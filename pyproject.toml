@@ -28,6 +28,8 @@ dev = ["pytest>=7,<9", "pyyaml>=6"]
 
 [project.scripts]
 medreview = "medreview.cli:main"
+# Stage 1 产品入口；medreview 是过渡期旧入口，器官迁移完成后删除（届时全仓只剩 clauseproof）
+clauseproof = "clauseproof.cli:main"
 
 [tool.setuptools]
 package-dir = { "" = "src" }

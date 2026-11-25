@@ -72,7 +72,7 @@ DIST_TO_IMPORT = {
 }
 
 # 允许的"本包内部/工具注入"模块名（tests 里直接 import 的同目录模块）
-LOCAL_MODULES = frozenset({"check_workflows"})
+LOCAL_MODULES = frozenset({"check_workflows", "clauseproof"})
 
 TOOLS_MODULES = frozenset({"gen_ruleset", "gen_cases", "make_snapshots", "audit_repo", "make_release"})
 
