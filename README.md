@@ -7,9 +7,9 @@
 > **身份（2026-11-25 起，轨AD D）**
 > - 仓库名 / 产品名 / 主 CLI：**`clauseproof`**
 > - **发行包名：`clauseproof`**（原 `medreview`；PyPI 旧名实测 404、未发布，改名无迁移包袱；GitHub Release 是 v0.1.2 源码 zip）
-> - **旧 CLI `medreview` 是过渡入口**，退役截止 **2026-11-30**；两个入口并存属过渡态，由 `tests/test_entry_surface.py` 门守着（截止后只许 1 条）
+> - **旧 CLI `medreview` 已于 2026-11-25 退役**（`[project.scripts]` 只剩 `clauseproof`）；旧包 `src/medreview` 仍可用模块方式 `python -m medreview.cli …` 运行
 > - `[project] version = "0.0.0"` 是**打包元数据占位**：运行时版本由 `references/manifest.json` 派生（K8 口径），本仓未发 PyPI
-> - 本 README 下文的 `medreview …` 示例在退役前仍可用；退役后整体改为 `clauseproof …`
+> - 本 README 下文的 `medreview …` 示例是**旧包历史示例**，已改为 `python -m medreview.cli …` 模块方式；新入口 `clauseproof` 只提供 `list` / `check`，不迁旧子命令
 
 ---
 
@@ -60,26 +60,26 @@ python -m pip install -e ".[dev]"
 
 ```bash
 # 审查单条文案（人读 Markdown 报告）
-medreview check --text "XX医疗美容门诊部（虚构）双眼皮手术，保证治愈，无效退款。"
+python -m medreview.cli check --text "XX医疗美容门诊部（虚构）双眼皮手术，保证治愈，无效退款。"
 
 # 机读 JSON 报告（含规则来源 URL，供核证）
-medreview check --format json --text "本品保健食品可有效降血糖、降血压。"
+python -m medreview.cli check --format json --text "本品保健食品可有效降血糖、降血压。"
 
 # 补材料后重跑（报告"待补材料清单"节索要的材料，用它回传；只记摘要不落路径）
-medreview check --text "XX医疗美容门诊部（虚构）双眼皮手术。" --proof yes --proof-file ./审查证明.pdf
+python -m medreview.cli check --text "XX医疗美容门诊部（虚构）双眼皮手术。" --proof yes --proof-file ./审查证明.pdf
 
 # 批量审查一个目录下的全部 .txt 文案（逐件出全 8 章节；失败件单列，不中断整批）
-medreview scan --dir ./samples --format markdown --out report.md   # 人读
-medreview scan --dir ./samples --format json     --out report.json # 机读
+python -m medreview.cli scan --dir ./samples --format markdown --out report.md   # 人读
+python -m medreview.cli scan --dir ./samples --format json     --out report.json # 机读
 
 # 列出规则包全部条目与锚点（含未启用清单）
-medreview rules
+python -m medreview.cli rules
 
 # 跑内置基准套件（四套件；退出码 0 达标 / 1 未达标 / 2 用法错误 / 3 真值库不可用）
-medreview bench
+python -m medreview.cli bench
 
 # 内建自检（门禁阳性对照 + 装配完整性）
-medreview selftest
+python -m medreview.cli selftest
 ```
 
 **退出码语义**（已锁进测试，是契约不是巧合）：

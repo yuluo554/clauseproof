@@ -21,32 +21,32 @@ description: 医疗/医美/药品/医疗器械/保健食品广告的发布前合
 
 ## 怎么用
 
-引擎是纯本地 CLI（零第三方依赖、零网络访问）。所有结论由 `medreview` 命令产出。
+引擎是纯本地 CLI（零第三方依赖、零网络访问）。所有结论由 `python -m medreview.cli` 模块产出（旧 console script `medreview` 已于 2026-11-25 退役）。
 
 ```bash
 # 1) 审查单条文案（人读 Markdown 报告，打印到 stdout）
-medreview check --text "<待审查文案>"
+python -m medreview.cli check --text "<待审查文案>"
 
 # 2) 机读 JSON（含条款锚点、法条原文、规则来源 URL）
-medreview check --format json --text "<待审查文案>"
+python -m medreview.cli check --format json --text "<待审查文案>"
 
 # 3) 带元信息与语境提示
-medreview check --text "<文案>" \
+python -m medreview.cli check --text "<文案>" \
   --channel "小红书" --subject medical_aesthetic \
   --proof no --scenario prepublication \
   --hint "<宿主 agent 的语境判断>"
 
 # 3b) 补材料后重跑（报告"待补材料清单"节要求的那份材料，用它回传）
-medreview check --text "<文案>" --proof yes --proof-file ./审查证明.pdf
+python -m medreview.cli check --text "<文案>" --proof yes --proof-file ./审查证明.pdf
 
 # 4) 批量审查一个目录下的全部 .txt（机读 JSON；失败件单列，不中断整批）
-medreview scan --dir ./samples --format json --out report.json
+python -m medreview.cli scan --dir ./samples --format json --out report.json
 
 # 4b) 批量审查的人读 Markdown 报告（逐件出全 8 章节；与 JSON **同一渲染源**）
-medreview scan --dir ./samples --format markdown --out report.md
+python -m medreview.cli scan --dir ./samples --format markdown --out report.md
 
 # 5) 查看规则包条目与锚点（含未启用清单）
-medreview rules
+python -m medreview.cli rules
 ```
 
 ## 退出码（契约，不是巧合）
@@ -95,7 +95,7 @@ medreview rules
 
 <!-- contract-fields: id text channel subject hint proof scenario proof_file categories grade findings applied_rule_count total_rule_count not_enabled advisories input_required ruleset_version rule_sources rule_id clause_anchor quote evidence severity kind notes -->
 
-`medreview check --format json` 的顶层字段（顺序即输出顺序）：
+`python -m medreview.cli check --format json` 的顶层字段（顺序即输出顺序）：
 
 | 字段 | 类型 | 说明 |
 |---|---|---|
@@ -133,7 +133,7 @@ medreview rules
 | 8 | `disclaimer` | 八、免责声明 | 辅助自查、不构成法律意见、不替代官方审查 |
 
 **报告层零判定**：报告层不 import 引擎模块、不做算术、不内联政策数值（条款号/阈值形态）。
-三条均有 AST 静态门禁（`medreview selftest` 的 S8/S9/S10，各含阳性对照）。
+三条均有 AST 静态门禁（`python -m medreview.cli selftest` 的 S8/S9/S10，各含阳性对照）。
 
 ## 隐私红线
 
@@ -142,4 +142,4 @@ medreview rules
 
 ## 免责
 
-输出为发布前**辅助自查**参考，**不构成法律意见，不替代广告审查机关的官方审查**。判定依赖内置冻结规则包（基准日见 `medreview check` 报告头部），法规更新后须重新核对。发布前请以官方审查结论为准。
+输出为发布前**辅助自查**参考，**不构成法律意见，不替代广告审查机关的官方审查**。判定依赖内置冻结规则包（基准日见 `python -m medreview.cli check` 报告头部），法规更新后须重新核对。发布前请以官方审查结论为准。

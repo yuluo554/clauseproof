@@ -305,7 +305,7 @@ def test_skill_input_table_covers_all_cli_check_params():
 
 def test_skill_declares_scan_batch_both_formats():
     text = _skill_text()
-    assert "medreview scan" in text, "SKILL.md 未声明批量通路"
+    assert "medreview.cli scan" in text, "SKILL.md 未声明批量通路"
     assert "--format markdown" in text and "--format json" in text, \
         "SKILL.md 未声明批量的两种格式"
 

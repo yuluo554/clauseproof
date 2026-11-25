@@ -98,7 +98,7 @@ def _readme_commands():
             line = line.strip()
             if line.startswith("#"):
                 continue
-            match = re.search(r"\bmedreview\s+([a-z][a-z-]*)", line)
+            match = re.search(r"\bmedreview(?:\.cli)?\s+([a-z][a-z-]*)", line)
             if not match:
                 continue
             sub = match.group(1)
@@ -138,7 +138,7 @@ def test_face2_all_parser_commands_are_documented():
     registered = _parser_commands()
     text = read(os.path.join(ROOT, "README.md"))
     for sub in registered:
-        assert re.search(r"\bmedreview\s+%s\b" % re.escape(sub), text), \
+        assert re.search(r"\bmedreview(?:\.cli)?\s+%s\b" % re.escape(sub), text), \
             "子命令未在 README 中记录：%s" % sub
 
 
