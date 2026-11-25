@@ -1,0 +1,52 @@
+{
+  "card_id": "SAMPLE-PET-OK",
+  "category": "猫粮",
+  "life_stage": "成年",
+  "fields": {
+    "product_name": "测试粮A",
+    "category": "猫粮",
+    "life_stage": "成年",
+    "ingredients": "鸡肉、糙米、鱼油、维生素预混料",
+    "additives": "维生素A、维生素D3、硫酸锌、氯化胆碱",
+    "net_content": "2kg",
+    "producer": "某合成宠物食品有限公司",
+    "product_dates": "生产日期 2026-01-01；保质期 18个月"
+  },
+  "guaranteed": {
+    "水分": {
+      "value": 12,
+      "unit": "%"
+    },
+    "粗蛋白": {
+      "value": 23,
+      "unit": "%"
+    },
+    "粗脂肪": {
+      "value": 8,
+      "unit": "%"
+    },
+    "粗灰分": {
+      "value": 8,
+      "unit": "%"
+    },
+    "粗纤维": {
+      "value": 7,
+      "unit": "%"
+    },
+    "钙": {
+      "value": 0.7,
+      "unit": "%"
+    },
+    "总磷": {
+      "value": 0.55,
+      "unit": "%"
+    },
+    "水溶性氯化物": {
+      "value": 0.4,
+      "unit": "%"
+    }
+  },
+  "claims": [
+    "天然"
+  ]
+}

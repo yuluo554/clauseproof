@@ -84,6 +84,53 @@ medreview selftest
 | `2` | 输入/用法错误 |
 | `3` | 规则包或**基准真值库**不可用（数据不可用——不是"跑了没过"，后者是 `1`） |
 
+## 条文判定器官（`clauseproof` 入口）
+
+同仓并存的第二个入口 `clauseproof` 是**条文判定引擎**：条文库（按版本登记）+ 器官（规则包）
++ 判定账本。器官只声明「输入字段 → 条件/阈值 → 条款锚点 → 判定」，**不带**自己的 CLI、
+配置框架与输出排版。
+
+| slug | 来源 | 状态 |
+|---|---|---|
+| `labeling-claims` | target-map ① 行 | ✅ 已迁入（27 条生效 / 7 条待核对；判据 1/3 见器官文档 §6.1） |
+| `checkup-ranges` | target-map ① 行 | ✅ 已迁入（19 条区间条目全部待核对 → 无自印区间即拒判；退出码语义差见器官文档 §3.3/§5） |
+| `petfood-label` | target-map ① 行 | ✅ 已迁入（43 条生效 / 2 条待核对；干物质基准换算 + 适用域画像） |
+
+```bash
+# 列出已注册的器官（slug / 版本 / 摘要）
+clauseproof list
+
+# AI 生成合成内容标识判定（GB 45438-2025 + 《标识办法》）
+clauseproof check labeling-claims \
+  --input samples/labeling-claims/card-text-basic.json \
+  --basis src/clauseproof/packs/labeling-claims/data/clauses.json
+clauseproof check labeling-claims \
+  --input samples/labeling-claims/card-image-metadata-stripped.json \
+  --basis src/clauseproof/packs/labeling-claims/data/clauses.json --json
+
+# 体检指标区间判定（报告自印区间优先；内置区间须已核对）
+clauseproof check checkup-ranges \
+  --input samples/checkup-ranges/measurement-high-alt.json \
+  --basis src/clauseproof/packs/checkup-ranges/data/clauses.json
+clauseproof check checkup-ranges \
+  --input samples/checkup-ranges/measurement-normal-tc.json \
+  --basis src/clauseproof/packs/checkup-ranges/data/clauses.json --json
+
+# 宠物食品标签合规判定（GB/T 31216/31217 + 公告20号标签规定）
+clauseproof check petfood-label \
+  --input samples/petfood-label/card-ok.json \
+  --basis src/clauseproof/packs/petfood-label/data/clauses.json
+clauseproof check petfood-label \
+  --input samples/petfood-label/card-missing.json \
+  --basis src/clauseproof/packs/petfood-label/data/clauses.json --json
+```
+
+器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
+（另两个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md) 与
+[`docs/petfood-label.md`](docs/petfood-label.md)）。
+判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
+退出码 0/1/2/3 见同页 §3。
+
 ## 分级口径
 
 | 结论 | 含义 |

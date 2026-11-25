@@ -1,0 +1,221 @@
+{
+  "version": "2025-09-01",
+  "clauses": [
+    {
+      "clause_id": "gb45438:5.1:a",
+      "path": "GB 45438-2025/5.1 a)",
+      "version": "2025-09-01",
+      "text": "文本内容显式标识应采用文字或角标形式并具备标识",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.1:b1",
+      "path": "GB 45438-2025/5.1 b) 1)",
+      "version": "2025-09-01",
+      "text": "文本内容显式标识应含人工智能要素：包含“人工智能”或“AI”",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.1:b2",
+      "path": "GB 45438-2025/5.1 b) 2)",
+      "version": "2025-09-01",
+      "text": "文本内容显式标识应含生成合成要素：包含“生成”和/或“合成”",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.1:d",
+      "path": "GB 45438-2025/5.1 d)",
+      "version": "2025-09-01",
+      "text": "文本内容显式标识应位于文本的起始位置、末尾位置或中间适当位置之一或多个",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.2:a",
+      "path": "GB 45438-2025/5.2 a)",
+      "version": "2025-09-01",
+      "text": "图片内容显式标识应采用文字提示并具备标识",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.2:b1",
+      "path": "GB 45438-2025/5.2 b) 1)",
+      "version": "2025-09-01",
+      "text": "图片内容显式标识应含人工智能要素：包含“人工智能”或“AI”",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.2:b2",
+      "path": "GB 45438-2025/5.2 b) 2)",
+      "version": "2025-09-01",
+      "text": "图片内容显式标识应含生成合成要素：包含“生成”和/或“合成”",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.2:c",
+      "path": "GB 45438-2025/5.2 c)",
+      "version": "2025-09-01",
+      "text": "图片内容显式标识应位于图片的边或角",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.3:a",
+      "path": "GB 45438-2025/5.3 a)",
+      "version": "2025-09-01",
+      "text": "音频内容显式标识应采用语音标识或音频节奏标识并具备标识",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.3:b1",
+      "path": "GB 45438-2025/5.3 b) 1)",
+      "version": "2025-09-01",
+      "text": "音频内容显式标识应含人工智能要素：包含“人工智能”或“AI”",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.3:b2",
+      "path": "GB 45438-2025/5.3 b) 2)",
+      "version": "2025-09-01",
+      "text": "音频内容显式标识应含生成合成要素：包含“生成”和/或“合成”",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.3:d",
+      "path": "GB 45438-2025/5.3 d)",
+      "version": "2025-09-01",
+      "text": "音频内容显式标识应位于音频的起始位置、末尾位置或中间适当位置之一或多个",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.4:a",
+      "path": "GB 45438-2025/5.4 a)",
+      "version": "2025-09-01",
+      "text": "视频内容显式标识应采用文字提示并具备标识",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.4:b1",
+      "path": "GB 45438-2025/5.4 b) 1)",
+      "version": "2025-09-01",
+      "text": "视频内容显式标识应含人工智能要素：包含“人工智能”或“AI”",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.4:b2",
+      "path": "GB 45438-2025/5.4 b) 2)",
+      "version": "2025-09-01",
+      "text": "视频内容显式标识应含生成合成要素：包含“生成”和/或“合成”",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:5.4:c",
+      "path": "GB 45438-2025/5.4 c)",
+      "version": "2025-09-01",
+      "text": "视频内容显式标识应位于视频起始画面，可位于视频末尾和中间适当位置",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:6.1:a1",
+      "path": "GB 45438-2025/6.1 a) 1)",
+      "version": "2025-09-01",
+      "text": "文件元数据隐式标识应包括生成合成标签要素：内容的人工智能生成合成属性信息",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:6.1:a2",
+      "path": "GB 45438-2025/6.1 a) 2)",
+      "version": "2025-09-01",
+      "text": "文件元数据隐式标识应包括生成合成服务提供者要素：生成合成服务提供者的名称或编码",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:6.1:a3",
+      "path": "GB 45438-2025/6.1 a) 3)",
+      "version": "2025-09-01",
+      "text": "文件元数据隐式标识应包括内容制作编号要素：生成合成服务提供者对该内容的唯一编号",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:6.1:a4",
+      "path": "GB 45438-2025/6.1 a) 4)",
+      "version": "2025-09-01",
+      "text": "文件元数据隐式标识应含内容传播服务提供者的名称或编码（传播场景适用）",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:6.1:a5",
+      "path": "GB 45438-2025/6.1 a) 5)",
+      "version": "2025-09-01",
+      "text": "文件元数据隐式标识应含内容传播服务提供者对该内容的唯一编号（传播场景适用）",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:6.1:c",
+      "path": "GB 45438-2025/6.1 c)",
+      "version": "2025-09-01",
+      "text": "文件元数据隐式标识应仅保留一份（同一标识要素不得重复提供）",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:E:c1",
+      "path": "GB 45438-2025/附录 E c) 1)",
+      "version": "2025-09-01",
+      "text": "生成合成标签要素（Label）取值：1=属于、2=可能为、3=疑似为人工智能生成合成内容",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:E:d2",
+      "path": "GB 45438-2025/附录 E d) 2)",
+      "version": "2025-09-01",
+      "text": "生成合成服务提供者要素（ContentProducer）类型为字符串",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "gb45438:E:e2",
+      "path": "GB 45438-2025/附录 E e) 2)",
+      "version": "2025-09-01",
+      "text": "内容制作编号要素（ProduceID）类型为字符串",
+      "effective": "2025-09-01",
+      "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547"
+    },
+    {
+      "clause_id": "measures:4-2",
+      "path": "《人工智能生成合成内容标识办法》（国信办通字〔2025〕2 号）/第四条第二款",
+      "version": "2025-09-01",
+      "text": "提供下载、复制、导出等功能时，应确保文件中含有符合本办法第四条要求的显式标识（导出场景适用）",
+      "effective": "2025-09-01",
+      "source": "https://www.gov.cn/zhengce/zhengceku/202503/content_7014286.htm"
+    },
+    {
+      "clause_id": "measures:6",
+      "path": "《人工智能生成合成内容标识办法》（国信办通字〔2025〕2 号）/第六条",
+      "version": "2025-09-01",
+      "text": "提供网络信息内容传播服务的服务提供者应核验隐式标识，并在发布内容周边添加显著的提示标识（传播场景适用）",
+      "effective": "2025-09-01",
+      "source": "https://www.gov.cn/zhengce/zhengceku/202503/content_7014286.htm"
+    }
+  ]
+}

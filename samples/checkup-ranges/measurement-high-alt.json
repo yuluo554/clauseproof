@@ -1,0 +1,11 @@
+{
+  "canonical_name": "ALT",
+  "value": 43.0,
+  "unit": "U/L",
+  "range": {
+    "low": 9.0,
+    "high": 40.0,
+    "bounds": "closed"
+  },
+  "subject_sex": "male"
+}

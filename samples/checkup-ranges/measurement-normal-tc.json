@@ -1,0 +1,11 @@
+{
+  "canonical_name": "TC",
+  "value": 5.2,
+  "unit": "mmol/L",
+  "range": {
+    "low": null,
+    "high": 5.2,
+    "bounds": "closed"
+  },
+  "subject_sex": "male"
+}

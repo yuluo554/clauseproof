@@ -1,0 +1,13 @@
+{
+  "version": "2026-10-16",
+  "clauses": [
+    {
+      "clause_id": "range:report-printed",
+      "path": "报告单 / LIS 印制参考区间",
+      "version": "2026-10-16",
+      "text": "以医疗机构报告单（LIS）印制的参考区间为准；本工具只做机械比较（值 < low → 低，值 > high → 高），不做诊断解读",
+      "effective": "2026-10-16",
+      "source": "报告单原件（受检者本人）"
+    }
+  ]
+}

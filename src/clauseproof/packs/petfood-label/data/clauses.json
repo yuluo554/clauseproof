@@ -1,0 +1,181 @@
+{
+  "version": "2026.1",
+  "clauses": [
+    {
+      "clause_id": "moa-annex3:5",
+      "path": "宠物饲料标签规定（农业农村部公告第20号 附件3）/第五条",
+      "version": "2026.1",
+      "text": "如不标示则默认为适用于所有生命阶段",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "moa-annex3:6",
+      "path": "宠物饲料标签规定（农业农村部公告第20号 附件3）/第六条",
+      "version": "2026.1",
+      "text": "原料组成包括饲料原料和饲料添加剂两部分",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "moa-annex3:9",
+      "path": "宠物饲料标签规定（农业农村部公告第20号 附件3）/第九条",
+      "version": "2026.1",
+      "text": "宠物饲料产品应当标示产品包装单位的净含量。",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "moa-annex3:14",
+      "path": "宠物饲料标签规定（农业农村部公告第20号 附件3）/第十四条",
+      "version": "2026.1",
+      "text": "宠物饲料产品标签应当标示保质期，标示方法见附录6。",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "moa-annex3:15",
+      "path": "宠物饲料标签规定（农业农村部公告第20号 附件3）/第十五条",
+      "version": "2026.1",
+      "text": "应当标示与许可证明文件一致的生产许可证编号、企业名称、注册地址、生产地址、联系方式",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "moa-annex3:20",
+      "path": "宠物饲料标签规定（农业农村部公告第20号 附件3）/第二十条",
+      "version": "2026.1",
+      "text": "且不含有氯化钠、防腐剂或者其他饲料添加剂",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312162014:t1:r2",
+      "path": "全价宠物食品 犬粮 表1 第2行",
+      "version": "2026.1",
+      "text": "粘蛋口质之22.0之18.0GB/TT6432",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312162014:t1:r3",
+      "path": "全价宠物食品 犬粮 表1 第3行",
+      "version": "2026.1",
+      "text": "粗脂肪之8.0芒5.0GB/TT6433",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312162014:t1:r4",
+      "path": "全价宠物食品 犬粮 表1 第4行",
+      "version": "2026.1",
+      "text": "粗灰分如10.0如10.0GB/T6438",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312162014:t1:r5",
+      "path": "全价宠物食品 犬粮 表1 第5行",
+      "version": "2026.1",
+      "text": "粗纤维妙9.0女9.0GB/T6434",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312162014:t1:r6",
+      "path": "全价宠物食品 犬粮 表1 第6行",
+      "version": "2026.1",
+      "text": "钨之1.0之0.6GPR/TT6436",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312162014:t1:r7",
+      "path": "全价宠物食品 犬粮 表1 第7行",
+      "version": "2026.1",
+      "text": "J'l[，】亏′′_l】、蜃丨靠之0.8之0.5GB/TT6437",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312162014:t1:r8",
+      "path": "全价宠物食品 犬粮 表1 第8行",
+      "version": "2026.1",
+      "text": "水溶性氯化物(以CL计〉之0.45之0.09GB/TT6439",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312162014:t1:r9",
+      "path": "全价宠物食品 犬粮 表1 第9行",
+      "version": "2026.1",
+      "text": "赖氨酸之0.77之0.63GB/工18246",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312172014:t1:r2",
+      "path": "全价宠物食品 猫粮 表1 第2行",
+      "version": "2026.1",
+      "text": "粗蛋白质之28.0之25.0GBy/工6432",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312172014:t1:r3",
+      "path": "全价宠物食品 猫粮 表1 第3行",
+      "version": "2026.1",
+      "text": "粗胆肢之9.0之9.0GB/丁6433",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312172014:t1:r4",
+      "path": "全价宠物食品 猫粮 表1 第4行",
+      "version": "2026.1",
+      "text": "粗灰分如10.0如10.0GB/工6438",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312172014:t1:r5",
+      "path": "全价宠物食品 猫粮 表1 第5行",
+      "version": "2026.1",
+      "text": "粗纤维女9.0女9.0GB/TT6434",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312172014:t1:r6",
+      "path": "全价宠物食品 猫粮 表1 第6行",
+      "version": "2026.1",
+      "text": "钙之1.0之0.6GB/TT6436",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312172014:t1:r7",
+      "path": "全价宠物食品 猫粮 表1 第7行",
+      "version": "2026.1",
+      "text": "」'丨湮`、碾'靠之0.8之0.5GB/TT6437",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312172014:t1:r8",
+      "path": "全价宠物食品 猫粮 表1 第8行",
+      "version": "2026.1",
+      "text": "水溶性氯化物(以CL计)之0.3之0.3(GB/T6439",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    },
+    {
+      "clause_id": "gbt312172014:t1:r9",
+      "path": "全价宠物食品 猫粮 表1 第9行",
+      "version": "2026.1",
+      "text": "牛磺酸之0童(〔〕霏鼻…'工粮)之0亡盲〈〔〕荠鼻…_亘粮)GB/T18246",
+      "effective": "2026.1",
+      "source": "来源仓 data/rules 冻结抓取（逐字 OCR 原文）"
+    }
+  ]
+}

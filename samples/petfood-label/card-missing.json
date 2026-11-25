@@ -1,0 +1,28 @@
+{
+  "card_id": "SAMPLE-PET-MISSING",
+  "category": "犬粮",
+  "life_stage": "成年",
+  "fields": {
+    "product_name": "测试粮B",
+    "category": "犬粮",
+    "life_stage": "成年",
+    "ingredients": "鸡肉、小麦、鱼油",
+    "producer": "某合成宠物食品有限公司",
+    "product_dates": "生产日期 2026-01-01"
+  },
+  "guaranteed": {
+    "水分": {
+      "value": 12,
+      "unit": "%"
+    },
+    "粗蛋白": {
+      "value": 26,
+      "unit": "%"
+    },
+    "粗脂肪": {
+      "value": 10,
+      "unit": "%"
+    }
+  },
+  "claims": []
+}

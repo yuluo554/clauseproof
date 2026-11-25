@@ -1,0 +1,326 @@
+{
+  "source": "data/samples/truth/case-*.truth.json（20 条，只读转写）",
+  "note": "bench_flag 为来源基准夹具口径（注入默认区间）；expected_flag 为产品通路口径（registry 全 pending → 拒判）",
+  "records": [
+    {
+      "case_id": "case-001-zhangsan-2023",
+      "subject": {
+        "canonical_name": "ALT",
+        "value": 43.0,
+        "unit": "U/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 40.0,
+          "low": 9.0
+        }
+      },
+      "expected_flag": "high",
+      "bench_flag": "high",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-001-zhangsan-2023",
+      "subject": {
+        "canonical_name": "AST",
+        "value": 37.0,
+        "unit": "U/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 40.0,
+          "low": 15.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-002-zhangsan-2024",
+      "subject": {
+        "canonical_name": "ALT",
+        "value": 13.0,
+        "unit": "U/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 40.0,
+          "low": 9.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-002-zhangsan-2024",
+      "subject": {
+        "canonical_name": "AST",
+        "value": 28.0,
+        "unit": "U/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 40.0,
+          "low": 15.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-003-zhangsan-2025",
+      "subject": {
+        "canonical_name": "ALT",
+        "value": 13.0,
+        "unit": "U/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 40.0,
+          "low": 9.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-003-zhangsan-2025",
+      "subject": {
+        "canonical_name": "AST",
+        "value": 28.0,
+        "unit": "U/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 40.0,
+          "low": 15.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-004-lisi-2024",
+      "subject": {
+        "canonical_name": "HGB",
+        "value": 149.0,
+        "unit": "g/L",
+        "subject_sex": "female"
+      },
+      "expected_flag": "not_assessed",
+      "bench_flag": "not_assessed",
+      "bench_range_source": "none"
+    },
+    {
+      "case_id": "case-004-lisi-2024",
+      "subject": {
+        "canonical_name": "WBC",
+        "value": 9.8,
+        "unit": "10^9/L",
+        "subject_sex": "female",
+        "range": {
+          "bounds": "closed",
+          "high": 9.5,
+          "low": 3.5
+        }
+      },
+      "expected_flag": "high",
+      "bench_flag": "high",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-004-lisi-2024",
+      "subject": {
+        "canonical_name": "PLT",
+        "value": 126.0,
+        "unit": "10^9/L",
+        "subject_sex": "female",
+        "range": {
+          "bounds": "closed",
+          "high": 350.0,
+          "low": 125.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-005-wangwu-2024",
+      "subject": {
+        "canonical_name": "HGB",
+        "value": 127.0,
+        "unit": "g/L",
+        "subject_sex": "male"
+      },
+      "expected_flag": "not_assessed",
+      "bench_flag": "low",
+      "bench_range_source": "builtin_default"
+    },
+    {
+      "case_id": "case-006-boundary-closed",
+      "subject": {
+        "canonical_name": "TC",
+        "value": 5.2,
+        "unit": "mmol/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 5.2,
+          "low": null
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-007-boundary-open",
+      "subject": {
+        "canonical_name": "TG",
+        "value": 1.7,
+        "unit": "mmol/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "open",
+          "high": 1.7,
+          "low": null
+        }
+      },
+      "expected_flag": "high",
+      "bench_flag": "high",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-008-near-miss",
+      "subject": {
+        "canonical_name": "TC",
+        "value": 5.1000000000000005,
+        "unit": "mmol/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 5.2,
+          "low": null
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-008-near-miss",
+      "subject": {
+        "canonical_name": "HDL-C",
+        "value": 1.2000000000000002,
+        "unit": "mmol/L",
+        "subject_sex": "male",
+        "range": {
+          "bounds": "closed",
+          "high": 1.7,
+          "low": 1.1
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-009-printed-overrides-default",
+      "subject": {
+        "canonical_name": "CREA",
+        "value": 92.0,
+        "unit": "umol/L",
+        "subject_sex": "female",
+        "range": {
+          "bounds": "closed",
+          "high": 97.0,
+          "low": 57.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-010-no-range",
+      "subject": {
+        "canonical_name": "GLU",
+        "value": 5.4,
+        "unit": "mmol/L",
+        "subject_sex": "female"
+      },
+      "expected_flag": "not_assessed",
+      "bench_flag": "not_assessed",
+      "bench_range_source": "none"
+    },
+    {
+      "case_id": "case-010-no-range",
+      "subject": {
+        "canonical_name": "ALT",
+        "value": 14.0,
+        "unit": "U/L",
+        "subject_sex": "female"
+      },
+      "expected_flag": "not_assessed",
+      "bench_flag": "not_assessed",
+      "bench_range_source": "none"
+    },
+    {
+      "case_id": "case-011-lisi-2025",
+      "subject": {
+        "canonical_name": "WBC",
+        "value": 8.700000000000001,
+        "unit": "10^9/L",
+        "subject_sex": "female",
+        "range": {
+          "bounds": "closed",
+          "high": 9.5,
+          "low": 3.5
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-011-lisi-2025",
+      "subject": {
+        "canonical_name": "PLT",
+        "value": 349.0,
+        "unit": "10^9/L",
+        "subject_sex": "female",
+        "range": {
+          "bounds": "closed",
+          "high": 350.0,
+          "low": 125.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    },
+    {
+      "case_id": "case-012-lowconf-review",
+      "subject": {
+        "canonical_name": "ALT",
+        "value": 32.0,
+        "unit": "U/L",
+        "subject_sex": "female",
+        "range": {
+          "bounds": "closed",
+          "high": 50.0,
+          "low": 9.0
+        }
+      },
+      "expected_flag": "normal",
+      "bench_flag": "normal",
+      "bench_range_source": "report_printed"
+    }
+  ]
+}

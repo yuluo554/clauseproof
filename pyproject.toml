@@ -41,3 +41,6 @@ where = ["src"]
 # 规则包与基准真值库**都随包**：任一缺失都会让安装态少一条可用通路
 # （规则包缺 → rules/check 不可用；真值库缺 → bench 不可用）。
 medreview = ["references/*.json", "fixtures/*.json"]
+# 器官的条文库与冻结来源产物随包：器官自身不读文件（执行约束），但这些 JSON 是
+# 条款锚点与规则表的**可复核出处**——安装态必须能核，`--basis` 也要能指到真文件。
+clauseproof = ["packs/*/data/*.json", "packs/*/data/*.yaml"]

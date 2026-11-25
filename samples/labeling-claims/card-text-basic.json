@@ -1,0 +1,20 @@
+{
+  "card_id": "SAMPLE-TEXT-0001",
+  "carrier": "text",
+  "source": "manual",
+  "content_sha256": "31e27b3cefccd2bedc76c1e5298aacccb9af4e31003290b96579b4c60fb031b8",
+  "explicit": [
+    {
+      "element": "text_explicit_notice",
+      "present": true,
+      "position": "head",
+      "value": "本内容由人工智能生成合成"
+    }
+  ],
+  "implicit": {
+    "AIGC:Label": "1",
+    "AIGC:ContentProducer": "SYN-0001",
+    "AIGC:ProduceID": "SYN-C120797"
+  },
+  "notes": "全要素齐备的示例件：用于演示 check 通路与 README 快速开始（内容完全虚构）"
+}
