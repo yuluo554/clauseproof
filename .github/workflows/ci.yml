@@ -53,13 +53,16 @@ jobs:
       - name: Run tests
         run: python -m pytest tests -q
 
-      # 裸 console script 冒烟：`python -m` 与裸 `<pkg>` 是两条通路，
+      # 裸 console script 冒烟：新入口 `clauseproof` 与旧包模块 `python -m medreview.cli` 是两条通路，
       # 只跑前者会漏掉"我们的包没进安装面"这类缺陷（安装面第四面）。
-      - name: CLI smoke (bare console script)
-        run: medreview selftest
+      - name: CLI smoke (bare console script, new entry)
+        run: clauseproof --help
 
-      - name: CLI smoke (module form, non-root CWD)
+      - name: CLI smoke (module form, old package)
         run: python -m medreview.cli --help
+
+      - name: CLI smoke (old package selftest, module form)
+        run: python -m medreview.cli selftest
 
       # 冻结产物位级一致守门（数据非代码）
       - name: Frozen regeneration check
@@ -69,7 +72,7 @@ jobs:
 
       # 基准四套件（退出码 0 达标 / 1 未达标 / 2 用法错误）
       - name: Benchmarks
-        run: medreview bench
+        run: python -m medreview.cli bench
 
       # 脱敏审计（M6 固化形态：五步扫描 + 提交元数据邮箱；命中即红）
       - name: Desensitize audit
