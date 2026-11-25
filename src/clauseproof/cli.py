@@ -23,6 +23,7 @@ from clauseproof.core.ledger import (
     Report,
 )
 from clauseproof.core.registry import PackMissing, all_packs, get
+from clauseproof.packs import load_builtin
 
 PRODUCT = "clauseproof"
 
@@ -47,6 +48,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv=None) -> int:
+    load_builtin()
     parser = build_parser()
     args = parser.parse_args(argv)
     if args.command is None:

@@ -93,6 +93,14 @@ def test_missing_pack_is_reported():
         get("no-such-pack")
 
 
+def test_builtin_manifest_is_sorted_and_loadable():
+    """器官清单必须字典序（输出可复现），且 ``load_builtin()`` 不因空表报错。"""
+    from clauseproof.packs import BUILTIN_MODULES, load_builtin
+
+    assert list(BUILTIN_MODULES) == sorted(BUILTIN_MODULES)
+    load_builtin()
+
+
 # --------------------------------------------------------------------------
 # 账本：无锚点不下判定
 # --------------------------------------------------------------------------
