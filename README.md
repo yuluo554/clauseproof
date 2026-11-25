@@ -1,8 +1,15 @@
-# medreview — 医疗广告合规预审体检
+# clauseproof — 医疗广告合规预审体检
 
 [![CI](https://github.com/yuluo554/10-16-2-medical-ad-review-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/yuluo554/10-16-2-medical-ad-review-skill/actions/workflows/ci.yml)
 
 **状态**：✅ **v0.1.2 已发布**（[Release](https://github.com/yuluo554/10-16-2-medical-ad-review-skill/releases/tag/v0.1.2) · **修**脱敏审计「仓库主人名被误判成姊妹目录名」的误报（工作区里放着 profile 仓时本机必红、CI 与中立解压树不红）· 脱敏审计 + 干净环境验证 + CI 三矩阵全绿后发布）
+
+> **身份（2026-11-25 起，轨AD D）**
+> - 仓库名 / 产品名 / 主 CLI：**`clauseproof`**
+> - **发行包名：`clauseproof`**（原 `medreview`；PyPI 旧名实测 404、未发布，改名无迁移包袱；GitHub Release 是 v0.1.2 源码 zip）
+> - **旧 CLI `medreview` 是过渡入口**，退役截止 **2026-11-30**；两个入口并存属过渡态，由 `tests/test_entry_surface.py` 门守着（截止后只许 1 条）
+> - `[project] version = "0.0.0"` 是**打包元数据占位**：运行时版本由 `references/manifest.json` 派生（K8 口径），本仓未发 PyPI
+> - 本 README 下文的 `medreview …` 示例在退役前仍可用；退役后整体改为 `clauseproof …`
 
 ---
 

@@ -124,10 +124,10 @@ clauseproof :: checkup-ranges 0.2.0 :: measurements.json
 |---|---|---|---|
 | 1 | 旧仓**判定层实跑**用例数（ORGAN-PLAYBOOK §3.0） | 旧仓判定层实跑 **X = 424** / 新仓实跑 **N = 481** / **过**（N ≥ X，差 +57） | **过** |
 | 2 | README 示例命令 rc 相同 | **结构不可比**：来源 README 的示例全部以**文件**为输入（`normalize 报告.pdf` / `ledger 报告.pdf` / `export 报告.pdf` …），器官按 SKELETON-SPEC §2 只收**已解析的结构化记录**；实测 `normalize data/samples/cases/case-006-boundary-closed.txt` → **rc 1**（"无法识别的输入类型（.txt）"），即来源工具自己也不吃样例的 txt。替代实测：来源 `data/samples/truth` 的 **20 条真值记录逐条判定一致**（§11）；另 `indicators` / `bench` → rc 0 属产品层命令，无器官对应物。rc 差异的产品级原因见 §3.3 | **不过（不可比）** |
-| 3 | 测试文件数 / 测试函数数 | 旧仓判定层 **21 文件 / 392 `def test_`**；本器官 **1 文件 / 481 `def test_`**（全部具名、无参数化） | **过**（函数数 481 ≥ 392；实跑 = 函数数 = 481） |
+| 3 | 测试文件数 / 测试函数数 | **口径乙（2026-11-25 用户裁决）**：文件数**按域计** → 本器官 **1 文件**（容器数 ≠ 覆盖数）/ 旧仓判定层 **20 文件**（`test_export.py` 属导出面，按 §6.1 口径排除；`audits/` 里记的 21 是未过滤数）；函数数**按条计** → 本器官 **481** / 旧 **392** | **过**（函数数 481 ≥ 392；实跑 = 函数数 = 481） |
 | 4 | `pip wheel` 后 `data/` 进包 | wheel 内 `clauseproof/packs/checkup-ranges/data/` **2 条**（`clauses.json` `indicators.yaml`） | **过** |
 
-### 6.1 判定层 21 文件处置表（进分母）
+### 6.1 判定层 20 文件处置表（进分母）
 
 | 旧测试文件 | 函数 | 处置 |
 |---|---|---|

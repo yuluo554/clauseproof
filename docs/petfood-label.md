@@ -116,7 +116,7 @@ clauseproof :: petfood-label 0.2.0 :: card-missing.json
 |---|---|---|---|
 | 1 | 旧仓**判定层实跑**用例数（ORGAN-PLAYBOOK §3.0） | 旧仓判定层实跑 **X = 207** / 新仓实跑 **N = 315** / **过**（N ≥ X，差 +108） | **过** |
 | 2 | README 示例命令 rc 相同 | 旧：`python -m pflc.cli check src/pflc/data/samples/label-demo-ok.txt` → **0**；新：`clauseproof check petfood-label --input samples/petfood-label/card-ok.json --basis …/clauses.json` → **0**。旧：`…label-demo-missing.txt` → **1**；新 `card-missing.json`（同一份样例的等价结构化档案）→ **1** | **过** |
-| 3 | 测试文件数 / 测试函数数 | 旧仓判定层 **10 文件 / 196 `def test_`**；本器官 **1 文件 / 228 `def test_`**（判定面详表 + 3 条保留参数化的状态矩阵） | **过**（函数数 228 ≥ 196；实跑 315） |
+| 3 | 测试文件数 / 测试函数数 | **口径乙（2026-11-25 用户裁决）**：文件数**按域计** → 本器官 **1 文件**（容器数 ≠ 覆盖数）/ 旧仓判定层 **10 文件**；函数数**按条计** → 本器官 **228** / 旧 **196**（判定面详表 + 3 条保留参数化的状态矩阵） | **过**（函数数 228 ≥ 196；实跑 315） |
 | 4 | `pip wheel` 后 `data/` 进包 | wheel 内 `clauseproof/packs/petfood-label/data/` **5 条**（`clauses.json` `manifest.json` `ruleset-claim.json` `ruleset-label.json` `ruleset-nutrition.json`） | **过** |
 
 ### 6.1 判定层 10 文件处置表（进分母）

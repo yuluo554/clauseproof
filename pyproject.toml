@@ -3,7 +3,9 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "medreview"
+# 轨AD D（2026-11-25）：发行包名从旧名 medreview 改为产品名 clauseproof。
+# PyPI 旧名实测 404（未发布），走「改名」分支；旧包目录 src/medreview 与旧入口暂留（截止 2026-11-30）。
+name = "clauseproof"
 # 打包元数据占位：运行时对外报告的版本一律由 references/manifest.json 派生（既定口径 K8），
 # 代码内零版本字面量。此处仅满足打包工具对 version 字段的格式要求。
 version = "0.0.0"

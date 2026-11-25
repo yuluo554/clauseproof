@@ -172,7 +172,7 @@ clauseproof :: labeling-claims 0.2.0 :: card-text-basic.json
 |---|---|---|---|
 | 1 | 旧仓**判定层实跑**用例数（ORGAN-PLAYBOOK §3.0） | 旧仓判定层实跑 **X = 205** / 新仓实跑 **N = 229** / **过**（N ≥ X，差 +24） | **过** |
 | 2 | README 示例命令 rc 相同 | 旧：`labelcheck check data/samples/card-text-basic.json` → **0**；新：`clauseproof check labeling-claims --input samples/labeling-claims/card-text-basic.json --basis …/clauses.json` → **0**。旧：`…card-image-metadata-stripped.json --json` → **1**；新同件 → **1**（源码态与 wheel 安装态各跑一次，一致） | **过** |
-| 3 | 测试文件数 / 测试函数数 | 旧仓判定层 **13 文件 / 202 `def test_`**；本器官 **1 文件 / 229 `def test_`**（实跑 = 229） | **过**（函数数 229 ≥ 202；**整仓 32 文件 / 472 函数**口径不适用，逐文件处置见 §6.1） |
+| 3 | 测试文件数 / 测试函数数 | **口径乙（2026-11-25 用户裁决）**：文件数**按域计** → 本器官 **1 文件**（容器数 ≠ 覆盖数）/ 旧仓判定层 **13 文件**；函数数**按条计** → 本器官 **229** / 旧 **202**（实跑 = 229） | **过**（函数数 229 ≥ 202；**整仓 32 文件 / 472 函数**口径不适用，逐文件处置见 §6.1） |
 | 4 | `pip wheel` 后 `data/` 进包 | wheel 内 `clauseproof/packs/labeling-claims/data/` **4 条**（`clauses.json` `gb45438-2025.json` `labeling-measures.json` `national-fields.json`）；装入全新 venv 后两件示例 rc=0/1 | **过** |
 
 ### 6.1 判定层口径与脚手架测试处置表
