@@ -102,6 +102,7 @@ python -m medreview.cli selftest
 | `labeling-claims` | target-map ① 行 | ✅ 已迁入（27 条生效 / 7 条待核对；判据 1/3 见器官文档 §6.1） |
 | `checkup-ranges` | target-map ① 行 | ✅ 已迁入（19 条区间条目全部待核对 → 无自印区间即拒判；退出码语义差见器官文档 §3.3/§5） |
 | `petfood-label` | target-map ① 行 | ✅ 已迁入（43 条生效 / 2 条待核对；干物质基准换算 + 适用域画像） |
+| `cost-card` | target-map ① 行 | ✅ 已迁入（10 条净料率 + 目标毛利率 + 波动阈值，全部 verified；依据 = **参数包条目**，不冒充法规文号；判据见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -130,11 +131,23 @@ clauseproof check petfood-label \
 clauseproof check petfood-label \
   --input samples/petfood-label/card-missing.json \
   --basis src/clauseproof/packs/petfood-label/data/clauses.json --json
+
+# 菜品成本卡判定（进货行三态 + 净料换算 + 毛利率定价 + 波动预警；依据 = 参数包条目）
+clauseproof check cost-card \
+  --input samples/cost-card/ledger-demo.json \
+  --basis src/clauseproof/packs/cost-card/data/clauses.json
+clauseproof check cost-card \
+  --input samples/cost-card/ledger-clean.json \
+  --basis src/clauseproof/packs/cost-card/data/clauses.json --json
+clauseproof check cost-card \
+  --input samples/cost-card/ledger-demo-alert.json \
+  --basis src/clauseproof/packs/cost-card/data/clauses.json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另两个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md) 与
-[`docs/petfood-label.md`](docs/petfood-label.md)）。
+（另三个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+[`docs/petfood-label.md`](docs/petfood-label.md) 与
+[`docs/cost-card.md`](docs/cost-card.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 

@@ -17,6 +17,7 @@ from typing import Tuple
 #: 已迁入的内置器官模块名（相对 ``clauseproof.packs``）。按 slug 字典序维护。
 BUILTIN_MODULES: Tuple[str, ...] = (
     "checkup-ranges",
+    "cost-card",
     "labeling-claims",
     "petfood-label",
 )
