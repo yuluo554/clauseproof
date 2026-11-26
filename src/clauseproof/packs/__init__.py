@@ -19,6 +19,7 @@ BUILTIN_MODULES: Tuple[str, ...] = (
     "bid-conformity",
     "checkup-ranges",
     "cost-card",
+    "ebike-limits",
     "expense-ledger",
     "extreme-terms",
     "labeling-claims",

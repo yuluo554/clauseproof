@@ -1,0 +1,53 @@
+{
+  "version": "2026-10-14",
+  "clauses": [
+    {
+      "clause_id": "contract:rulesets",
+      "path": "数据契约 / 规则包分册",
+      "version": "2026-10-14",
+      "text": "随包冻结四册规则包：GB 17761-2024（整车）/ GB 17761-2018（整车历史）/ GB 43854-2024（电池）/ GB 42296-2022（充电器）；限值以正式标准全文核对（基准日 2026-10-14）；pending 条目零参与核查"
+    },
+    {
+      "clause_id": "contract:status-gate",
+      "path": "数据契约 / status 门控",
+      "version": "2026-10-14",
+      "text": "status != verified 的条目零参与核查路径，只进 excluded 集合并显式列出；pending 条目 value 必须为 null（待核对不许预填数值）"
+    },
+    {
+      "clause_id": "contract:clause-discipline",
+      "path": "数据契约 / 条款号核对纪律",
+      "version": "2026-10-14",
+      "text": "clause_status 与 status 分开跟踪；clause_status=verified 必须有 clause；pending 时 clause 必须为 null——绝不编造条款号（编造标准内容比缺失更严重）"
+    },
+    {
+      "clause_id": "contract:four-states",
+      "path": "数据契约 / 判定四态",
+      "version": "2026-10-14",
+      "text": "判定四态：compliant / non_compliant / not_applicable / not_provided；整体结论按最弱优先聚合（non_compliant > not_provided > not_assessed > compliant）；一条规则都不适用时整体记 not_assessed"
+    },
+    {
+      "clause_id": "contract:not-provided",
+      "path": "数据契约 / 未提供不判符合",
+      "version": "2026-10-14",
+      "text": "未提供参数绝不判为符合——「没查到问题」与「没检查过」绝不等同； applies_if 引用参数不可解析时按「不知道是否适用」处理，不出 not_applicable"
+    },
+    {
+      "clause_id": "contract:unit-aliases",
+      "path": "数据契约 / 单位别名表",
+      "version": "2026-10-14",
+      "text": "单位换算系数是数学常量（kg↔g、km↔m、%↔‰ 等显式无损十进换算）；可换算 → 判定并降级 warning；不可换算一律 not_provided(unit_incompatible)，绝不臆测；全链路 Decimal（禁 float）"
+    },
+    {
+      "clause_id": "param:version-anchors",
+      "path": "参数包 / 版本锚定窗口",
+      "version": "2026-10-14",
+      "text": "GB17761 族版本锚定：>=2025-09-01 → GB17761-2024；<2025-09-01 → GB17761-2018（历史车型对照）；无日期不猜，要求显式指定"
+    },
+    {
+      "clause_id": "contract:mapping-table",
+      "path": "数据契约 / 字段映射",
+      "version": "2026-10-14",
+      "text": "字段映射：已登记列名变体 → 标准参数名；歧义列名（如「车速」）→ mapping_uncertain 显式未提供，绝不猜；未登记列名 → missing"
+    }
+  ]
+}

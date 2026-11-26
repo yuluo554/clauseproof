@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "tools/gen_rulesets.py",
+  "generator_version": "1.0.0",
+  "rulesets": [
+    {
+      "file": "gb17761-2024.json",
+      "standard": "GB 17761-2024",
+      "scope": "vehicle",
+      "version_key": "GB17761-2024",
+      "effective_from": "2025-09-01",
+      "sha256": "1d00b3f05c5d29b3fbfe292b87f639e23ab9b061d1bf2285ed7462f31725df33"
+    },
+    {
+      "file": "gb17761-2018.json",
+      "standard": "GB 17761-2018",
+      "scope": "vehicle",
+      "version_key": "GB17761-2018",
+      "effective_from": "2019-04-15",
+      "sha256": "32d018bb15989d1e086c515e4e9d3129d234f1d99e44c639f98fc92bb4f3f801"
+    },
+    {
+      "file": "gb43854-2024.json",
+      "standard": "GB 43854-2024",
+      "scope": "battery",
+      "version_key": "GB43854-2024",
+      "effective_from": "2024-11-01",
+      "sha256": "6fd4dabc2056ca5c4b218e43823cf9ede3db003fdbe12b2489eaf4e1e8c78dcd"
+    },
+    {
+      "file": "gb42296-2022.json",
+      "standard": "GB 42296-2022",
+      "scope": "charger",
+      "version_key": "GB42296-2022",
+      "effective_from": "2023-07-01",
+      "sha256": "4c64e4f611a70eb324f5b4abcd4b0297e1925feb74b807bcf8a17a8c58f5f1c6"
+    }
+  ],
+  "version_anchors": [
+    {
+      "standard_family": "GB17761",
+      "version_key": "GB17761-2024",
+      "applies_from": "2025-09-01",
+      "note": "新生产车辆适用（实施日 2025-09-01）"
+    },
+    {
+      "standard_family": "GB17761",
+      "version_key": "GB17761-2018",
+      "applies_until": "2025-09-01",
+      "note": "历史车型对照；生产过渡期至 2025-08-31、销售过渡期至 2025-11-30"
+    }
+  ],
+  "thresholds": {
+    "truth_match_min": "1.0",
+    "mapping_accuracy_min": "0.98",
+    "reconcile_consistency_min": "1.0",
+    "bench_max_seconds": "1.0"
+  }
+}
