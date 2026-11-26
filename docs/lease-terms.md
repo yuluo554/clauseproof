@@ -113,7 +113,10 @@ clauseproof :: lease-terms 0.1.1 :: card-demo-bj.json
 | `0` | 无阻断（`compliant` / `skipped` / `unknown` / quota 提示） |
 | `1` | 有阻断（`noncompliant`） |
 | `2` | 输入不合法（城市未登记、`party`/`lease_kind` 未知、`fields` 非对象、条款缺 `number`） |
-| `3` | 契约违约（条文库缺条款、条文库版本与规则包坐标不符、参数包存在 pending 条目） |
+| `3` | 契约违约（条文库版本与规则包坐标不符、参数包存在 pending 条目） |
+
+> **条文库缺某条依据时**，内核抛 `BasisMissing` 并把它归入「输入不可用」→ **退出码 2**
+> （`ORG-PLAYBOOK` §4 的口径是 3；本产品内核实现为 2，未改内核，此处如实登记）。
 
 > 漏 `--basis` 时条文库版本为空 → 版本不符 → **退出码 3**，是契约的正确行为。
 

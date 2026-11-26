@@ -18,6 +18,7 @@ from typing import Tuple
 BUILTIN_MODULES: Tuple[str, ...] = (
     "checkup-ranges",
     "cost-card",
+    "extreme-terms",
     "labeling-claims",
     "lease-terms",
     "petfood-label",
