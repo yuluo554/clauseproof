@@ -106,6 +106,7 @@ python -m medreview.cli selftest
 | `lease-terms` | target-map ① 行 | ✅ 已迁入（京/沪 + 民法典 21 条规则；五态判定 + 法条原文锚点 + 义务分栏；见器官文档 §5/§6） |
 | `policy-intake` | target-map ① 行 | ✅ 已迁入（数据契约 8 条：schema / 日期真实性 / 文号三态 / 部门最长优先 / 双键去重；见器官文档 §5/§6） |
 | `extreme-terms` | target-map ① 行 | ✅ 已迁入（133 条词表 + 前缀树扫描 + 广告法/医疗广告办法原文锚点；词表为非官方整理快照，见器官文档 §5） |
+| `bid-conformity` | target-map ① 行 | ✅ 已迁入（21 条 CHK-*：资格/星号/算术/保证金/时间/否决/低价；依据=已核对法规条文块或招标条款；退出码语义差见器官文档 §5） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -148,10 +149,11 @@ clauseproof check cost-card \
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另六个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另七个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
-[`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)
-与 [`docs/extreme-terms.md`](docs/extreme-terms.md)）。
+[`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
+[`docs/extreme-terms.md`](docs/extreme-terms.md) 与
+[`docs/bid-conformity.md`](docs/bid-conformity.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 

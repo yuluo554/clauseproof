@@ -1,0 +1,335 @@
+{
+ "tender": {
+  "doc_type": "tender",
+  "schema_version": "1",
+  "project": {
+   "name": "江州市城建投资集团有限公司医疗设备采购项目",
+   "number": "ZB-2026-6452",
+   "buyer": "江州市城建投资集团有限公司",
+   "agency": "正阳招标代理有限公司"
+  },
+  "qualifications": [
+   {
+    "item_id": "Q1",
+    "requirement": "具有独立承担民事责任能力的法人，提供有效营业执照",
+    "category": "qualification",
+    "level": null,
+    "valid_until": null,
+    "evidence": {
+     "section": "1.2 投标人资格要求",
+     "quote": "Q1. 具有独立承担民事责任能力的法人，提供有效营业执照（资格类）；",
+     "line": 19
+    }
+   },
+   {
+    "item_id": "Q2",
+    "requirement": "财务状况良好，提供上一年度经审计的财务报告",
+    "category": "finance",
+    "level": null,
+    "valid_until": null,
+    "evidence": {
+     "section": "1.2 投标人资格要求",
+     "quote": "Q2. 财务状况良好，提供上一年度经审计的财务报告（财务类）；",
+     "line": 20
+    }
+   },
+   {
+    "item_id": "Q3",
+    "requirement": "具有有效的ISO9001质量管理体系认证证书",
+    "category": "qualification",
+    "level": null,
+    "valid_until": null,
+    "evidence": {
+     "section": "1.2 投标人资格要求",
+     "quote": "Q3. 具有有效的ISO9001质量管理体系认证证书（资格类）；",
+     "line": 21
+    }
+   },
+   {
+    "item_id": "Q4",
+    "requirement": "具有有效的企业信用等级证书",
+    "category": "qualification",
+    "level": "AAA",
+    "valid_until": null,
+    "evidence": {
+     "section": "1.2 投标人资格要求",
+     "quote": "Q4. 具有有效的企业信用等级证书（资格类，等级要求：AAA）；",
+     "line": 22
+    }
+   },
+   {
+    "item_id": "Q5",
+    "requirement": "提供2023年以来至少1个类似项目业绩合同",
+    "category": "performance",
+    "level": null,
+    "valid_until": null,
+    "evidence": {
+     "section": "1.2 投标人资格要求",
+     "quote": "Q5. 提供2023年以来至少1个类似项目业绩合同（业绩类）；",
+     "line": 23
+    }
+   },
+   {
+    "item_id": "Q6",
+    "requirement": "拟投入项目负责人具有PMP项目管理证书",
+    "category": "personnel",
+    "level": null,
+    "valid_until": null,
+    "evidence": {
+     "section": "1.2 投标人资格要求",
+     "quote": "Q6. 拟投入项目负责人具有PMP项目管理证书（人员类）；",
+     "line": 24
+    }
+   }
+  ],
+  "star_clauses": [
+   {
+    "item_id": "S1",
+    "marker": "★",
+    "text": "所投设备整体质保期不少于36个月",
+    "evidence": {
+     "section": "5.1 实质性要求（星号条款）",
+     "quote": "★ S1：所投设备整体质保期不少于36个月。",
+     "line": 82
+    }
+   },
+   {
+    "item_id": "S2",
+    "marker": "▲",
+    "text": "交货期：合同签订后60日内完成供货并安装调试",
+    "evidence": {
+     "section": "5.1 实质性要求（星号条款）",
+     "quote": "▲ S2：交货期：合同签订后60日内完成供货并安装调试。",
+     "line": 83
+    }
+   },
+   {
+    "item_id": "S3",
+    "marker": "★",
+    "text": "质保期内故障响应时间不超过2小时",
+    "evidence": {
+     "section": "5.1 实质性要求（星号条款）",
+     "quote": "★ S3：质保期内故障响应时间不超过2小时。",
+     "line": 84
+    }
+   }
+  ],
+  "scoring": {
+   "method": "综合评分法",
+   "items": [
+    {
+     "name": "价格分",
+     "weight": 30.0
+    },
+    {
+     "name": "技术分",
+     "weight": 45.0
+    },
+    {
+     "name": "商务分",
+     "weight": 15.0
+    },
+    {
+     "name": "售后服务分",
+     "weight": 10.0
+    }
+   ],
+   "price_weight": 30.0
+  },
+  "bond": {
+   "amount": 50000.0,
+   "currency": "CNY",
+   "forms": [
+    "银行转账",
+    "银行保函",
+    "保证保险"
+   ],
+   "deadline": "2026-10-19 09:30"
+  },
+  "key_dates": {
+   "issue_start": "2026-10-08 09:00",
+   "submit_deadline": "2026-10-19 09:30",
+   "open_time": "2026-10-19 09:00",
+   "validity_days": 60
+  },
+  "rejection_clauses": [
+   {
+    "item_id": "R1",
+    "text": "投标报价超过最高限价（人民币3,580,000.00元）的，其投标无效。",
+    "basis": "招标文件自设",
+    "evidence": {
+     "section": "2.2 否决投标条款",
+     "quote": "R1. 投标报价超过最高限价（人民币3,580,000.00元）的，其投标无效。",
+     "line": 46
+    }
+   },
+   {
+    "item_id": "R2",
+    "text": "未按要求提交投标保证金的，其投标无效。",
+    "basis": "招标文件自设",
+    "evidence": {
+     "section": "2.2 否决投标条款",
+     "quote": "R2. 未按要求提交投标保证金的，其投标无效。",
+     "line": 47
+    }
+   },
+   {
+    "item_id": "R3",
+    "text": "投标有效期不足60日历天的，其投标无效。",
+    "basis": "招标文件自设",
+    "evidence": {
+     "section": "2.2 否决投标条款",
+     "quote": "R3. 投标有效期不足60日历天的，其投标无效。",
+     "line": 48
+    }
+   },
+   {
+    "item_id": "R4",
+    "text": "★号条款不满足或者未响应的，其投标无效。",
+    "basis": "招标文件自设",
+    "evidence": {
+     "section": "2.2 否决投标条款",
+     "quote": "R4. ★号条款不满足或者未响应的，其投标无效。",
+     "line": 49
+    }
+   }
+  ]
+ },
+ "bid": {
+  "doc_type": "bid",
+  "schema_version": "1",
+  "project": {
+   "name": "江州市城建投资集团有限公司医疗设备采购项目",
+   "number": "ZB-2026-6452",
+   "buyer": "江州市城建投资集团有限公司",
+   "agency": null
+  },
+  "bidder": "启明智能化工程有限公司",
+  "qualifications": [
+   {
+    "item_id": "Q1",
+    "requirement": "营业执照",
+    "category": "qualification",
+    "level": null,
+    "valid_until": "2029-07-15",
+    "evidence": {
+     "section": "第二章 资格证明文件",
+     "quote": "证明材料：营业执照｜编号：CERT-2026-9854｜有效期至：2029-07-15｜等级：不限",
+     "line": 19
+    }
+   },
+   {
+    "item_id": "Q2",
+    "requirement": "2025年度财务审计报告",
+    "category": "finance",
+    "level": null,
+    "valid_until": null,
+    "evidence": {
+     "section": "第二章 资格证明文件",
+     "quote": "证明材料：2025年度财务审计报告｜编号：CERT-2026-5876｜有效期至：不限｜等级：不限",
+     "line": 20
+    }
+   },
+   {
+    "item_id": "Q3",
+    "requirement": "ISO9001质量管理体系认证证书",
+    "category": "qualification",
+    "level": null,
+    "valid_until": "2028-02-08",
+    "evidence": {
+     "section": "第二章 资格证明文件",
+     "quote": "证明材料：ISO9001质量管理体系认证证书｜编号：CERT-2026-8393｜有效期至：2028-02-08｜等级：不限",
+     "line": 21
+    }
+   },
+   {
+    "item_id": "Q4",
+    "requirement": "企业信用等级证书",
+    "category": "qualification",
+    "level": "AAA",
+    "valid_until": "2027-10-28",
+    "evidence": {
+     "section": "第二章 资格证明文件",
+     "quote": "证明材料：企业信用等级证书｜编号：CERT-2026-9310｜有效期至：2027-10-28｜等级：AAA",
+     "line": 22
+    }
+   }
+  ],
+  "star_responses": [
+   {
+    "star_id": "S2",
+    "responded": true,
+    "location": "第四章 技术方案",
+    "quote": "响应。交货期：合同签订后60日内完成供货并安装调试，满足招标文件要求。",
+    "deviation": "无偏离"
+   },
+   {
+    "star_id": "S3",
+    "responded": true,
+    "location": "第四章 技术方案",
+    "quote": "响应。质保期内故障响应时间不超过2小时，满足招标文件要求。",
+    "deviation": "无偏离"
+   }
+  ],
+  "prices": {
+   "total_words": "叁佰贰拾贰万贰仟元整",
+   "total_number": 3222000.0,
+   "items": [
+    {
+     "name": "主机设备",
+     "amount": 2255400.0
+    },
+    {
+     "name": "辅助设备",
+     "amount": 483300.0
+    },
+    {
+     "name": "安装调试费",
+     "amount": 322200.0
+    },
+    {
+     "name": "运输保险费",
+     "amount": 161100.0
+    }
+   ],
+   "items_sum": 3222000.0
+  },
+  "bond_response": {
+   "amount": 50000.0,
+   "currency": "CNY",
+   "forms": [
+    "银行保函"
+   ],
+   "deadline": null
+  },
+  "key_dates": {
+   "issue_start": null,
+   "submit_deadline": null,
+   "open_time": null,
+   "validity_days": 60
+  },
+  "personnel": [
+   {
+    "name": "周涛",
+    "cert_name": "PMP项目管理证书",
+    "cert_no": "PMP-2016-9072",
+    "valid_until": "2028-01-31"
+   },
+   {
+    "name": "王强",
+    "cert_name": "中级工程师职称证书",
+    "cert_no": "ENG-2021-4917",
+    "valid_until": null
+   }
+  ],
+  "performance": [
+   {
+    "name": "临江市第二实验小学医疗设备采购项目",
+    "amount": 800000.0,
+    "date": "2025-03-18",
+    "counterparty": "临江市第二实验小学"
+   }
+  ]
+ },
+ "doc_text": "# 江州市城建投资集团有限公司医疗设备采购项目 招标文件\n\n项目编号：ZB-2026-6452\n项目名称：江州市城建投资集团有限公司医疗设备采购项目\n招标人：江州市城建投资集团有限公司\n招标代理机构：正阳招标代理有限公司\n采购类别：货物\n\n## 第一章 招标公告\n\n### 1.1 项目概况\n\n本项目已具备招标条件，现对医疗设备进行公开招标，欢迎符合资格要求的投标人参加投标。\n最高限价（预算金额）：￥3,580,000.00。\n投标有效期：自投标截止之日起60日历天。\n\n### 1.2 投标人资格要求\n\nQ1. 具有独立承担民事责任能力的法人，提供有效营业执照（资格类）；\nQ2. 财务状况良好，提供上一年度经审计的财务报告（财务类）；\nQ3. 具有有效的ISO9001质量管理体系认证证书（资格类）；\nQ4. 具有有效的企业信用等级证书（资格类，等级要求：AAA）；\nQ5. 提供2023年以来至少1个类似项目业绩合同（业绩类）；\nQ6. 拟投入项目负责人具有PMP项目管理证书（人员类）；\n\n### 1.3 招标文件的获取与递交\n\n招标文件获取时间：2026-10-08 09:00 至 2026-10-14 17:00。\n投标文件递交截止时间（投标截止时间）：2026-10-19 09:30。\n开标时间：2026-10-19 09:00。\n\n## 第二章 投标人须知\n\n### 2.1 投标人须知前附表\n\n| 条款名称 | 内容 |\n|---|---|\n| 项目编号 | ZB-2026-6452 |\n| 投标截止时间 | 2026-10-19 09:30 |\n| 开标时间 | 2026-10-19 09:00 |\n| 投标有效期 | 60日历天 |\n| 投标保证金 | 金额：￥50,000.00；形式：银行转账、银行保函、保证保险；缴纳截止时间：2026-10-19 09:30 |\n\n### 2.2 否决投标条款\n\nR1. 投标报价超过最高限价（人民币3,580,000.00元）的，其投标无效。\nR2. 未按要求提交投标保证金的，其投标无效。\nR3. 投标有效期不足60日历天的，其投标无效。\nR4. ★号条款不满足或者未响应的，其投标无效。\n\n### 2.3 须知正文\n\n2.3.1 投标人应认真阅读招标文件全部内容，按第六章格式要求编制并递交投标文件。\n2.3.2 投标文件应密封并在投标截止时间前送达指定地点，逾期送达的将被拒收。\n\n## 第三章 评标办法\n\n### 3.1 评标方法\n\n评标方法：综合评分法。\n\n### 3.2 分值构成\n\n| 评分项 | 分值 |\n|---|---|\n| 价格分 | 30 |\n| 技术分 | 45 |\n| 商务分 | 15 |\n| 售后服务分 | 10 |\n价格分权重：30%。\n\n## 第四章 合同条款\n\n4.1 付款方式：项目验收合格后支付合同总价的95%，剩余5%于质保期满后无息支付。\n4.2 交货地点：招标人指定地点。\n4.3 本合同条款为体例占位内容，具体以双方签订的合同为准。\n\n## 第五章 技术要求\n\n### 5.1 实质性要求（星号条款）\n\n★ S1：所投设备整体质保期不少于36个月。\n▲ S2：交货期：合同签订后60日内完成供货并安装调试。\n★ S3：质保期内故障响应时间不超过2小时。\n\n### 5.2 一般技术要求\n\n5.2.1 所供货物应符合国家相关标准及行业规范。\n5.2.2 投标人应对技术要求逐条应答，未逐条应答的视为不响应。\n\n## 第六章 投标文件格式\n\n6.1 投标文件应包含：投函声明、资格证明文件、商务偏差表、技术方案、开标一览表与分项报价、承诺函、拟投入人员与类似业绩清单。\n\n——本文件由 bidchecker datagen 合成生成（seed=42），全部主体、编号与证书均为虚构，仅用于系统评测。——\n"
+}
