@@ -107,6 +107,7 @@ python -m medreview.cli selftest
 | `policy-intake` | target-map ① 行 | ✅ 已迁入（数据契约 8 条：schema / 日期真实性 / 文号三态 / 部门最长优先 / 双键去重；见器官文档 §5/§6） |
 | `extreme-terms` | target-map ① 行 | ✅ 已迁入（133 条词表 + 前缀树扫描 + 广告法/医疗广告办法原文锚点；词表为非官方整理快照，见器官文档 §5） |
 | `bid-conformity` | target-map ① 行 | ✅ 已迁入（21 条 CHK-*：资格/星号/算术/保证金/时间/否决/低价；依据=已核对法规条文块或招标条款；退出码语义差见器官文档 §5） |
+| `expense-ledger` | target-map ① 行 | ✅ 已迁入（多平台账单真实支出对账：行三态 + 商户归一化 + 跨平台去重 + 语义识别 + 订阅识别；依据=规则包参数条目，经验默认非官方；见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -146,14 +147,23 @@ clauseproof check cost-card \
 clauseproof check cost-card \
   --input samples/cost-card/ledger-demo-alert.json \
   --basis src/clauseproof/packs/cost-card/data/clauses.json
+
+# 多平台账单真实支出对账（行三态 + 归一化 + 跨平台去重 + 语义 + 订阅；依据 = 规则包参数条目）
+clauseproof check expense-ledger \
+  --input samples/expense-ledger/ledger-readme.json \
+  --basis src/clauseproof/packs/expense-ledger/data/clauses.json
+clauseproof check expense-ledger \
+  --input samples/expense-ledger/ledger-clean.json \
+  --basis src/clauseproof/packs/expense-ledger/data/clauses.json --json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另七个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另八个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
-[`docs/extreme-terms.md`](docs/extreme-terms.md) 与
-[`docs/bid-conformity.md`](docs/bid-conformity.md)）。
+[`docs/extreme-terms.md`](docs/extreme-terms.md)、
+[`docs/bid-conformity.md`](docs/bid-conformity.md) 与
+[`docs/expense-ledger.md`](docs/expense-ledger.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 

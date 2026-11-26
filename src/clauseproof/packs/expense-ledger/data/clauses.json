@@ -1,0 +1,71 @@
+{
+  "version": "2026-10-15",
+  "clauses": [
+    {
+      "clause_id": "import:column-map",
+      "path": "数据契约 / 列名映射",
+      "version": "2026-10-15",
+      "text": "已登记列名：交易时间/交易创建时间/交易日期 → 交易时间；交易对方/对方户名 → 对手方；商品/商品说明/摘要 → 商品说明；收/支 → 收支类型；金额(元)/金额（元）/金额/支出金额/收入金额 → 金额；未登记列名记 unknown（不猜）；必填列：交易时间、金额、对手方"
+    },
+    {
+      "clause_id": "param:dedup-window",
+      "path": "参数包 / 去重时间窗口",
+      "version": "2026-10-15",
+      "text": "跨平台去重时间窗口：闭区间 |Δt| ≤ W；恰好等于 W 应合并（经验默认（非官方）：全部默认值为经验示例值，用户可经 CLI flag 覆盖）"
+    },
+    {
+      "clause_id": "param:subscription-min-repeats",
+      "path": "参数包 / 订阅最小重复次数",
+      "version": "2026-10-15",
+      "text": "周期订阅最小重复次数（含首期）（经验默认（非官方）：全部默认值为经验示例值，用户可经 CLI flag 覆盖）"
+    },
+    {
+      "clause_id": "param:subscription-tolerance",
+      "path": "参数包 / 订阅间隔容差",
+      "version": "2026-10-15",
+      "text": "周期表内各周期未单独覆盖时的间隔容差默认值（经验默认（非官方）：全部默认值为经验示例值，用户可经 CLI flag 覆盖）"
+    },
+    {
+      "clause_id": "param:price-change-threshold",
+      "path": "参数包 / 涨价判定阈值",
+      "version": "2026-10-15",
+      "text": "涨价判定阈值：相邻周期金额变化 ≥ 该百分比记一条涨价记录（经验默认（非官方）：全部默认值为经验示例值，用户可经 CLI flag 覆盖）"
+    },
+    {
+      "clause_id": "param:platform-priority",
+      "path": "参数包 / 平台次序",
+      "version": "2026-10-15",
+      "text": "去重簇代表笔选择排序键（时间最早 → 本次序 → 来源行号）（经验默认（非官方）：全部默认值为经验示例值，用户可经 CLI flag 覆盖）"
+    },
+    {
+      "clause_id": "param:period-table",
+      "path": "参数包 / 周期表",
+      "version": "2026-10-15",
+      "text": "订阅周期判定表：相邻间隔落在 interval_days ± tolerance_days 内即视为同周期；monthly 30±2 / quarterly 91±3 / yearly 365±5（经验默认（非官方）：全部默认值为经验示例值，用户可经 CLI flag 覆盖）"
+    },
+    {
+      "clause_id": "param:header-locate",
+      "path": "参数包 / 表头定位",
+      "version": "2026-10-15",
+      "text": "表头定位：候选行命中的预期列名数 ≥ K 即判为表头；只在前 N 行内找表头，超出即文件级失败（经验默认（非官方）：全部默认值为经验示例值，用户可经 CLI flag 覆盖）"
+    },
+    {
+      "clause_id": "contract:alias-table",
+      "path": "数据契约 / 商户别名表",
+      "version": "2026-10-15",
+      "text": "商户归一化动作序列写死：去空白 → 全半角统一（映射表）→ 后缀剥离（白名单、剥离后非空才生效）→ 别名表命中（variants 过同一管线后建索引）；未命中任何规则则原样保留"
+    },
+    {
+      "clause_id": "contract:keyword-rules",
+      "path": "数据契约 / 关键词规则",
+      "version": "2026-10-15",
+      "text": "关键词按子串匹配、区分大小写；作用域 = 交易对方 + 商品说明；规则按 priority 升序评估，方向条件不满足即跳过；全部未命中 → 『未知』（一等结论，不得 fallthrough 为消费）"
+    },
+    {
+      "clause_id": "contract:unknown-first-class",
+      "path": "数据契约 / 未知一等结论",
+      "version": "2026-10-15",
+      "text": "『未知』是一等结论：未知行入显式清单且不混入消费；同平台候选簇显式不合并、待人工复核（绝不静默合并）；invalid 行绝不入库"
+    }
+  ]
+}
