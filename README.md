@@ -103,6 +103,7 @@ python -m medreview.cli selftest
 | `checkup-ranges` | target-map ① 行 | ✅ 已迁入（19 条区间条目全部待核对 → 无自印区间即拒判；退出码语义差见器官文档 §3.3/§5） |
 | `petfood-label` | target-map ① 行 | ✅ 已迁入（43 条生效 / 2 条待核对；干物质基准换算 + 适用域画像） |
 | `cost-card` | target-map ① 行 | ✅ 已迁入（10 条净料率 + 目标毛利率 + 波动阈值，全部 verified；依据 = **参数包条目**，不冒充法规文号；判据见器官文档 §5/§6） |
+| `lease-terms` | target-map ① 行 | ✅ 已迁入（京/沪 + 民法典 21 条规则；五态判定 + 法条原文锚点 + 义务分栏；见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -145,9 +146,9 @@ clauseproof check cost-card \
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另三个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
-[`docs/petfood-label.md`](docs/petfood-label.md) 与
-[`docs/cost-card.md`](docs/cost-card.md)）。
+（另四个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+[`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md) 与
+[`docs/lease-terms.md`](docs/lease-terms.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 
