@@ -1,0 +1,69 @@
+{
+  "version": "2026-10-15",
+  "clauses": [
+    {
+      "clause_id": "contract:canonical-order",
+      "path": "数据契约 / 规范序",
+      "version": "2026-10-15",
+      "text": "规范序：pubtimeStr 倒序、同级按 id 升序；产物无时间戳",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract:date-format",
+      "path": "数据契约 / 发布日期形态",
+      "version": "2026-10-15",
+      "text": "发布日期形态 YYYY.MM.DD，且年月日组合必须真实存在（拒绝 2026.13.45）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract:diff-keys",
+      "path": "数据契约 / 新增与重复判定双键",
+      "version": "2026-10-15",
+      "text": "重复判定双键：id 相同 → 重复；否则 pcode 相同且非空 → 重复；命中键写入 matched_by",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract:entry-schema",
+      "path": "数据契约 / 统一字段与必填项",
+      "version": "2026-10-15",
+      "text": "统一字段 source、id、index、pcode、title、pubtimeStr、puborg、url、summary、channel；必填 source、id、title、pubtimeStr、puborg、url、summary；缺任一必填 → 该条不得落库、不得进日报",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract:org-aliases",
+      "path": "数据契约 / 部门别名归一",
+      "version": "2026-10-15",
+      "text": "部门拆分按空白类字符；匹配前缀 + 最长优先；未命中原样保留并记 alias_missing（不猜）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract:pcode-grammar",
+      "path": "数据契约 / 文号形态",
+      "version": "2026-10-15",
+      "text": "文号形态：〔〕/﹝﹞ 括号形态（代字 + 四位年份 + 序号）或『第…号』形态（无可靠年份）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract:pcode-sentinel",
+      "path": "数据契约 / 未解析哨兵与三态",
+      "version": "2026-10-15",
+      "text": "解析失败显式标哨兵「未解析」；三态 parsed/partial/unparsed 不互并",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract:snapshot-fields",
+      "path": "数据契约 / 快照字段白名单",
+      "version": "2026-10-15",
+      "text": "快照只存元数据：字段白名单 source、id、index、pcode、title、pubtimeStr、puborg、url、summary、channel；出现 content、body、fulltext、full_text、html、text、article 任一字段即拒（不做全文归档）",
+      "effective": null,
+      "expires": null
+    }
+  ]
+}
