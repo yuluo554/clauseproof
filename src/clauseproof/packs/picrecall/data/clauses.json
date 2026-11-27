@@ -1,0 +1,45 @@
+{
+  "version": "2026-10-14",
+  "clauses": [
+    {
+      "clause_id": "contract.dedupe",
+      "path": "数据契约 / 相似分组",
+      "version": "2026-10-14",
+      "text": "相似分组口径：pHash 汉明距离 ≤ threshold（默认 8）单链聚类；成员与组顺序按 path 排序（确定性）；读不出图的条目不参与（不中断分组）。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.keep",
+      "path": "数据契约 / 保留建议",
+      "version": "2026-10-14",
+      "text": "保留建议优先级：分辨率（宽×高）→ 文件大小 → mtime_ns → 路径字典序；每组恰一条 keep，其余 redundant。仅建议，不执行删除。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.ledger",
+      "path": "数据契约 / 账本口径",
+      "version": "2026-10-14",
+      "text": "账本口径：存在相似分组→组级 fail（检出重复建议，阻断语义与来源 exit 1 对齐）；代表图 keep→pass；冗余图→not_applicable（仅建议）；无组→pass。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.readonly",
+      "path": "数据契约 / 只读纪律",
+      "version": "2026-10-14",
+      "text": "只读纪律：去重模块不得删除/改名/写回任何用户文件；唯一写盘动作是建议清单 CSV，且落在用户文件夹之外。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.threshold",
+      "path": "数据契约 / 阈值单一来源",
+      "version": "2026-10-14",
+      "text": "pHash 阈值单一来源：随包数据/输入显式提供（默认 8）；不读环境变量、不读时钟。",
+      "effective": null,
+      "expires": null
+    }
+  ]
+}

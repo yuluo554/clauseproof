@@ -1,0 +1,32 @@
+{
+ "case_id": "clean-demo",
+ "dedupe": {
+  "threshold": 8,
+  "items": [
+   {
+    "path": "img_0001.png",
+    "phash": "ec4a92b5b592686d",
+    "width": 520,
+    "height": 136,
+    "size": 5990,
+    "mtime_ns": 1792196750522121000
+   },
+   {
+    "path": "img_0002.png",
+    "phash": "bb46c41b64333bcc",
+    "width": 520,
+    "height": 176,
+    "size": 14327,
+    "mtime_ns": 1792196750531629800
+   },
+   {
+    "path": "img_0003.png",
+    "phash": "e2629d9d9d94626a",
+    "width": 520,
+    "height": 144,
+    "size": 12570,
+    "mtime_ns": 1792196750539189800
+   }
+  ]
+ }
+}

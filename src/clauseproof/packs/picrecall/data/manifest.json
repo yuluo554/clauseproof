@@ -1,0 +1,18 @@
+{
+  "version": "2026-10-14",
+  "clause_count": 5,
+  "files": {
+    "clauses.json": {
+      "bytes": 1830,
+      "sha256": "41194242cd552e0492cc17d2c9f67a149035469a2a4d637b591fe5350efa2cd5"
+    },
+    "phash-cases.json": {
+      "bytes": 3968,
+      "sha256": "e29b18cbdf0c5ded876e737fdac2bb7bdd946f4994a84e53ad77f82286faef5a"
+    },
+    "phash-clean.json": {
+      "bytes": 591,
+      "sha256": "0bb793af1fc068acc8b4a3c6fa52fc5dcd42ff20ccf25a7176ebd1b6b0582950"
+    }
+  }
+}

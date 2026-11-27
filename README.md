@@ -116,6 +116,7 @@ python -m medreview.cli selftest
 | `labor-entitlement` | target-map ① 行 | ✅ 已迁入（劳动用工权益：经济补偿/赔偿金 + 加班费 + 未休年休假 + 二倍工资；地区×年度参数包 + status 门控 + 法条锚点；与 `income-tax` 零复用；见器官文档 §5/§6） |
 | `occupational-surveillance` | target-map ① 行 | ✅ 已迁入（职业健康监护：GBZ 188—2025/2014 双版本 × 82/97 因素矩阵 + 覆盖度四态 + 周期判定 + 版本对照；第 8–9 章 15 因素明细 pending 如实登记；见器官文档 §5/§6） |
 | `patent-annuity` | target-map ① 行 | ✅ 已迁入（专利年费：4 类型双闭阶梯 + 滞纳金自然月/上限 + 费减资格与多政策择一 + 组合排期；规则包逐字节随包；见器官文档 §5/§6） |
+| `picrecall` | target-map ① 行 | ✅ 已迁入（截图相似分组：pHash 汉明距离单链聚类 + 分辨率/大小/mtime 保留建议 + 只读纪律（AST 守门）；数据契约锚点；见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -227,10 +228,18 @@ clauseproof check patent-annuity \
 clauseproof check patent-annuity \
   --input samples/patent-annuity/reduction.json \
   --basis src/clauseproof/packs/patent-annuity/data/clauses.json
+
+# 截图相似分组与保留建议（只读；pHash 指纹入参）
+clauseproof check picrecall \
+  --input samples/picrecall/dedupe-dupes.json \
+  --basis src/clauseproof/packs/picrecall/data/clauses.json
+clauseproof check picrecall \
+  --input samples/picrecall/dedupe-clean.json \
+  --basis src/clauseproof/packs/picrecall/data/clauses.json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另十六个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另十七个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
 [`docs/extreme-terms.md`](docs/extreme-terms.md)、
@@ -243,7 +252,8 @@ clauseproof check patent-annuity \
 [`docs/invoice-ledger.md`](docs/invoice-ledger.md) 与
 [`docs/labor-entitlement.md`](docs/labor-entitlement.md) 与
 [`docs/occupational-surveillance.md`](docs/occupational-surveillance.md) 与
-[`docs/patent-annuity.md`](docs/patent-annuity.md)）。
+[`docs/patent-annuity.md`](docs/patent-annuity.md) 与
+[`docs/picrecall.md`](docs/picrecall.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 
