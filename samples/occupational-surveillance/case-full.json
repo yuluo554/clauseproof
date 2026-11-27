@@ -1,0 +1,54 @@
+{
+  "case_id": "full-demo",
+  "position": {
+    "position_id": "SYN-POS-benzene",
+    "position_name": "示例岗位（合成）",
+    "exam_date": "2026-09-15",
+    "factors": [
+      {
+        "factor_code": "GBZ188-5.19"
+      }
+    ]
+  },
+  "records": [
+    {
+      "record_id": "SYN-TRUTH-001",
+      "employee_id": "90000000001SYN",
+      "employee_name": "示例人员 A-001",
+      "position_id": "SYN-POS-benzene",
+      "factor_code": "GBZ188-5.19",
+      "exam_date": "2026-09-15",
+      "exam_type": "periodic",
+      "items": [
+        "血常规",
+        "尿常规",
+        "肝功能",
+        "心电图",
+        "肝脾B超"
+      ],
+      "conclusion_code": "normal",
+      "notified_suspected": false,
+      "last_exam_date": "2025-10-01"
+    },
+    {
+      "record_id": "SYN-TRUTH-018",
+      "employee_id": "90000000018SYN",
+      "employee_name": "示例人员 A-018",
+      "position_id": "SYN-POS-dust_metal",
+      "factor_code": "GBZ188-6.7",
+      "exam_date": "2026-09-21",
+      "exam_type": "periodic",
+      "items": [
+        "胸部X射线摄片",
+        "肺功能"
+      ],
+      "conclusion_code": "normal",
+      "notified_suspected": false,
+      "last_exam_date": "2024-09-20"
+    }
+  ],
+  "compare": {
+    "ruleset_a": "GBZ188-2014",
+    "ruleset_b": "GBZ188-2025"
+  }
+}

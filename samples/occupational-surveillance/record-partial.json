@@ -1,0 +1,21 @@
+{
+  "case_id": "check-partial",
+  "records": [
+    {
+      "record_id": "SYN-TRUTH-018",
+      "employee_id": "90000000018SYN",
+      "employee_name": "示例人员 A-018",
+      "position_id": "SYN-POS-dust_metal",
+      "factor_code": "GBZ188-6.7",
+      "exam_date": "2026-09-21",
+      "exam_type": "periodic",
+      "items": [
+        "胸部X射线摄片",
+        "肺功能"
+      ],
+      "conclusion_code": "normal",
+      "notified_suspected": false,
+      "last_exam_date": "2024-09-20"
+    }
+  ]
+}

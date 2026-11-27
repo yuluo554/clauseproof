@@ -1,0 +1,27 @@
+{
+  "version": "2026-10-14",
+  "source_reviewed_at": "2026-10-14",
+  "clause_count": 103,
+  "files": {
+    "clauses.json": {
+      "bytes": 33220,
+      "sha256": "632d6fb958b56970d4a885a20bb992172479b13209ca687c96f7322b46d34554"
+    },
+    "knowledge-clauses.json": {
+      "bytes": 68606,
+      "sha256": "ff39e98574249a7d9e0faba7d702faacfbca91187ba23450b7848ccd3da84c90"
+    },
+    "rules-manifest.json": {
+      "bytes": 1331,
+      "sha256": "5768baf6a322e864b3699b3b581424d05db40ad1de1018801019cc383aa4ac19"
+    },
+    "ruleset-2014.json": {
+      "bytes": 191153,
+      "sha256": "d484508ebd743c5320ca4240adaf104a5db9761de070d6c3cdf3909174e0dd48"
+    },
+    "ruleset-2025.json": {
+      "bytes": 1008282,
+      "sha256": "99be71c8c9da9e1d844dadb2ad7455dc93c30a943f077af8684aca5432afa4b1"
+    }
+  }
+}

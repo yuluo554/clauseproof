@@ -29,6 +29,7 @@ BUILTIN_MODULES: Tuple[str, ...] = (
     "labeling-claims",
     "labor-entitlement",
     "lease-terms",
+    "occupational-surveillance",
     "petfood-label",
     "policy-intake",
 )

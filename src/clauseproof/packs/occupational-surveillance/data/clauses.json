@@ -1,0 +1,829 @@
+{
+  "version": "2026-10-14",
+  "clauses": [
+    {
+      "clause_id": "5.1",
+      "path": "GBZ 188—2025 / 第 5.1 节",
+      "version": "2026-10-14",
+      "text": "铅及其无机化合物（铅，CAS 号：7439-92-1）（章节 5.1；子条款：emergency=5.1.4.2、periodic=5.1.2.2、post_placement=5.1.3.2、pre_placement=5.1.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.10",
+      "path": "GBZ 188—2025 / 第 5.10 节",
+      "version": "2026-10-14",
+      "text": "砷化氢（砷化三氢，CAS 号：7784-42-1)（章节 5.10；子条款：emergency=5.10.2.2、pre_placement=5.10.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.11",
+      "path": "GBZ 188—2025 / 第 5.11 节",
+      "version": "2026-10-14",
+      "text": "磷及其无机化合物（黄磷，CAS 号：12185-10-3）（章节 5.11；子条款：emergency=5.11.4.2、periodic=5.11.2.2、post_placement=5.11.3.2、pre_placement=5.11.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.12",
+      "path": "GBZ 188—2025 / 第 5.12 节",
+      "version": "2026-10-14",
+      "text": "磷化氢（CAS 号：7803-51-2）（章节 5.12；子条款：emergency=5.12.2.2、pre_placement=5.12.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.13",
+      "path": "GBZ 188—2025 / 第 5.13 节",
+      "version": "2026-10-14",
+      "text": "可溶性钡化合物（章节 5.13；子条款：emergency=5.13.2.2、pre_placement=5.13.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.14",
+      "path": "GBZ 188—2025 / 第 5.14 节",
+      "version": "2026-10-14",
+      "text": "钒及其无机化合物（钒，CAS 号：7440-62-2）（章节 5.14；子条款：emergency=5.14.2.2、pre_placement=5.14.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.15",
+      "path": "GBZ 188—2025 / 第 5.15 节",
+      "version": "2026-10-14",
+      "text": "三烷基锡（章节 5.15；子条款：emergency=5.15.2.2、pre_placement=5.15.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.16",
+      "path": "GBZ 188—2025 / 第 5.16 节",
+      "version": "2026-10-14",
+      "text": "铊及其无机化合物（铊，CAS 号：7440-28-0）（章节 5.16；子条款：emergency=5.16.4.2、periodic=5.16.2.2、post_placement=5.16.3.2、pre_placement=5.16.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.17",
+      "path": "GBZ 188—2025 / 第 5.17 节",
+      "version": "2026-10-14",
+      "text": "羰基镍（CAS 号：13463-39-3）（章节 5.17；子条款：emergency=5.17.2.2、pre_placement=5.17.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.18",
+      "path": "GBZ 188—2025 / 第 5.18 节",
+      "version": "2026-10-14",
+      "text": "氟及其无机化合物（氟，CAS 号：7782-41-4）（章节 5.18；子条款：emergency=5.18.4.2、periodic=5.18.2.2、post_placement=5.18.3.2、pre_placement=5.18.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.19",
+      "path": "GBZ 188—2025 / 第 5.19 节",
+      "version": "2026-10-14",
+      "text": "苯（CAS 号：71-43-2）（章节 5.19；子条款：emergency=5.19.4.2、periodic=5.19.2.2、post_placement=5.19.3.2、pre_placement=5.19.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.2",
+      "path": "GBZ 188—2025 / 第 5.2 节",
+      "version": "2026-10-14",
+      "text": "四乙基铅（CAS 号：78-00-2）（章节 5.2；子条款：emergency=5.2.2.2、pre_placement=5.2.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.20",
+      "path": "GBZ 188—2025 / 第 5.20 节",
+      "version": "2026-10-14",
+      "text": "二硫化碳（CAS 号：75-15-0）（章节 5.20；子条款：emergency=5.20.4.2、periodic=5.20.2.2、post_placement=5.20.3.2、pre_placement=5.20.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.21",
+      "path": "GBZ 188—2025 / 第 5.21 节",
+      "version": "2026-10-14",
+      "text": "四氯化碳（CAS 号：56-23-5）（章节 5.21；子条款：emergency=5.21.4.2、periodic=5.21.2.2、post_placement=5.21.3.2、pre_placement=5.21.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.22",
+      "path": "GBZ 188—2025 / 第 5.22 节",
+      "version": "2026-10-14",
+      "text": "甲醇（CAS 号：67-56-1）（章节 5.22；子条款：emergency=5.22.2.2、pre_placement=5.22.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.23",
+      "path": "GBZ 188—2025 / 第 5.23 节",
+      "version": "2026-10-14",
+      "text": "汽油（CAS 号：8006-61-9）（章节 5.23；子条款：emergency=5.23.4.2、periodic=5.23.2.2、post_placement=5.23.3.2、pre_placement=5.23.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.24",
+      "path": "GBZ 188—2025 / 第 5.24 节",
+      "version": "2026-10-14",
+      "text": "溴甲烷（CAS 号：74-83-9）（章节 5.24；子条款：emergency=5.24.2.2、pre_placement=5.24.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.25",
+      "path": "GBZ 188—2025 / 第 5.25 节",
+      "version": "2026-10-14",
+      "text": "1,2-二氯乙烷（CAS 号：107-06-2）（章节 5.25；子条款：emergency=5.25.2.2、pre_placement=5.25.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.26",
+      "path": "GBZ 188—2025 / 第 5.26 节",
+      "version": "2026-10-14",
+      "text": "正己烷（CAS 号：110-54-3）（章节 5.26；子条款：periodic=5.26.2.2、post_placement=5.26.3.2、pre_placement=5.26.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.27",
+      "path": "GBZ 188—2025 / 第 5.27 节",
+      "version": "2026-10-14",
+      "text": "苯的氨基与硝基化合物（章节 5.27；子条款：emergency=5.27.4.2、periodic=5.27.2.2、post_placement=5.27.3.2、pre_placement=5.27.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.28",
+      "path": "GBZ 188—2025 / 第 5.28 节",
+      "version": "2026-10-14",
+      "text": "三硝基甲苯（CAS 号：118-96-7）（章节 5.28；子条款：periodic=5.28.2.2、post_placement=5.28.3.2、pre_placement=5.28.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.29",
+      "path": "GBZ 188—2025 / 第 5.29 节",
+      "version": "2026-10-14",
+      "text": "联苯胺（CAS 号：92-87-5）（章节 5.29；子条款：periodic=5.29.2.2、post_placement=5.29.3.2、pre_placement=5.29.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.3",
+      "path": "GBZ 188—2025 / 第 5.3 节",
+      "version": "2026-10-14",
+      "text": "汞及其无机化合物（汞，CAS 号：7439-97-6）（章节 5.3；子条款：emergency=5.3.4.2、periodic=5.3.2.2、post_placement=5.3.3.2、pre_placement=5.3.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.30",
+      "path": "GBZ 188—2025 / 第 5.30 节",
+      "version": "2026-10-14",
+      "text": "氯气（CAS 号：7782-50-5）（章节 5.30；子条款：emergency=5.30.4.2、periodic=5.30.2.2、post_placement=5.30.3.2、pre_placement=5.30.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.31",
+      "path": "GBZ 188—2025 / 第 5.31 节",
+      "version": "2026-10-14",
+      "text": "二氧化硫（CAS 号：7446-09-5）（章节 5.31；子条款：emergency=5.31.4.2、periodic=5.31.2.2、post_placement=5.31.3.2、pre_placement=5.31.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.32",
+      "path": "GBZ 188—2025 / 第 5.32 节",
+      "version": "2026-10-14",
+      "text": "氮氧化物（章节 5.32；子条款：emergency=5.32.4.2、periodic=5.32.2.2、post_placement=5.32.3.2、pre_placement=5.32.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.33",
+      "path": "GBZ 188—2025 / 第 5.33 节",
+      "version": "2026-10-14",
+      "text": "氨（CAS 号：7664-41-7）（章节 5.33；子条款：emergency=5.33.4.2、periodic=5.33.2.2、post_placement=5.33.3.2、pre_placement=5.33.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.34",
+      "path": "GBZ 188—2025 / 第 5.34 节",
+      "version": "2026-10-14",
+      "text": "光气（CAS 号：75-44-5）（章节 5.34；子条款：emergency=5.34.4.2、periodic=5.34.2.2、post_placement=5.34.3.2、pre_placement=5.34.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.35",
+      "path": "GBZ 188—2025 / 第 5.35 节",
+      "version": "2026-10-14",
+      "text": "甲醛（CAS 号：50-00-0）（章节 5.35；子条款：emergency=5.35.4.2、periodic=5.35.2.2、post_placement=5.35.3.2、pre_placement=5.35.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.36",
+      "path": "GBZ 188—2025 / 第 5.36 节",
+      "version": "2026-10-14",
+      "text": "一甲胺（CAS 号：74-89-5）（章节 5.36；子条款：emergency=5.36.4.2、periodic=5.36.2.2、post_placement=5.36.3.2、pre_placement=5.36.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.37",
+      "path": "GBZ 188—2025 / 第 5.37 节",
+      "version": "2026-10-14",
+      "text": "一氧化碳（CAS 号：630-08-0）（章节 5.37；子条款：emergency=5.37.2.2、pre_placement=5.37.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.38",
+      "path": "GBZ 188—2025 / 第 5.38 节",
+      "version": "2026-10-14",
+      "text": "硫化氢（CAS 号：7783-06-4）（章节 5.38；子条款：emergency=5.38.2.2、pre_placement=5.38.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.39",
+      "path": "GBZ 188—2025 / 第 5.39 节",
+      "version": "2026-10-14",
+      "text": "氯乙烯（CAS 号：75-01-4）（章节 5.39；子条款：emergency=5.39.4.2、periodic=5.39.2.2、post_placement=5.39.3.2、pre_placement=5.39.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.4",
+      "path": "GBZ 188—2025 / 第 5.4 节",
+      "version": "2026-10-14",
+      "text": "锰及其无机化合物（锰，CAS 号：7439-96-5）（章节 5.4；子条款：periodic=5.4.2.2、post_placement=5.4.3.2、pre_placement=5.4.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.40",
+      "path": "GBZ 188—2025 / 第 5.40 节",
+      "version": "2026-10-14",
+      "text": "三氯乙烯（CAS 号：79-01-6）（章节 5.40；子条款：emergency=5.40.3.2、periodic=5.40.2.2、pre_placement=5.40.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.41",
+      "path": "GBZ 188—2025 / 第 5.41 节",
+      "version": "2026-10-14",
+      "text": "氯丙烯（CAS 号：107-05-1）（章节 5.41；子条款：periodic=5.41.2.2、post_placement=5.41.3.2、pre_placement=5.41.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.42",
+      "path": "GBZ 188—2025 / 第 5.42 节",
+      "version": "2026-10-14",
+      "text": "氯丁二烯（CAS 号：126-99-8）（章节 5.42；子条款：emergency=5.42.4.2、periodic=5.42.2.2、post_placement=5.42.3.2、pre_placement=5.42.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.43",
+      "path": "GBZ 188—2025 / 第 5.43 节",
+      "version": "2026-10-14",
+      "text": "有机氟（章节 5.43；子条款：emergency=5.43.4.2、periodic=5.43.2.2、post_placement=5.43.3.2、pre_placement=5.43.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.44",
+      "path": "GBZ 188—2025 / 第 5.44 节",
+      "version": "2026-10-14",
+      "text": "二甲基甲酰胺（CAS 号：68-12-2）（章节 5.44；子条款：emergency=5.44.4.2、periodic=5.44.2.2、post_placement=5.44.3.2、pre_placement=5.44.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.45",
+      "path": "GBZ 188—2025 / 第 5.45 节",
+      "version": "2026-10-14",
+      "text": "氰及腈类化合物（氰，CAS 号：460-19-5）（章节 5.45；子条款：emergency=5.45.2.2、pre_placement=5.45.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.46",
+      "path": "GBZ 188—2025 / 第 5.46 节",
+      "version": "2026-10-14",
+      "text": "酚（酚，CAS 号：108-95-2。酚类化合物如甲酚、邻苯二酚、间苯二酚、对苯二酚等参照执行)（章节 5.46；子条款：emergency=5.46.2.2、pre_placement=5.46.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.47",
+      "path": "GBZ 188—2025 / 第 5.47 节",
+      "version": "2026-10-14",
+      "text": "五氯酚（CAS 号：87-86-5）（章节 5.47；子条款：emergency=5.47.2.2、pre_placement=5.47.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.48",
+      "path": "GBZ 188—2025 / 第 5.48 节",
+      "version": "2026-10-14",
+      "text": "氯甲醚、双氯甲醚（CAS 号：107-30-2、542-88-1）（章节 5.48；子条款：periodic=5.48.2.2、post_placement=5.48.3.2、pre_placement=5.48.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.49",
+      "path": "GBZ 188—2025 / 第 5.49 节",
+      "version": "2026-10-14",
+      "text": "丙烯酰胺（CAS 号：79-06-1）（章节 5.49；子条款：emergency=5.49.4.2、periodic=5.49.2.2、post_placement=5.49.3.2、pre_placement=5.49.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.5",
+      "path": "GBZ 188—2025 / 第 5.5 节",
+      "version": "2026-10-14",
+      "text": "铍及其无机化合物（铍，CAS 号：7440-41-7）（章节 5.5；子条款：emergency=5.5.4.2、periodic=5.5.2.2、post_placement=5.5.3.2、pre_placement=5.5.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.50",
+      "path": "GBZ 188—2025 / 第 5.50 节",
+      "version": "2026-10-14",
+      "text": "偏二甲基肼（CAS 号：57-14-7）（章节 5.50；子条款：emergency=5.50.2.2、pre_placement=5.50.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.51",
+      "path": "GBZ 188—2025 / 第 5.51 节",
+      "version": "2026-10-14",
+      "text": "硫酸二甲酯（CAS 号：77-78-1）（章节 5.51；子条款：emergency=5.51.4.2、periodic=5.51.2.2、post_placement=5.51.3.2、pre_placement=5.51.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.52",
+      "path": "GBZ 188—2025 / 第 5.52 节",
+      "version": "2026-10-14",
+      "text": "有机磷（章节 5.52；子条款：emergency=5.52.3.2、periodic=5.52.2.2、pre_placement=5.52.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.53",
+      "path": "GBZ 188—2025 / 第 5.53 节",
+      "version": "2026-10-14",
+      "text": "氨基甲酸酯类（章节 5.53；子条款：emergency=5.53.3.2、periodic=5.53.2.2、pre_placement=5.53.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.54",
+      "path": "GBZ 188—2025 / 第 5.54 节",
+      "version": "2026-10-14",
+      "text": "拟除虫菊酯类（章节 5.54；子条款：emergency=5.54.2.2、pre_placement=5.54.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.55",
+      "path": "GBZ 188—2025 / 第 5.55 节",
+      "version": "2026-10-14",
+      "text": "酸雾或酸酐（章节 5.55；子条款：emergency=5.55.4.2、periodic=5.55.2.2、post_placement=5.55.3.2、pre_placement=5.55.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.56",
+      "path": "GBZ 188—2025 / 第 5.56 节",
+      "version": "2026-10-14",
+      "text": "致喘物（章节 5.56；子条款：emergency=5.56.5.2、periodic=5.56.3.2、post_placement=5.56.4.2、pre_placement=5.56.2.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.57",
+      "path": "GBZ 188—2025 / 第 5.57 节",
+      "version": "2026-10-14",
+      "text": "焦炉逸散物（章节 5.57；子条款：periodic=5.57.2.2、post_placement=5.57.3.2、pre_placement=5.57.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.58",
+      "path": "GBZ 188—2025 / 第 5.58 节",
+      "version": "2026-10-14",
+      "text": "甲苯（甲苯，CAS 号：108-88-3。二甲苯参照执行）（章节 5.58；子条款：emergency=5.58.2.2、pre_placement=5.58.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.59",
+      "path": "GBZ 188—2025 / 第 5.59 节",
+      "version": "2026-10-14",
+      "text": "溴丙烷（1-溴丙烷，CAS 号：106-94-5）（章节 5.59；子条款：emergency=5.59.4.2、periodic=5.59.2.2、post_placement=5.59.3.2、pre_placement=5.59.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.6",
+      "path": "GBZ 188—2025 / 第 5.6 节",
+      "version": "2026-10-14",
+      "text": "镉及其无机化合物（镉，CAS 号：7440-43-9）（章节 5.6；子条款：emergency=5.6.4.2、periodic=5.6.2.2、post_placement=5.6.3.2、pre_placement=5.6.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.60",
+      "path": "GBZ 188—2025 / 第 5.60 节",
+      "version": "2026-10-14",
+      "text": "碘甲烷（CAS 号：74-88-4）（章节 5.60；子条款：emergency=5.60.2.2、pre_placement=5.60.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.61",
+      "path": "GBZ 188—2025 / 第 5.61 节",
+      "version": "2026-10-14",
+      "text": "环氧乙烷（CAS 号：75-21-8）（章节 5.61；子条款：emergency=5.61.4.2、periodic=5.61.2.2、post_placement=5.61.3.2、pre_placement=5.61.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.62",
+      "path": "GBZ 188—2025 / 第 5.62 节",
+      "version": "2026-10-14",
+      "text": "氯乙酸（CAS 号：79-11-8）（章节 5.62；子条款：emergency=5.62.2.2、pre_placement=5.62.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.63",
+      "path": "GBZ 188—2025 / 第 5.63 节",
+      "version": "2026-10-14",
+      "text": "铟及其化合物（铟，CAS 号：7440-74-6）（章节 5.63；子条款：periodic=5.63.2.2、post_placement=5.63.3.2、pre_placement=5.63.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.64",
+      "path": "GBZ 188—2025 / 第 5.64 节",
+      "version": "2026-10-14",
+      "text": "煤焦油、煤焦油沥青、石油沥青（章节 5.64；子条款：periodic=5.64.2.2、post_placement=5.64.3.2、pre_placement=5.64.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.65",
+      "path": "GBZ 188—2025 / 第 5.65 节",
+      "version": "2026-10-14",
+      "text": "β-萘胺（CAS 号：91-59-8）（章节 5.65；子条款：emergency=5.65.4.2、periodic=5.65.2.2、post_placement=5.65.3.2、pre_placement=5.65.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.7",
+      "path": "GBZ 188—2025 / 第 5.7 节",
+      "version": "2026-10-14",
+      "text": "铬及其无机化合物（铬，CAS 号：7440-47-3）（章节 5.7；子条款：periodic=5.7.2.2、post_placement=5.7.3.2、pre_placement=5.7.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.8",
+      "path": "GBZ 188—2025 / 第 5.8 节",
+      "version": "2026-10-14",
+      "text": "氧化锌（CAS 号：1314-13-2）（章节 5.8；子条款：emergency=5.8.2.2、pre_placement=5.8.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "5.9",
+      "path": "GBZ 188—2025 / 第 5.9 节",
+      "version": "2026-10-14",
+      "text": "砷及其化合物（砷，CAS 号：7440-38-2）（章节 5.9；子条款：emergency=5.9.4.2、periodic=5.9.2.2、post_placement=5.9.3.2、pre_placement=5.9.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.1",
+      "path": "GBZ 188—2025 / 第 6.1 节",
+      "version": "2026-10-14",
+      "text": "游离二氧化硅粉尘[结晶型二氧化硅粉尘，又称矽尘（游离二氧化硅含量≥10%的无机性粉尘)]（章节 6.1；子条款：periodic=6.1.2.2、post_placement=6.1.3.2、pre_placement=6.1.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.2",
+      "path": "GBZ 188—2025 / 第 6.2 节",
+      "version": "2026-10-14",
+      "text": "煤尘（章节 6.2；子条款：periodic=6.2.2.2、post_placement=6.2.3.2、pre_placement=6.2.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.3",
+      "path": "GBZ 188—2025 / 第 6.3 节",
+      "version": "2026-10-14",
+      "text": "石棉粉尘（章节 6.3；子条款：periodic=6.3.3.2、post_placement=6.3.4.2、pre_placement=6.3.2.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.4",
+      "path": "GBZ 188—2025 / 第 6.4 节",
+      "version": "2026-10-14",
+      "text": "其他致尘肺病的无机粉尘[根据职业病分类和目录，系指炭黑粉尘、石墨粉尘、滑石粉尘、云母粉尘、水泥粉尘、铸造粉尘、陶土粉尘、铝尘（铝、铝矾土、氧化铝）、电焊烟尘等粉尘]（章节 6.4；子条款：periodic=6.4.2.2、post_placement=6.4.3.2、pre_placement=6.4.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.5",
+      "path": "GBZ 188—2025 / 第 6.5 节",
+      "version": "2026-10-14",
+      "text": "棉尘（包括亚麻、软大麻、黄麻粉尘）（章节 6.5；子条款：periodic=6.5.2.2、post_placement=6.5.3.2、pre_placement=6.5.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.6",
+      "path": "GBZ 188—2025 / 第 6.6 节",
+      "version": "2026-10-14",
+      "text": "有机粉尘[指动物性粉尘（动物蛋白、皮毛、排泄物）、植物性粉尘（燕麦、谷物、木材、纸浆、大豆、咖啡、烟草粉尘等）、生物因素（如霉菌属类、霉菌孢子、嗜热放线杆菌、枯草杆菌、芽孢杆菌等）以及具有半抗原性质的化学物质等形成的气溶胶]（章节 6.6；子条款：periodic=6.6.2.2、post_placement=6.6.3.2、pre_placement=6.6.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.7",
+      "path": "GBZ 188—2025 / 第 6.7 节",
+      "version": "2026-10-14",
+      "text": "金属及其化合物粉尘（锡、铁、锑、钡及其化合物等）（章节 6.7；子条款：periodic=6.7.2.2、post_placement=6.7.3.2、pre_placement=6.7.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.8",
+      "path": "GBZ 188—2025 / 第 6.8 节",
+      "version": "2026-10-14",
+      "text": "硬金属粉尘（章节 6.8；子条款：periodic=6.8.2.2、post_placement=6.8.3.2、pre_placement=6.8.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "6.9",
+      "path": "GBZ 188—2025 / 第 6.9 节",
+      "version": "2026-10-14",
+      "text": "毛沸石粉尘（章节 6.9；子条款：periodic=6.9.2.2、post_placement=6.9.3.2、pre_placement=6.9.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "7.1",
+      "path": "GBZ 188—2025 / 第 7.1 节",
+      "version": "2026-10-14",
+      "text": "噪声（章节 7.1；子条款：emergency=7.1.4.3、periodic=7.1.2.2、post_placement=7.1.3.2、pre_placement=7.1.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "7.2",
+      "path": "GBZ 188—2025 / 第 7.2 节",
+      "version": "2026-10-14",
+      "text": "手传振动（章节 7.2；子条款：periodic=7.2.2.2、post_placement=7.2.3.2、pre_placement=7.2.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "7.3",
+      "path": "GBZ 188—2025 / 第 7.3 节",
+      "version": "2026-10-14",
+      "text": "高温（章节 7.3；子条款：emergency=7.3.3.3、periodic=7.3.2.2、pre_placement=7.3.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "7.4",
+      "path": "GBZ 188—2025 / 第 7.4 节",
+      "version": "2026-10-14",
+      "text": "高气压（按 GB 20827）（章节 7.4；子条款：emergency=7.4.4.3、periodic=7.4.2.2、post_placement=7.4.3.2、pre_placement=7.4.1.3）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "7.5",
+      "path": "GBZ 188—2025 / 第 7.5 节",
+      "version": "2026-10-14",
+      "text": "紫外辐射（紫外线）（章节 7.5；子条款：emergency=7.5.4.3、periodic=7.5.2.2、post_placement=7.5.3.2、pre_placement=7.5.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "7.6",
+      "path": "GBZ 188—2025 / 第 7.6 节",
+      "version": "2026-10-14",
+      "text": "微波（章节 7.6；子条款：periodic=7.6.2.2、post_placement=7.6.3.2、pre_placement=7.6.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "7.7",
+      "path": "GBZ 188—2025 / 第 7.7 节",
+      "version": "2026-10-14",
+      "text": "低温（章节 7.7；子条款：emergency=7.7.2.3、pre_placement=7.7.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "7.8",
+      "path": "GBZ 188—2025 / 第 7.8 节",
+      "version": "2026-10-14",
+      "text": "激光（章节 7.8；子条款：emergency=7.8.4.3、periodic=7.8.2.2、post_placement=7.8.3.2、pre_placement=7.8.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "8.1",
+      "path": "GBZ 188—2025 / 第 8.1 节",
+      "version": "2026-10-14",
+      "text": "布鲁氏菌（章节 8.1；子条款：emergency=8.1.4.3、periodic=8.1.2.2、post_placement=8.1.3.2、pre_placement=8.1.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "8.2",
+      "path": "GBZ 188—2025 / 第 8.2 节",
+      "version": "2026-10-14",
+      "text": "炭疽芽孢杆菌（章节 8.2；子条款：emergency=8.2.2.3、pre_placement=8.2.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "8.3",
+      "path": "GBZ 188—2025 / 第 8.3 节",
+      "version": "2026-10-14",
+      "text": "蜱传脑炎病毒（森林脑炎病毒）（章节 8.3；子条款：emergency=8.3.2.3、pre_placement=8.3.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "8.4",
+      "path": "GBZ 188—2025 / 第 8.4 节",
+      "version": "2026-10-14",
+      "text": "布氏疏螺旋体（伯氏疏螺旋体）（章节 8.4；子条款：emergency=8.4.4.3、periodic=8.4.2.2、post_placement=8.4.3.2、pre_placement=8.4.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "8.5",
+      "path": "GBZ 188—2025 / 第 8.5 节",
+      "version": "2026-10-14",
+      "text": "人免疫缺陷病毒（章节 8.5；子条款：emergency=8.5.1.3）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.1",
+      "path": "GBZ 188—2025 / 第 9.1 节",
+      "version": "2026-10-14",
+      "text": "电工作业（章节 9.1；子条款：periodic=9.1.2.2、pre_placement=9.1.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.10",
+      "path": "GBZ 188—2025 / 第 9.10 节",
+      "version": "2026-10-14",
+      "text": "参与突发事件处置的应急救援作业（章节 9.10；子条款：emergency=9.10.1.3）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.2",
+      "path": "GBZ 188—2025 / 第 9.2 节",
+      "version": "2026-10-14",
+      "text": "高处作业（章节 9.2；子条款：periodic=9.2.2.2、pre_placement=9.2.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.3",
+      "path": "GBZ 188—2025 / 第 9.3 节",
+      "version": "2026-10-14",
+      "text": "压力容器作业（章节 9.3；子条款：periodic=9.3.2.2、pre_placement=9.3.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.4",
+      "path": "GBZ 188—2025 / 第 9.4 节",
+      "version": "2026-10-14",
+      "text": "职业机动车驾驶作业（章节 9.4；子条款：periodic=9.4.3.2、pre_placement=9.4.2.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.5",
+      "path": "GBZ 188—2025 / 第 9.5 节",
+      "version": "2026-10-14",
+      "text": "高原作业（章节 9.5；子条款：emergency=9.5.4.3、periodic=9.5.2.2、post_placement=9.5.3.2、pre_placement=9.5.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.6",
+      "path": "GBZ 188—2025 / 第 9.6 节",
+      "version": "2026-10-14",
+      "text": "航空作业（章节 9.6；子条款：periodic=9.6.2.2、post_placement=9.6.3.2、pre_placement=9.6.1.3）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.7",
+      "path": "GBZ 188—2025 / 第 9.7 节",
+      "version": "2026-10-14",
+      "text": "刮研作业（章节 9.7；子条款：periodic=9.7.2.2、post_placement=9.7.3.2、pre_placement=9.7.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.8",
+      "path": "GBZ 188—2025 / 第 9.8 节",
+      "version": "2026-10-14",
+      "text": "井下工人长期蹲跪姿、爬行、侧卧、肩扛作业（章节 9.8；子条款：periodic=9.8.2.2、post_placement=9.8.3.2、pre_placement=9.8.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "9.9",
+      "path": "GBZ 188—2025 / 第 9.9 节",
+      "version": "2026-10-14",
+      "text": "制造业工人长时间腕部重复作业或用力作业（章节 9.9；子条款：periodic=9.9.2.2、post_placement=9.9.3.2、pre_placement=9.9.1.2）",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.compare",
+      "path": "数据契约 / 版本对照",
+      "version": "2026-10-14",
+      "text": "版本差异对照：因素覆盖/时点/必检项构成/选检项/周期五维；任一明细 pending 时跳过该因素的条目级比较（避免把「未转写」误报成「标准差异」）。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.gate",
+      "path": "数据契约 / status 门控",
+      "version": "2026-10-14",
+      "text": "status 门控：verified 条目才可进入核查路径；pending 一律拦截；input_required 放行但必须显式索取（适用性/项目级阻断，周期级降级待输入）。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.module",
+      "path": "数据契约 / 账本口径",
+      "version": "2026-10-14",
+      "text": "账本口径：覆盖度 compliant→pass；partial/non_compliant→fail（阻断）；not_applicable/unknown/failed→not_applicable（非结论不冒充合规）。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.period",
+      "path": "数据契约 / 周期判定",
+      "version": "2026-10-14",
+      "text": "周期判定以「上次检查日 + N 月」为准，不做「今天」判定；due 当日合规；无基线记 no_baseline 不报超期。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.verdict",
+      "path": "数据契约 / 覆盖度四态",
+      "version": "2026-10-14",
+      "text": "覆盖度四态：应检全齐+周期合规=compliant；缺项或周期超期=partial；必检项一项未做=non_compliant；因素不适用=not_applicable。unknown/failed 是非结论。",
+      "effective": null,
+      "expires": null
+    },
+    {
+      "clause_id": "contract.version",
+      "path": "数据契约 / 版本锚定",
+      "version": "2026-10-14",
+      "text": "版本锚定按体检日期 exam_date：切口日之前用旧版、当日及之后用新版；只给年度且该年含切口日即年度歧义（宁报错不猜）。",
+      "effective": null,
+      "expires": null
+    }
+  ]
+}

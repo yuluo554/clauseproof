@@ -1,0 +1,7 @@
+{
+  "case_id": "compare-only",
+  "compare": {
+    "ruleset_a": "GBZ188-2014",
+    "ruleset_b": "GBZ188-2025"
+  }
+}
