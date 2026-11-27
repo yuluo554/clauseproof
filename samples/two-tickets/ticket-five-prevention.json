@@ -1,0 +1,26 @@
+{
+  "case_id": "gen-operating-005-five-prevention",
+  "ticket": {
+    "fields": {
+      "dispatcher": "张测试",
+      "end_time": "2026-10-17T09:40",
+      "guardian": "赵演练",
+      "operator": "周样例",
+      "start_time": "2026-10-17T08:30",
+      "task": "将220kV西江线221断路器由运行转为检修",
+      "ticket_no": "CZ-2026-0005"
+    },
+    "operation_sequence": [
+      {
+        "action": "检查220kV西江线221断路器确在合闸位置",
+        "no": 1
+      },
+      {
+        "action": "拉开220kV西江线221-1隔离开关",
+        "no": 2
+      }
+    ],
+    "safety_measures": [],
+    "ticket_type": "operating"
+  }
+}

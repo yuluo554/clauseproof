@@ -1,0 +1,42 @@
+{
+  "case_id": "gen-operating-004-time-order",
+  "ticket": {
+    "fields": {
+      "dispatcher": "周样例",
+      "end_time": "2026-10-16T08:30",
+      "guardian": "钱示例",
+      "operator": "李演示",
+      "start_time": "2026-10-16T09:40",
+      "task": "将35kV南岭线312断路器由运行转为检修",
+      "ticket_no": "CZ-2026-0004"
+    },
+    "operation_sequence": [
+      {
+        "action": "检查35kV南岭线312断路器确在合闸位置",
+        "no": 1
+      },
+      {
+        "action": "断开35kV南岭线312断路器",
+        "no": 2
+      },
+      {
+        "action": "检查35kV南岭线312断路器确在断开位置",
+        "no": 3
+      },
+      {
+        "action": "拉开35kV南岭线312-1隔离开关",
+        "no": 4
+      },
+      {
+        "action": "检查35kV南岭线312-1隔离开关确在拉开位置",
+        "no": 5
+      },
+      {
+        "action": "在35kV南岭线312断路器与312-1隔离开关间验电确无电压并装设接地线一组",
+        "no": 6
+      }
+    ],
+    "safety_measures": [],
+    "ticket_type": "operating"
+  }
+}

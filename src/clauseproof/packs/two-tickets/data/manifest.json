@@ -1,0 +1,38 @@
+{
+  "basis_status": {
+    "已核对": 9,
+    "待核对": 30
+  },
+  "clause_count": 55,
+  "files": {
+    "clauses.json": {
+      "bytes": 24944,
+      "sha256": "2c75f738db2229dc345ffa29d2288baa2990ed21025db7247b67037c4e69ca2a",
+      "source_name": "built-from-rules+raw-cards+contracts"
+    },
+    "rules-content.json": {
+      "bytes": 8734,
+      "sha256": "b574c86628336ee23d8b008c551f84c72559c6bf9b08176defd3e943a9656361",
+      "source_name": "knowledge/rules/rules-content.json"
+    },
+    "rules-form.json": {
+      "bytes": 10920,
+      "sha256": "792970a219033a2dbbe6c2c10595d96053a9847b1f1f66ddba4cbcc61e83b161",
+      "source_name": "knowledge/rules/rules-form.json"
+    },
+    "rules-time.json": {
+      "bytes": 17715,
+      "sha256": "cb411ff38293d3229b70e86d502f832a4b40422889c7bdfcac8a49bfb9c7703e",
+      "source_name": "knowledge/rules/rules-time.json"
+    },
+    "ticket-cases.json": {
+      "bytes": 43152,
+      "sha256": "fa74687aa97d633c9da1cbaaaed24f7571f4021d06f5a17c55c237c50ccf73f8",
+      "source_name": "samples/gen/*.truth.json (aggregated)"
+    }
+  },
+  "rules": 39,
+  "source_reviewed_at": "2026-10-02",
+  "ticket_cases": 35,
+  "version": "2026-10-02"
+}

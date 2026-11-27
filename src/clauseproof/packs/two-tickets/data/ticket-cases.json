@@ -1,0 +1,1370 @@
+{
+  "cases": [
+    {
+      "also_expect": [],
+      "case_id": "gen-emergency_repair-032-normal",
+      "defects": [],
+      "expect": [],
+      "fields": {
+        "crew": "张测试、王模拟、李演示",
+        "end_time": "2026-10-14T17:30",
+        "permitor": "赵演练",
+        "start_time": "2026-10-14T14:00",
+        "task": "处理10kV城区线815断路器故障跳闸（保护动作，站内检查发现815断路器机构漏气）",
+        "ticket_no": "QX-2026-0032",
+        "work_head": "王模拟",
+        "work_unit": "配电运检三班"
+      },
+      "kind": "normal",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开10kV城区线815断路器并在两侧验电确无电压",
+        "在故障点两侧各装设接地线一组",
+        "在操作把手上悬挂“禁止合闸，有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "emergency_repair"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-emergency_repair-033-missing-crew",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "crew"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "end_time": "2026-10-15T17:30",
+        "permitor": "钱示例",
+        "start_time": "2026-10-15T14:00",
+        "task": "处理10kV城区线815断路器故障跳闸（保护动作，站内检查发现815断路器机构漏气）",
+        "ticket_no": "QX-2026-0033",
+        "work_head": "赵演练",
+        "work_unit": "变电检修一班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开10kV城区线815断路器并在两侧验电确无电压",
+        "在故障点两侧各装设接地线一组",
+        "在操作把手上悬挂“禁止合闸，有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "emergency_repair"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-emergency_repair-034-time-order",
+      "defects": [
+        {
+          "defect_type": "time_order",
+          "target": "start_time,end_time"
+        }
+      ],
+      "expect": [
+        "time_order"
+      ],
+      "fields": {
+        "crew": "王模拟、李演示、周样例",
+        "end_time": "2026-10-16T14:00",
+        "permitor": "孙占位",
+        "start_time": "2026-10-16T17:30",
+        "task": "处理10kV城区线815断路器故障跳闸（保护动作，站内检查发现815断路器机构漏气）",
+        "ticket_no": "QX-2026-0034",
+        "work_head": "钱示例",
+        "work_unit": "输电运检二班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开10kV城区线815断路器并在两侧验电确无电压",
+        "在故障点两侧各装设接地线一组",
+        "在操作把手上悬挂“禁止合闸，有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "emergency_repair"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-emergency_repair-035-signature-gap-permitor",
+      "defects": [
+        {
+          "defect_type": "signature_gap",
+          "target": "permitor"
+        }
+      ],
+      "expect": [
+        "process_signature"
+      ],
+      "fields": {
+        "crew": "张测试、赵演练、周样例",
+        "end_time": "2026-10-17T17:30",
+        "start_time": "2026-10-17T14:00",
+        "task": "处理10kV城区线815断路器故障跳闸（保护动作，站内检查发现815断路器机构漏气）",
+        "ticket_no": "QX-2026-0035",
+        "work_head": "孙占位",
+        "work_unit": "配电运检三班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开10kV城区线815断路器并在两侧验电确无电压",
+        "在故障点两侧各装设接地线一组",
+        "在操作把手上悬挂“禁止合闸，有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "emergency_repair"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_operating-008-normal",
+      "defects": [],
+      "expect": [],
+      "fields": {
+        "dispatcher": "赵演练",
+        "end_time": "2026-10-20T09:40",
+        "guardian": "李演示",
+        "operator": "周样例",
+        "start_time": "2026-10-20T08:30",
+        "task": "将220kV西江线7号-9号杆区段由运行转为检修",
+        "ticket_no": "XZ-2026-0008"
+      },
+      "kind": "normal",
+      "operation_sequence": [
+        {
+          "action": "断开220kV西江线7号杆分段断路器",
+          "no": 1
+        },
+        {
+          "action": "检查220kV西江线7号杆分段断路器确在断开位置",
+          "no": 2
+        },
+        {
+          "action": "拉开220kV西江线9号杆007隔离开关",
+          "no": 3
+        },
+        {
+          "action": "检查220kV西江线9号杆007隔离开关确在拉开位置",
+          "no": 4
+        },
+        {
+          "action": "在220kV西江线7号-9号杆区段两侧验电确无电压并各装设接地线一组",
+          "no": 5
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "line_operating"
+    },
+    {
+      "also_expect": [
+        "time_order"
+      ],
+      "case_id": "gen-line_operating-009-missing-end-time",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "end_time"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "dispatcher": "钱示例",
+        "guardian": "周样例",
+        "operator": "李演示",
+        "start_time": "2026-10-21T08:30",
+        "task": "将110kV东湖线31号-33号杆区段由运行转为检修",
+        "ticket_no": "XZ-2026-0009"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "断开110kV东湖线31号杆分段断路器",
+          "no": 1
+        },
+        {
+          "action": "检查110kV东湖线31号杆分段断路器确在断开位置",
+          "no": 2
+        },
+        {
+          "action": "拉开110kV东湖线33号杆003隔离开关",
+          "no": 3
+        },
+        {
+          "action": "检查110kV东湖线33号杆003隔离开关确在拉开位置",
+          "no": 4
+        },
+        {
+          "action": "在110kV东湖线31号-33号杆区段两侧验电确无电压并各装设接地线一组",
+          "no": 5
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "line_operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_operating-010-time-order",
+      "defects": [
+        {
+          "defect_type": "time_order",
+          "target": "start_time,end_time"
+        }
+      ],
+      "expect": [
+        "time_order"
+      ],
+      "fields": {
+        "dispatcher": "孙占位",
+        "end_time": "2026-10-22T08:30",
+        "guardian": "周样例",
+        "operator": "王模拟",
+        "start_time": "2026-10-22T09:40",
+        "task": "将35kV南岭线15号-17号杆区段由运行转为检修",
+        "ticket_no": "XZ-2026-0010"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "断开35kV南岭线15号杆分段断路器",
+          "no": 1
+        },
+        {
+          "action": "检查35kV南岭线15号杆分段断路器确在断开位置",
+          "no": 2
+        },
+        {
+          "action": "拉开35kV南岭线17号杆015隔离开关",
+          "no": 3
+        },
+        {
+          "action": "检查35kV南岭线17号杆015隔离开关确在拉开位置",
+          "no": 4
+        },
+        {
+          "action": "在35kV南岭线15号-17号杆区段两侧验电确无电压并各装设接地线一组",
+          "no": 5
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "line_operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_operating-011-five-prevention",
+      "defects": [
+        {
+          "defect_type": "five_prevention_violation",
+          "target": "steps"
+        }
+      ],
+      "expect": [
+        "five_prevention"
+      ],
+      "fields": {
+        "dispatcher": "周样例",
+        "end_time": "2026-10-23T09:40",
+        "guardian": "孙占位",
+        "operator": "周样例",
+        "start_time": "2026-10-23T08:30",
+        "task": "将220kV西江线7号-9号杆区段由运行转为检修",
+        "ticket_no": "XZ-2026-0011"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "检查220kV西江线7号杆分段断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "拉开220kV西江线9号杆007隔离开关",
+          "no": 2
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "line_operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_operating-012-combo-missing-task-five-prevention",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "task"
+        },
+        {
+          "defect_type": "five_prevention_violation",
+          "target": "steps"
+        }
+      ],
+      "expect": [
+        "required_field",
+        "five_prevention"
+      ],
+      "fields": {
+        "dispatcher": "张测试",
+        "end_time": "2026-10-24T09:40",
+        "guardian": "李演示",
+        "operator": "孙占位",
+        "start_time": "2026-10-24T08:30",
+        "ticket_no": "XZ-2026-0012"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "检查110kV东湖线31号杆分段断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "拉开110kV东湖线33号杆003隔离开关",
+          "no": 2
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "line_operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_work_first-024-normal",
+      "defects": [],
+      "expect": [],
+      "fields": {
+        "crew": "周样例、李演示、王模拟",
+        "end_time": "2026-10-21T16:50",
+        "issuer": "钱示例",
+        "location": "110kV东湖线31号-33号杆区段",
+        "permit_start": "2026-10-21T08:10",
+        "permitor": "周样例",
+        "plan_end": "2026-10-21T17:00",
+        "plan_start": "2026-10-21T08:00",
+        "task": "更换110kV东湖线31号杆绝缘子（需停电）",
+        "ticket_no": "XL1-2026-0024",
+        "work_head": "张测试",
+        "work_unit": "变电检修一班"
+      },
+      "kind": "normal",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开110kV东湖线发电厂、变电站侧断路器和两侧隔离开关",
+        "在110kV东湖线31号-33号杆区段两端验电确无电压",
+        "在110kV东湖线31号-33号杆区段两端各装设接地线一组",
+        "悬挂“禁止合闸，线路有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "line_work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_work_first-025-missing-location",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "location"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "crew": "周样例、李演示、王模拟",
+        "end_time": "2026-10-22T16:50",
+        "issuer": "孙占位",
+        "permit_start": "2026-10-22T08:10",
+        "permitor": "张测试",
+        "plan_end": "2026-10-22T17:00",
+        "plan_start": "2026-10-22T08:00",
+        "task": "更换35kV南岭线15号杆绝缘子（需停电）",
+        "ticket_no": "XL1-2026-0025",
+        "work_head": "李演示",
+        "work_unit": "输电运检二班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开35kV南岭线发电厂、变电站侧断路器和两侧隔离开关",
+        "在35kV南岭线15号-17号杆区段两端验电确无电压",
+        "在35kV南岭线15号-17号杆区段两端各装设接地线一组",
+        "悬挂“禁止合闸，线路有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "line_work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_work_first-026-permit-out-of-range",
+      "defects": [
+        {
+          "defect_type": "permit_time_out_of_range",
+          "detail": {
+            "mode": "before_start"
+          },
+          "target": "permit_start"
+        }
+      ],
+      "expect": [
+        "time_order"
+      ],
+      "fields": {
+        "crew": "李演示、王模拟、孙占位",
+        "end_time": "2026-10-23T16:50",
+        "issuer": "周样例",
+        "location": "220kV西江线7号-9号杆区段",
+        "permit_start": "2026-10-23T07:40",
+        "permitor": "李演示",
+        "plan_end": "2026-10-23T17:00",
+        "plan_start": "2026-10-23T08:00",
+        "task": "更换220kV西江线7号杆绝缘子（需停电）",
+        "ticket_no": "XL1-2026-0026",
+        "work_head": "王模拟",
+        "work_unit": "配电运检三班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开220kV西江线发电厂、变电站侧断路器和两侧隔离开关",
+        "在220kV西江线7号-9号杆区段两端验电确无电压",
+        "在220kV西江线7号-9号杆区段两端各装设接地线一组",
+        "悬挂“禁止合闸，线路有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "line_work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_work_first-027-measure-missing",
+      "defects": [
+        {
+          "defect_type": "measure_missing",
+          "detail": {
+            "dropped_index": 1
+          },
+          "target": "measures"
+        }
+      ],
+      "expect": [
+        "measure_coverage"
+      ],
+      "fields": {
+        "crew": "周样例、孙占位、王模拟",
+        "end_time": "2026-10-24T16:50",
+        "issuer": "张测试",
+        "location": "110kV东湖线31号-33号杆区段",
+        "permit_start": "2026-10-24T08:10",
+        "permitor": "王模拟",
+        "plan_end": "2026-10-24T17:00",
+        "plan_start": "2026-10-24T08:00",
+        "task": "更换110kV东湖线31号杆绝缘子（需停电）",
+        "ticket_no": "XL1-2026-0027",
+        "work_head": "赵演练",
+        "work_unit": "变电检修一班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开110kV东湖线发电厂、变电站侧断路器和两侧隔离开关",
+        "在110kV东湖线31号-33号杆区段两端各装设接地线一组",
+        "悬挂“禁止合闸，线路有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "line_work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_work_first-028-signature-gap-permitor",
+      "defects": [
+        {
+          "defect_type": "signature_gap",
+          "target": "permitor"
+        }
+      ],
+      "expect": [
+        "process_signature"
+      ],
+      "fields": {
+        "crew": "张测试、孙占位、李演示",
+        "end_time": "2026-10-25T16:50",
+        "issuer": "李演示",
+        "location": "35kV南岭线15号-17号杆区段",
+        "permit_start": "2026-10-25T08:10",
+        "plan_end": "2026-10-25T17:00",
+        "plan_start": "2026-10-25T08:00",
+        "task": "更换35kV南岭线15号杆绝缘子（需停电）",
+        "ticket_no": "XL1-2026-0028",
+        "work_head": "钱示例",
+        "work_unit": "输电运检二班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开35kV南岭线发电厂、变电站侧断路器和两侧隔离开关",
+        "在35kV南岭线15号-17号杆区段两端验电确无电压",
+        "在35kV南岭线15号-17号杆区段两端各装设接地线一组",
+        "悬挂“禁止合闸，线路有人工作！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "line_work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_work_second-029-normal",
+      "defects": [],
+      "expect": [],
+      "fields": {
+        "crew": "王模拟、赵演练、周样例",
+        "end_time": "2026-10-26T16:50",
+        "issuer": "王模拟",
+        "location": "220kV西江线7号-9号杆区段",
+        "permit_start": "2026-10-26T08:10",
+        "permitor": "钱示例",
+        "plan_end": "2026-10-26T17:00",
+        "plan_start": "2026-10-26T08:00",
+        "task": "带电清扫220kV西江线7号杆绝缘子（不需停电）",
+        "ticket_no": "XL2-2026-0029",
+        "work_head": "孙占位",
+        "work_unit": "配电运检三班"
+      },
+      "kind": "normal",
+      "operation_sequence": [],
+      "safety_measures": [
+        "在工作地点悬挂“在此工作！”标示牌",
+        "在相邻带电设备处装设遮栏并悬挂“止步，高压危险！”标示牌",
+        "工作地点设置安全围栏并悬挂标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "line_work_second"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_work_second-030-missing-task",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "task"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "crew": "孙占位、周样例、赵演练",
+        "end_time": "2026-10-12T16:50",
+        "issuer": "赵演练",
+        "location": "110kV东湖线31号-33号杆区段",
+        "permit_start": "2026-10-12T08:10",
+        "permitor": "孙占位",
+        "plan_end": "2026-10-12T17:00",
+        "plan_start": "2026-10-12T08:00",
+        "ticket_no": "XL2-2026-0030",
+        "work_head": "周样例",
+        "work_unit": "变电检修一班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "在工作地点悬挂“在此工作！”标示牌",
+        "在相邻带电设备处装设遮栏并悬挂“止步，高压危险！”标示牌",
+        "工作地点设置安全围栏并悬挂标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "line_work_second"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-line_work_second-031-type-mismatch",
+      "defects": [
+        {
+          "defect_type": "ticket_type_mismatch",
+          "target": "task"
+        }
+      ],
+      "expect": [
+        "ticket_type_match"
+      ],
+      "fields": {
+        "crew": "李演示、王模拟、孙占位",
+        "end_time": "2026-10-13T16:50",
+        "issuer": "钱示例",
+        "location": "35kV南岭线15号-17号杆区段",
+        "permit_start": "2026-10-13T08:10",
+        "permitor": "周样例",
+        "plan_end": "2026-10-13T17:00",
+        "plan_start": "2026-10-13T08:00",
+        "task": "更换35kV南岭线15号杆绝缘子（需停电作业）",
+        "ticket_no": "XL2-2026-0031",
+        "work_head": "张测试",
+        "work_unit": "输电运检二班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "在工作地点悬挂“在此工作！”标示牌",
+        "在相邻带电设备处装设遮栏并悬挂“止步，高压危险！”标示牌",
+        "工作地点设置安全围栏并悬挂标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "line_work_second"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-operating-001-normal",
+      "defects": [],
+      "expect": [],
+      "fields": {
+        "dispatcher": "赵演练",
+        "end_time": "2026-10-13T09:40",
+        "guardian": "孙占位",
+        "operator": "王模拟",
+        "start_time": "2026-10-13T08:30",
+        "task": "将35kV南岭线312断路器由运行转为检修",
+        "ticket_no": "CZ-2026-0001"
+      },
+      "kind": "normal",
+      "operation_sequence": [
+        {
+          "action": "检查35kV南岭线312断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "断开35kV南岭线312断路器",
+          "no": 2
+        },
+        {
+          "action": "检查35kV南岭线312断路器确在断开位置",
+          "no": 3
+        },
+        {
+          "action": "拉开35kV南岭线312-1隔离开关",
+          "no": 4
+        },
+        {
+          "action": "检查35kV南岭线312-1隔离开关确在拉开位置",
+          "no": 5
+        },
+        {
+          "action": "在35kV南岭线312断路器与312-1隔离开关间验电确无电压并装设接地线一组",
+          "no": 6
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "operating"
+    },
+    {
+      "also_expect": [
+        "time_order"
+      ],
+      "case_id": "gen-operating-002-missing-start-time",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "start_time"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "dispatcher": "钱示例",
+        "end_time": "2026-10-14T09:40",
+        "guardian": "张测试",
+        "operator": "李演示",
+        "task": "将220kV西江线221断路器由运行转为检修",
+        "ticket_no": "CZ-2026-0002"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "检查220kV西江线221断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "断开220kV西江线221断路器",
+          "no": 2
+        },
+        {
+          "action": "检查220kV西江线221断路器确在断开位置",
+          "no": 3
+        },
+        {
+          "action": "拉开220kV西江线221-1隔离开关",
+          "no": 4
+        },
+        {
+          "action": "检查220kV西江线221-1隔离开关确在拉开位置",
+          "no": 5
+        },
+        {
+          "action": "在220kV西江线221断路器与221-1隔离开关间验电确无电压并装设接地线一组",
+          "no": 6
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-operating-003-missing-task",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "task"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "dispatcher": "孙占位",
+        "end_time": "2026-10-15T09:40",
+        "guardian": "赵演练",
+        "operator": "张测试",
+        "start_time": "2026-10-15T08:30",
+        "ticket_no": "CZ-2026-0003"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "检查110kV东湖线111断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "断开110kV东湖线111断路器",
+          "no": 2
+        },
+        {
+          "action": "检查110kV东湖线111断路器确在断开位置",
+          "no": 3
+        },
+        {
+          "action": "拉开110kV东湖线111-1隔离开关",
+          "no": 4
+        },
+        {
+          "action": "检查110kV东湖线111-1隔离开关确在拉开位置",
+          "no": 5
+        },
+        {
+          "action": "在110kV东湖线111断路器与111-1隔离开关间验电确无电压并装设接地线一组",
+          "no": 6
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-operating-004-time-order",
+      "defects": [
+        {
+          "defect_type": "time_order",
+          "target": "start_time,end_time"
+        }
+      ],
+      "expect": [
+        "time_order"
+      ],
+      "fields": {
+        "dispatcher": "周样例",
+        "end_time": "2026-10-16T08:30",
+        "guardian": "钱示例",
+        "operator": "李演示",
+        "start_time": "2026-10-16T09:40",
+        "task": "将35kV南岭线312断路器由运行转为检修",
+        "ticket_no": "CZ-2026-0004"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "检查35kV南岭线312断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "断开35kV南岭线312断路器",
+          "no": 2
+        },
+        {
+          "action": "检查35kV南岭线312断路器确在断开位置",
+          "no": 3
+        },
+        {
+          "action": "拉开35kV南岭线312-1隔离开关",
+          "no": 4
+        },
+        {
+          "action": "检查35kV南岭线312-1隔离开关确在拉开位置",
+          "no": 5
+        },
+        {
+          "action": "在35kV南岭线312断路器与312-1隔离开关间验电确无电压并装设接地线一组",
+          "no": 6
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-operating-005-five-prevention",
+      "defects": [
+        {
+          "defect_type": "five_prevention_violation",
+          "target": "steps"
+        }
+      ],
+      "expect": [
+        "five_prevention"
+      ],
+      "fields": {
+        "dispatcher": "张测试",
+        "end_time": "2026-10-17T09:40",
+        "guardian": "赵演练",
+        "operator": "周样例",
+        "start_time": "2026-10-17T08:30",
+        "task": "将220kV西江线221断路器由运行转为检修",
+        "ticket_no": "CZ-2026-0005"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "检查220kV西江线221断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "拉开220kV西江线221-1隔离开关",
+          "no": 2
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-operating-006-name-mismatch",
+      "defects": [
+        {
+          "defect_type": "double_name_mismatch",
+          "detail": {
+            "step_kv": "35",
+            "task_kv": 110
+          },
+          "target": "steps"
+        }
+      ],
+      "expect": [
+        "consistency"
+      ],
+      "fields": {
+        "dispatcher": "李演示",
+        "end_time": "2026-10-18T09:40",
+        "guardian": "钱示例",
+        "operator": "张测试",
+        "start_time": "2026-10-18T08:30",
+        "task": "将110kV东湖线111断路器由运行转为检修",
+        "ticket_no": "CZ-2026-0006"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "检查110kV东湖线111断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "断开35kV东湖线111断路器",
+          "no": 2
+        },
+        {
+          "action": "检查35kV东湖线111断路器确在断开位置",
+          "no": 3
+        },
+        {
+          "action": "拉开110kV东湖线111-1隔离开关",
+          "no": 4
+        },
+        {
+          "action": "检查110kV东湖线111-1隔离开关确在拉开位置",
+          "no": 5
+        },
+        {
+          "action": "在110kV东湖线111断路器与111-1隔离开关间验电确无电压并装设接地线一组",
+          "no": 6
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-operating-007-combo-missing-guardian-name-mismatch",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "guardian"
+        },
+        {
+          "defect_type": "double_name_mismatch",
+          "detail": {
+            "step_kv": "10",
+            "task_kv": 35
+          },
+          "target": "steps"
+        }
+      ],
+      "expect": [
+        "required_field",
+        "consistency"
+      ],
+      "fields": {
+        "dispatcher": "王模拟",
+        "end_time": "2026-10-19T09:40",
+        "operator": "李演示",
+        "start_time": "2026-10-19T08:30",
+        "task": "将35kV南岭线312断路器由运行转为检修",
+        "ticket_no": "CZ-2026-0007"
+      },
+      "kind": "defect",
+      "operation_sequence": [
+        {
+          "action": "检查35kV南岭线312断路器确在合闸位置",
+          "no": 1
+        },
+        {
+          "action": "断开10kV南岭线312断路器",
+          "no": 2
+        },
+        {
+          "action": "检查10kV南岭线312断路器确在断开位置",
+          "no": 3
+        },
+        {
+          "action": "拉开35kV南岭线312-1隔离开关",
+          "no": 4
+        },
+        {
+          "action": "检查35kV南岭线312-1隔离开关确在拉开位置",
+          "no": 5
+        },
+        {
+          "action": "在35kV南岭线312断路器与312-1隔离开关间验电确无电压并装设接地线一组",
+          "no": 6
+        }
+      ],
+      "safety_measures": [],
+      "seed": 20261002,
+      "ticket_type": "operating"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_first-013-normal",
+      "defects": [],
+      "expect": [],
+      "fields": {
+        "crew": "李演示、周样例、孙占位",
+        "end_time": "2026-10-25T16:50",
+        "issuer": "张测试",
+        "location": "南岭变电站35kV南岭线312断路器间隔",
+        "permit_start": "2026-10-25T08:10",
+        "permitor": "王模拟",
+        "plan_end": "2026-10-25T17:00",
+        "plan_start": "2026-10-25T08:00",
+        "task": "对35kV南岭线312断路器进行检修（需停电）",
+        "ticket_no": "GZ1-2026-0013",
+        "work_head": "赵演练",
+        "work_unit": "输电运检二班"
+      },
+      "kind": "normal",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开35kV南岭线312断路器，断开312-1、312-3隔离开关",
+        "在35kV南岭线312断路器两侧验电确无电压",
+        "在35kV南岭线312断路器两侧各装设接地线一组",
+        "悬挂“禁止合闸，有人工作！”标示牌，装设遮栏并悬挂“止步，高压危险！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_first-014-missing-task",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "task"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "crew": "王模拟、赵演练、张测试",
+        "end_time": "2026-10-26T16:50",
+        "issuer": "李演示",
+        "location": "西江变电站220kV西江线221断路器间隔",
+        "permit_start": "2026-10-26T08:10",
+        "permitor": "赵演练",
+        "plan_end": "2026-10-26T17:00",
+        "plan_start": "2026-10-26T08:00",
+        "ticket_no": "GZ1-2026-0014",
+        "work_head": "钱示例",
+        "work_unit": "配电运检三班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开220kV西江线221断路器，断开221-1、221-3隔离开关",
+        "在220kV西江线221断路器两侧验电确无电压",
+        "在220kV西江线221断路器两侧各装设接地线一组",
+        "悬挂“禁止合闸，有人工作！”标示牌，装设遮栏并悬挂“止步，高压危险！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_first"
+    },
+    {
+      "also_expect": [
+        "time_order"
+      ],
+      "case_id": "gen-work_first-015-missing-plan-end",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "plan_end"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "crew": "周样例、李演示、赵演练",
+        "end_time": "2026-10-12T16:50",
+        "issuer": "王模拟",
+        "location": "东湖变电站110kV东湖线111断路器间隔",
+        "permit_start": "2026-10-12T08:10",
+        "permitor": "钱示例",
+        "plan_start": "2026-10-12T08:00",
+        "task": "对110kV东湖线111断路器进行检修（需停电）",
+        "ticket_no": "GZ1-2026-0015",
+        "work_head": "孙占位",
+        "work_unit": "变电检修一班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开110kV东湖线111断路器，断开111-1、111-3隔离开关",
+        "在110kV东湖线111断路器两侧验电确无电压",
+        "在110kV东湖线111断路器两侧各装设接地线一组",
+        "悬挂“禁止合闸，有人工作！”标示牌，装设遮栏并悬挂“止步，高压危险！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_first-016-permit-out-of-range",
+      "defects": [
+        {
+          "defect_type": "permit_time_out_of_range",
+          "detail": {
+            "mode": "before_start"
+          },
+          "target": "permit_start"
+        }
+      ],
+      "expect": [
+        "time_order"
+      ],
+      "fields": {
+        "crew": "赵演练、周样例、李演示",
+        "end_time": "2026-10-13T16:50",
+        "issuer": "赵演练",
+        "location": "南岭变电站35kV南岭线312断路器间隔",
+        "permit_start": "2026-10-13T07:40",
+        "permitor": "孙占位",
+        "plan_end": "2026-10-13T17:00",
+        "plan_start": "2026-10-13T08:00",
+        "task": "对35kV南岭线312断路器进行检修（需停电）",
+        "ticket_no": "GZ1-2026-0016",
+        "work_head": "周样例",
+        "work_unit": "输电运检二班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开35kV南岭线312断路器，断开312-1、312-3隔离开关",
+        "在35kV南岭线312断路器两侧验电确无电压",
+        "在35kV南岭线312断路器两侧各装设接地线一组",
+        "悬挂“禁止合闸，有人工作！”标示牌，装设遮栏并悬挂“止步，高压危险！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_first-017-measure-missing",
+      "defects": [
+        {
+          "defect_type": "measure_missing",
+          "detail": {
+            "dropped_index": 3
+          },
+          "target": "measures"
+        }
+      ],
+      "expect": [
+        "measure_coverage"
+      ],
+      "fields": {
+        "crew": "李演示、周样例、孙占位",
+        "end_time": "2026-10-14T16:50",
+        "issuer": "钱示例",
+        "location": "西江变电站220kV西江线221断路器间隔",
+        "permit_start": "2026-10-14T08:10",
+        "permitor": "周样例",
+        "plan_end": "2026-10-14T17:00",
+        "plan_start": "2026-10-14T08:00",
+        "task": "对220kV西江线221断路器进行检修（需停电）",
+        "ticket_no": "GZ1-2026-0017",
+        "work_head": "张测试",
+        "work_unit": "配电运检三班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开220kV西江线221断路器，断开221-1、221-3隔离开关",
+        "在220kV西江线221断路器两侧验电确无电压",
+        "在220kV西江线221断路器两侧各装设接地线一组"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_first-018-signature-gap-permitor",
+      "defects": [
+        {
+          "defect_type": "signature_gap",
+          "target": "permitor"
+        }
+      ],
+      "expect": [
+        "process_signature"
+      ],
+      "fields": {
+        "crew": "李演示、孙占位、张测试",
+        "end_time": "2026-10-15T16:50",
+        "issuer": "孙占位",
+        "location": "东湖变电站110kV东湖线111断路器间隔",
+        "permit_start": "2026-10-15T08:10",
+        "plan_end": "2026-10-15T17:00",
+        "plan_start": "2026-10-15T08:00",
+        "task": "对110kV东湖线111断路器进行检修（需停电）",
+        "ticket_no": "GZ1-2026-0018",
+        "work_head": "李演示",
+        "work_unit": "变电检修一班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开110kV东湖线111断路器，断开111-1、111-3隔离开关",
+        "在110kV东湖线111断路器两侧验电确无电压",
+        "在110kV东湖线111断路器两侧各装设接地线一组",
+        "悬挂“禁止合闸，有人工作！”标示牌，装设遮栏并悬挂“止步，高压危险！”标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_first-019-combo-measure-missing-signature-gap",
+      "defects": [
+        {
+          "defect_type": "measure_missing",
+          "detail": {
+            "dropped_index": 3
+          },
+          "target": "measures"
+        },
+        {
+          "defect_type": "signature_gap",
+          "target": "permitor"
+        }
+      ],
+      "expect": [
+        "measure_coverage",
+        "process_signature"
+      ],
+      "fields": {
+        "crew": "孙占位、周样例、张测试",
+        "end_time": "2026-10-16T16:50",
+        "issuer": "周样例",
+        "location": "南岭变电站35kV南岭线312断路器间隔",
+        "permit_start": "2026-10-16T08:10",
+        "plan_end": "2026-10-16T17:00",
+        "plan_start": "2026-10-16T08:00",
+        "task": "对35kV南岭线312断路器进行检修（需停电）",
+        "ticket_no": "GZ1-2026-0019",
+        "work_head": "王模拟",
+        "work_unit": "输电运检二班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "断开35kV南岭线312断路器，断开312-1、312-3隔离开关",
+        "在35kV南岭线312断路器两侧验电确无电压",
+        "在35kV南岭线312断路器两侧各装设接地线一组"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_first"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_second-020-normal",
+      "defects": [],
+      "expect": [],
+      "fields": {
+        "crew": "赵演练、张测试、李演示",
+        "end_time": "2026-10-17T16:50",
+        "issuer": "张测试",
+        "location": "西江变电站220kV西江线221断路器间隔",
+        "permit_start": "2026-10-17T08:10",
+        "permitor": "王模拟",
+        "plan_end": "2026-10-17T17:00",
+        "plan_start": "2026-10-17T08:00",
+        "task": "对220kV西江线221断路器机构进行例行检查（不需停电，断路器在试验位置进行）",
+        "ticket_no": "GZ2-2026-0020",
+        "work_head": "赵演练",
+        "work_unit": "配电运检三班"
+      },
+      "kind": "normal",
+      "operation_sequence": [],
+      "safety_measures": [
+        "在工作地点悬挂“在此工作！”标示牌",
+        "在相邻带电设备处装设遮栏并悬挂“止步，高压危险！”标示牌",
+        "工作地点设置安全围栏并悬挂标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_second"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_second-021-missing-crew",
+      "defects": [
+        {
+          "defect_type": "missing_field",
+          "target": "crew"
+        }
+      ],
+      "expect": [
+        "required_field"
+      ],
+      "fields": {
+        "end_time": "2026-10-18T16:50",
+        "issuer": "李演示",
+        "location": "东湖变电站110kV东湖线111断路器间隔",
+        "permit_start": "2026-10-18T08:10",
+        "permitor": "赵演练",
+        "plan_end": "2026-10-18T17:00",
+        "plan_start": "2026-10-18T08:00",
+        "task": "对110kV东湖线111断路器机构进行例行检查（不需停电，断路器在试验位置进行）",
+        "ticket_no": "GZ2-2026-0021",
+        "work_head": "钱示例",
+        "work_unit": "变电检修一班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "在工作地点悬挂“在此工作！”标示牌",
+        "在相邻带电设备处装设遮栏并悬挂“止步，高压危险！”标示牌",
+        "工作地点设置安全围栏并悬挂标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_second"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_second-022-signature-gap-issuer",
+      "defects": [
+        {
+          "defect_type": "signature_gap",
+          "target": "issuer"
+        }
+      ],
+      "expect": [
+        "process_signature"
+      ],
+      "fields": {
+        "crew": "王模拟、张测试、赵演练",
+        "end_time": "2026-10-19T16:50",
+        "location": "南岭变电站35kV南岭线312断路器间隔",
+        "permit_start": "2026-10-19T08:10",
+        "permitor": "钱示例",
+        "plan_end": "2026-10-19T17:00",
+        "plan_start": "2026-10-19T08:00",
+        "task": "对35kV南岭线312断路器机构进行例行检查（不需停电，断路器在试验位置进行）",
+        "ticket_no": "GZ2-2026-0022",
+        "work_head": "孙占位",
+        "work_unit": "输电运检二班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "在工作地点悬挂“在此工作！”标示牌",
+        "在相邻带电设备处装设遮栏并悬挂“止步，高压危险！”标示牌",
+        "工作地点设置安全围栏并悬挂标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_second"
+    },
+    {
+      "also_expect": [],
+      "case_id": "gen-work_second-023-type-mismatch",
+      "defects": [
+        {
+          "defect_type": "ticket_type_mismatch",
+          "target": "task"
+        }
+      ],
+      "expect": [
+        "ticket_type_match"
+      ],
+      "fields": {
+        "crew": "孙占位、李演示、钱示例",
+        "end_time": "2026-10-20T16:50",
+        "issuer": "赵演练",
+        "location": "西江变电站220kV西江线221断路器间隔",
+        "permit_start": "2026-10-20T08:10",
+        "permitor": "孙占位",
+        "plan_end": "2026-10-20T17:00",
+        "plan_start": "2026-10-20T08:00",
+        "task": "处理220kV西江线221断路器机构缺陷（需将221断路器由运行位置转检修并停电）",
+        "ticket_no": "GZ2-2026-0023",
+        "work_head": "周样例",
+        "work_unit": "配电运检三班"
+      },
+      "kind": "defect",
+      "operation_sequence": [],
+      "safety_measures": [
+        "在工作地点悬挂“在此工作！”标示牌",
+        "在相邻带电设备处装设遮栏并悬挂“止步，高压危险！”标示牌",
+        "工作地点设置安全围栏并悬挂标示牌"
+      ],
+      "seed": 20261002,
+      "ticket_type": "work_second"
+    }
+  ],
+  "count": 35,
+  "source_reviewed_at": "2026-10-02"
+}

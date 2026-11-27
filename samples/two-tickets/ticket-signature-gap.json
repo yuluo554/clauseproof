@@ -1,0 +1,21 @@
+{
+  "case_id": "gen-emergency_repair-035-signature-gap-permitor",
+  "ticket": {
+    "fields": {
+      "crew": "张测试、赵演练、周样例",
+      "end_time": "2026-10-17T17:30",
+      "start_time": "2026-10-17T14:00",
+      "task": "处理10kV城区线815断路器故障跳闸（保护动作，站内检查发现815断路器机构漏气）",
+      "ticket_no": "QX-2026-0035",
+      "work_head": "孙占位",
+      "work_unit": "配电运检三班"
+    },
+    "operation_sequence": [],
+    "safety_measures": [
+      "断开10kV城区线815断路器并在两侧验电确无电压",
+      "在故障点两侧各装设接地线一组",
+      "在操作把手上悬挂“禁止合闸，有人工作！”标示牌"
+    ],
+    "ticket_type": "emergency_repair"
+  }
+}

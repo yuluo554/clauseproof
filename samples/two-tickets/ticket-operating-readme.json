@@ -1,0 +1,115 @@
+{
+  "case_id": "two-tickets-readme",
+  "ticket": {
+    "fields": {
+      "dispatcher": {
+        "confidence": 1.0,
+        "evidence": {
+          "quote": "发令人：王模拟（虚构）",
+          "region": "body"
+        },
+        "value": "王模拟（虚构）"
+      },
+      "end_time": {
+        "confidence": 1.0,
+        "evidence": {
+          "quote": "操作结束时间：2026年10月15日 09:40",
+          "region": "body"
+        },
+        "value": "2026-10-15T09:40"
+      },
+      "guardian": {
+        "confidence": 1.0,
+        "evidence": {
+          "quote": "监护人：张测试（虚构）",
+          "region": "body"
+        },
+        "value": "张测试（虚构）"
+      },
+      "operator": {
+        "confidence": 1.0,
+        "evidence": {
+          "quote": "操作人：李演示（虚构）",
+          "region": "body"
+        },
+        "value": "李演示（虚构）"
+      },
+      "remarks": {
+        "confidence": 1.0,
+        "evidence": {
+          "quote": "备注：本样例为人工编写的虚构演示数据，设备名与人名均非真实，仅用于骨架联调。",
+          "region": "body"
+        },
+        "value": "本样例为人工编写的虚构演示数据，设备名与人名均非真实，仅用于骨架联调。"
+      },
+      "start_time": {
+        "confidence": 1.0,
+        "evidence": {
+          "quote": "操作开始时间：2026年10月15日 08:30",
+          "region": "body"
+        },
+        "value": "2026-10-15T08:30"
+      },
+      "task": {
+        "confidence": 1.0,
+        "evidence": {
+          "quote": "操作任务：将110kV东湖线111断路器由运行位置摇至试验位置（虚构演示数据）",
+          "region": "body"
+        },
+        "value": "将110kV东湖线111断路器由运行位置摇至试验位置（虚构演示数据）"
+      },
+      "ticket_no": {
+        "confidence": 1.0,
+        "evidence": {
+          "quote": "编号：CZ-2026-0001",
+          "region": "body"
+        },
+        "value": "CZ-2026-0001"
+      }
+    },
+    "operation_sequence": [
+      {
+        "action": "检查110kV东湖线111断路器确在运行位置",
+        "evidence": {
+          "quote": "1  检查110kV东湖线111断路器确在运行位置",
+          "region": "body"
+        },
+        "no": 1
+      },
+      {
+        "action": "断开110kV东湖线111断路器",
+        "evidence": {
+          "quote": "2  断开110kV东湖线111断路器",
+          "region": "body"
+        },
+        "no": 2
+      },
+      {
+        "action": "检查110kV东湖线111断路器确在断开位置",
+        "evidence": {
+          "quote": "3  检查110kV东湖线111断路器确在断开位置",
+          "region": "body"
+        },
+        "no": 3
+      },
+      {
+        "action": "将110kV东湖线111断路器手车由运行位置摇至试验位置",
+        "evidence": {
+          "quote": "4  将110kV东湖线111断路器手车由运行位置摇至试验位置",
+          "region": "body"
+        },
+        "no": 4
+      },
+      {
+        "action": "检查110kV东湖线111断路器手车确在试验位置",
+        "evidence": {
+          "quote": "5  检查110kV东湖线111断路器手车确在试验位置",
+          "region": "body"
+        },
+        "no": 5
+      }
+    ],
+    "safety_measures": [],
+    "ticket_type": "operating"
+  }
+}
