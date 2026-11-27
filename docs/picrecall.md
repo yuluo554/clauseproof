@@ -166,7 +166,7 @@ clauseproof :: picrecall 2026-10-14 :: dedupe-clean.json
 | 1 | 旧仓**判定层**实跑用例数（D1 + **D18**） | 旧仓判定层实跑 **X = 101**（12 文件；`test_readme_gate` 12 函数中 1 条 quickstart 子进程门在本机未安装态失败，passed 计 11） | **过**（102 ≥ 101） |
 | 2 | README 示例命令 rc 相同 | 旧 `picrecall index data/synthetic_dupes --db <tmp>` → **0**；随后 `picrecall dedupe --db <tmp> --out <tmp>` → **1**（6 组，每组建议保留 hi_res）/ 新 `check picrecall …/dedupe-dupes.json` → **1**（6 组，同保留建议）；干净对照旧 `index data/synthetic` + `dedupe` → **0**（0 组）/ 新 `…/dedupe-clean.json` → **0**（0 组） | **过**（1=1，6 组一致；0=0） |
 | 3 | 用例数 / 函数数（**口径乙**） | 用例 102 ≥ 101；AST `test_` 函数 **102** ≥ 旧层 **100**；文件数旧 12 → 新 **1**（按域计，只记录） | **过** |
-| 4 | `pip wheel` 后 `data/` 进包 | `%TEMP%` 副本 `pip wheel --no-deps --no-build-isolation` → `clauseproof-0.0.0-py3-none-any.whl`（**261 条目 / 828486 B**）；`picrecall/data/` **4 件 / 6863 B**；解包 `list` = **18 器官**、干净样例 rc **0** | **过** |
+| 4 | `pip wheel` 后 `data/` 进包 | `%TEMP%` 副本 `pip wheel --no-deps --no-build-isolation` → `clauseproof-0.0.0-py3-none-any.whl`（**261 条目 / 828472 B**）；`picrecall/data/` **4 件 / 6649 B**；解包 `list` = **18 器官**、干净样例 rc **0** | **过** |
 
 **判据 1 的命令与输出原文**（来源仓只读，`PYTHONDONTWRITEBYTECODE=1`）：
 
@@ -231,13 +231,13 @@ segment 11 / serialize 6 = **101**；旧层 AST `test_` 函数 = **100**。
 ### 6.3 判据 4 的进包清单（`%TEMP%` 副本 `pip wheel --no-deps --no-build-isolation`）
 
 wheel：`clauseproof-0.0.0-py3-none-any.whl`（828486 B，**261 条目**）；
-`clauseproof/packs/picrecall/data/` **4 件 / 6863 B**：
+`clauseproof/packs/picrecall/data/` **4 件 / 6649 B**：
 
 | 文件 | bytes | 来源 |
 |---|---:|---|
 | `clauses.json` | 1830 | 5 条数据契约 |
-| `phash-cases.json` | 3968 | 来源合成重复族 18 张的 pHash 计算快照 |
-| `phash-clean.json` | 591 | 来源合成集 3 张独立截图 |
+| `phash-cases.json` | 3783 | 来源合成重复族 18 张的 pHash 计算快照 |
+| `phash-clean.json` | 562 | 来源合成集 3 张独立截图 |
 | `manifest.json` | 474 | 逐文件 sha256 / bytes / 条文数登记 |
 
 解包后 `clauseproof list` = **18 器官**；干净样例 rc **0**。
