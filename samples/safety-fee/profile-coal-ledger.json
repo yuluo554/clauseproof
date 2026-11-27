@@ -1,0 +1,39 @@
+{
+  "case_id": "safety-fee-coal-ledger",
+  "ledger": [
+    {
+      "amount": "120000.00",
+      "item_key": "EXP-001",
+      "subject": "安全费用",
+      "summary": "煤矿安全改造支出"
+    },
+    {
+      "amount": "80000.00",
+      "item_key": "EXP-002",
+      "subject": "安全费用",
+      "summary": "重大隐患治理支出"
+    },
+    {
+      "amount": "30000.00",
+      "item_key": "EXP-003",
+      "subject": "管理费用",
+      "summary": "挪用于办公经费"
+    },
+    {
+      "amount": "50000.00",
+      "item_key": "EXP-004",
+      "subject": "安全费用",
+      "summary": "安全生产标准化建设"
+    }
+  ],
+  "profile": {
+    "basis_kind": "output",
+    "basis_unit": "ton",
+    "basis_value": "120000",
+    "enterprise_id": "90000000SYN0000001A",
+    "enterprise_name": "示例煤炭（合成）有限公司",
+    "industry_id": "coal",
+    "variant_id": "coal_high_gas",
+    "year": 2024
+  }
+}

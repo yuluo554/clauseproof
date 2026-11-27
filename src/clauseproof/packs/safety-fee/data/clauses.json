@@ -1,0 +1,1341 @@
+{
+  "clauses": [
+    {
+      "clause_id": "contract.accrual",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 计提机制",
+      "text": "by_output（产量×单价）/ by_revenue_tiered（超额累退）/ by_revenue_rate（单一比例）/ by_project_cost（工程造价比例）；标准值全部读规则包，金额 Decimal 精确到分。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.basis",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 依据选择",
+      "text": "第五十二条跨行业（能分别核算分别提，否则按占比最高业务对合计计提取）；第五十三条净额口径（外购成本 > 营业收入 85% 可按净额）；矿井多种灾害并存从高提取。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.diff",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 双版本对照",
+      "text": "按 (industry_id, variant_id) 配对，四类差异（value_changed / rate_changed / added / removed）；两版都登记的行业即使无数值差异也记已比对。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.gate",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / status 门控",
+      "text": "按计算路径分作用域（calc / check / progress）；status != verified 的条目绝不进入计算路径（来源 rc 1）；input_required 放行但运行时必索，缺失即 rc 2。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.input",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 输入契约",
+      "text": "subject = {case_id, profile, ledger?, progress?, compare?}；企业档案缺必填字段即退出码 2；判定内核零文件 IO、零时钟、零环境变量。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.not_assessed",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 未评估",
+      "text": "支出无可适用条目 → 未评估（不冒充符合，也不冒充不符合）；引用未评估的条目不得作为合规结论。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.progress",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 使用进度",
+      "text": "门槛值来自规则包（2022 版第五十一条 60%）；当年实际使用不足门槛须披露并于下一年度 4 月底前提交书面说明。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.rules",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 规则包纪律",
+      "text": "按 依据文件 × 版本 组织；每条挂文号/条款号与 status（verified / pending / input_required），规则包 manifest 逐文件登记 sha256；被手改即规则包不可用。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.spending",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 支出范围四态",
+      "text": "符合 / 部分符合 / 不符合 / 不适用；无适用条目记未评估（绝不输出符合）；不适用只保留给原文明确写了例外情形的项。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.summary",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 汇总语义",
+      "text": "任一阻断（门控拦截 / 支出红线）→ 退出码 1；否则 0。使用进度披露义务属非阻断结论（与来源 progress 命令 rc 0 一致），在账本消息明示。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.tiered",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 超额累退边界",
+      "text": "段区间 [lower, upper)，恰好等于分段点归下一段；逐段量化到分后求和（不是总额乘单一费率）。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.units",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 单位换算",
+      "text": "单位定义是定义性事实（1 万元 = 10000 元），不是政策数值；单位不一致可精确换算时换算并记 warning，不可判定即 rc 2，绝不静默猜测。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "contract.version",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 版本锚定",
+      "text": "条文库坐标 = 依据基准日 2026-10-14；条文库版本不符即契约违约（退出码 3）。",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:coal",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第五条",
+      "text": "煤炭生产：计提机制 by_output（coal）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:construction",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第七条",
+      "text": "建设工程施工：计提机制 by_project_cost（construction）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:fireworks",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十二条",
+      "text": "烟花爆竹生产：计提机制 by_revenue_tiered（fireworks）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:hazardous_chemicals",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第八条",
+      "text": "危险品生产与储存：计提机制 by_revenue_tiered（hazardous_chemicals）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:machinery",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十一条",
+      "text": "机械制造：计提机制 by_revenue_tiered（machinery）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:metallurgy",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十条",
+      "text": "冶金：计提机制 by_revenue_tiered（metallurgy）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:noncoal_mine",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "非煤矿山开采：计提机制 by_output（noncoal_mine）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:transport",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第九条",
+      "text": "交通运输：计提机制 by_revenue_rate（transport）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:industry:weapons",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十三条",
+      "text": "武器装备研制生产与试验：计提机制 by_revenue_tiered（weapons）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:progress:default",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十四条",
+      "text": "【待核对】2012 版无按比例披露条款：第十四条为上年末结余达标（中小微企业达上年营业收入5%、大型企业达1.5%）时经批准可缓提少提的规则，与 2022 版第五十一条结构不同——门槛不套用，待 M2 重定型",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-COAL-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十七条",
+      "text": "煤矿安全生产改造和重大隐患治理支出（第十七条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-COAL-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十七条",
+      "text": "安全生产检查、评价、咨询、标准化建设支出（第十七条第五项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-COAL-03",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十七条",
+      "text": "安全生产宣传、教育、培训支出（第十七条第七项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-COAL-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-CONST-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十九条",
+      "text": "完善、改造和维护安全防护设施设备支出（第十九条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-CONST-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十九条",
+      "text": "配备、维护、保养应急救援器材、设备支出和应急演练支出（第十九条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-CONST-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-FW-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十四条",
+      "text": "完善、改造和维护安全设备设施支出（第二十四条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-FW-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十四条",
+      "text": "配备、维护、保养防爆机械电器设备支出（第二十四条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-FW-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-HAZ-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十条",
+      "text": "完善安全防护设施设备与配备维护应急救援器材支出（第二十条第一、二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-HAZ-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十条",
+      "text": "配备和更新现场作业人员安全防护用品支出（第二十条第五项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-HAZ-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-MAC-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十三条",
+      "text": "完善、改造和维护安全防护设施设备支出，含大型起重机械安装安全监控管理系统支出（第二十三条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-MAC-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十三条",
+      "text": "配备、维护、保养应急救援器材、设备支出和应急演练支出（第二十三条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-MAC-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-MET-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十二条",
+      "text": "完善、改造和维护安全防护设施设备支出（第二十二条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-MET-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十二条",
+      "text": "安全生产宣传、教育、培训支出（第二十二条第五项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-MET-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-NONCOAL-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十八条",
+      "text": "完善、改造和维护安全防护设施设备（不含“三同时”要求初期投入的安全设施）和重大安全隐患治理支出（第十八条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-NONCOAL-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十八条",
+      "text": "安全生产检查、评价、咨询、标准化建设支出（第十八条第四项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-NONCOAL-03",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十八条",
+      "text": "尾矿库闭库及闭库后维护费用支出（第十八条第九项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-NONCOAL-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-TRANS-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十一条",
+      "text": "完善、改造和维护安全防护设施设备支出（第二十一条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-TRANS-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十一条",
+      "text": "购置、安装和使用具有行驶记录功能的车辆卫星定位装置、船舶通信导航定位和自动识别系统、电子海图等支出（第二十一条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-TRANS-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-WP-01",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十五条",
+      "text": "完善、改造和维护安全防护设施设备支出（第二十五条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-WP-02",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十五条",
+      "text": "高新技术和特种专用设备安全鉴定评估、安全性能检验检测及操作人员上岗培训支出（第二十五条第四项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-WP-03",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十五条",
+      "text": "军工核设施（含核废物）防泄漏、防辐射的设施设备支出（第二十五条第七项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:spending:SP-WP-99",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第二十七条",
+      "text": "专户核算、不得挤占挪用安全费用（红线，第二十七条）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:coal:coal_opencast",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第五条",
+      "text": "露天矿（变体 coal_opencast）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:coal:coal_other_underground",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第五条",
+      "text": "其他井工矿（变体 coal_other_underground）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:coal:coal_outburst_high_gas",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第五条",
+      "text": "煤（岩）与瓦斯（二氧化碳）突出矿井、高瓦斯矿井（变体 coal_outburst_high_gas）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:construction:building_water_power_rail",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第七条",
+      "text": "房屋建筑工程、水利水电工程、电力工程、铁路工程、城市轨道交通工程（变体 building_water_power_rail）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:construction:mine_engineering",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第七条",
+      "text": "矿山工程（变体 mine_engineering）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:construction:municipal_smelting_others",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第七条",
+      "text": "市政公用工程、冶炼工程、机电安装工程、化工石油工程、港口与航道工程、公路工程、通信工程（变体 municipal_smelting_others）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_gas",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "天然气、煤层气（地面开采）（变体 nc_gas）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_geological_exploration",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "地质勘探单位（按地质勘查项目或工程总费用的 2%）（变体 nc_geological_exploration）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_metal_opencast",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "金属矿山·露天矿山（变体 nc_metal_opencast）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_metal_underground",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "金属矿山·地下矿山（变体 nc_metal_underground）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_nonmetal_opencast",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "非金属矿山·露天矿山（变体 nc_nonmetal_opencast）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_nonmetal_underground",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "非金属矿山·地下矿山（变体 nc_nonmetal_underground）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_nuclear",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "核工业矿山（变体 nc_nuclear）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_oil",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "石油（变体 nc_oil）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:noncoal_mine:nc_small_quarry",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第六条",
+      "text": "小型露天采石场（年采剥总量 50 万吨以下且最大开采高度不超过 50 米）（变体 nc_small_quarry）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:transport:general_freight",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第九条",
+      "text": "普通货运业务（变体 general_freight）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:transport:passenger_special_freight",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第九条",
+      "text": "客运业务、管道运输、危险品等特殊货运业务（变体 passenger_special_freight）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:weapons:wp_military_hazardous_chemicals",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十三条",
+      "text": "火炸药及其制品（含能材料，炸药、火药、推进剂，发动机，弹箭，引信、火工品）（变体 wp_military_hazardous_chemicals）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:weapons:wp_naval_ship",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十三条",
+      "text": "军用舰船（含修理）（变体 wp_naval_ship）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:weapons:wp_nuclear",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十三条",
+      "text": "核装备及核燃料（变体 wp_nuclear）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:weapons:wp_other_military_hazardous",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十三条",
+      "text": "其他军用危险品（变体 wp_other_military_hazardous）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2012:variant:weapons:wp_spacecraft",
+      "effective": null,
+      "expires": null,
+      "path": "财企〔2012〕16号 / 第十三条",
+      "text": "飞船、卫星、军用飞机、坦克车辆、火炮、轻武器、大型天线等（变体 wp_spacecraft）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:basis:multi_business",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第五十二条",
+      "text": "企业同时开展两项及两项以上以营业收入为计提依据的业务，能够按业务类别分别核算的，按各项业务计提标准分别提取；不能分别核算的，按营业收入占比最高业务对应的提取标准对各项合计营业收入计提",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:basis:net_basis",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第五十三条",
+      "text": "企业作为承揽人或承运人向客户提供纳入本办法规定范围的服务，且外购材料和服务成本高于自客户取得营业收入 85% 以上的，可以将营业收入扣除相关外购材料和服务成本的净额，作为计提依据",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:civil_explosives",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十六条",
+      "text": "民用爆炸物品生产：计提机制 by_revenue_tiered（civil_explosives）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:coal",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第七条",
+      "text": "煤炭生产：计提机制 by_output（coal）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:construction",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十七条",
+      "text": "建设工程施工：计提机制 by_project_cost（construction）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:fireworks",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十三条",
+      "text": "烟花爆竹生产：计提机制 by_revenue_tiered（fireworks）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:hazardous_chemicals",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十一条",
+      "text": "危险品生产与储存：计提机制 by_revenue_tiered（hazardous_chemicals）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:machinery",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十条",
+      "text": "机械制造：计提机制 by_revenue_tiered（machinery）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:metallurgy",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十七条",
+      "text": "冶金：计提机制 by_revenue_tiered（metallurgy）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:noncoal_mine",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十条",
+      "text": "非煤矿山开采：计提机制 by_output（noncoal_mine）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:oil_gas",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十四条",
+      "text": "石油天然气开采：计提机制 by_output（oil_gas）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:power",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四十三条",
+      "text": "电力生产与供应：计提机制 by_revenue_tiered（power）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:transport",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十四条",
+      "text": "交通运输：计提机制 by_revenue_rate（transport）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:industry:weapons",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十九条",
+      "text": "武器装备研制生产与试验：计提机制 by_revenue_tiered（weapons）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:progress:default",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第五十一条",
+      "text": "当年实际使用的安全生产费用不足年度应计提金额60%的，除按规定进行信息披露外，还应当于下一年度4月底前按属地监管权限向县级以上负有安全生产监督管理职责的部门提交经企业董事会、股东会等机构审议的书面说明",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-CE-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十七条",
+      "text": "完善、改造和维护安全防护设施设备支出（第三十七条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-CE-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十七条",
+      "text": "配备、维护、保养应急救援器材、设备支出和应急救援队伍建设、应急预案制修订与应急演练支出（第三十七条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-CE-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-COAL-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第八条",
+      "text": "煤矿安全生产改造和重大事故隐患治理支出（第八条第三项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-COAL-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第八条",
+      "text": "安全生产检查、咨询、标准化建设支出（第八条第六项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-COAL-03",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第八条",
+      "text": "安全生产宣传、教育、培训和从业人员发现并报告事故隐患的奖励支出（第八条第八项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-COAL-04",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第八条",
+      "text": "应急救援技术装备设施配置维护保养与应急救援队伍建设、应急预案制修订与应急演练支出（第八条第四项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-COAL-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-CONST-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十九条",
+      "text": "完善、改造和维护安全防护设施设备支出（第十九条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-CONST-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十九条",
+      "text": "应急救援技术装备设施配置及维护保养与应急救援队伍建设、应急预案制修订与应急演练支出（第十九条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-CONST-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-FW-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十四条",
+      "text": "完善、改造和维护安全设备设施支出（第三十四条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-FW-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十四条",
+      "text": "配备、维护、保养防爆机械电器设备支出（第三十四条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-FW-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-HAZ-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十二条",
+      "text": "完善安全防护设施设备与配备维护应急救援器材支出（第二十二条第一、二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-HAZ-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十二条",
+      "text": "配备和更新现场作业人员安全防护用品支出（第二十二条第五项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-HAZ-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-MAC-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十一条",
+      "text": "完善、改造和维护安全防护设施设备支出，含大型起重机械安装安全监控管理系统支出（第三十一条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-MAC-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十一条",
+      "text": "配备、维护、保养应急救援器材、设备支出和应急救援队伍建设、应急预案制修订与应急演练支出（第三十一条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-MAC-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-MET-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十八条",
+      "text": "完善、改造和维护安全防护设备设施支出（第二十八条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-MET-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十八条",
+      "text": "安全生产宣传、教育、培训和从业人员发现并报告事故隐患的奖励支出（第二十八条第五项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-MET-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-NONCOAL-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十二条",
+      "text": "完善、改造和维护安全防护设施设备（不含“三同时”要求初期投入的安全设施）和重大事故隐患治理支出（第十二条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-NONCOAL-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十二条",
+      "text": "安全生产检查、评估评价、咨询、标准化建设支出（第十二条第四项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-NONCOAL-03",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十二条",
+      "text": "尾矿库闭库、销库费用支出（第十二条第九项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-NONCOAL-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-OILGAS-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十五条",
+      "text": "完善、改造和维护安全防护设施设备支出（第十五条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-OILGAS-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十五条",
+      "text": "野外或海上作业应急食品、应急器械、应急药品支出（第十五条第九项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-OILGAS-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-POWER-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四十四条",
+      "text": "发电输电变配电设备设施安全防护与安全监控支出（第四十四条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-POWER-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四十四条",
+      "text": "配备和更新现场作业人员安全防护用品支出（第四十四条第六项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-POWER-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-TRANS-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十五条",
+      "text": "完善、改造和维护安全防护设施设备支出（第二十五条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-TRANS-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十五条",
+      "text": "购置、安装和使用具有行驶记录功能的车辆卫星定位装置、视频监控装置、船舶通信导航定位和自动识别系统等支出（第二十五条第二项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-TRANS-03",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十五条",
+      "text": "安全生产责任保险及承运人责任保险支出（第二十五条第十一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-TRANS-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-WP-01",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四十一条",
+      "text": "完善、改造和维护安全防护设施设备支出（第四十一条第一项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-WP-02",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四十一条",
+      "text": "高新技术和特种专用设备安全鉴定评估、安全性能检验检测及操作人员上岗培训支出（第四十一条第四项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-WP-03",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四十一条",
+      "text": "军工核设施（含核废物）防泄漏、防辐射的设施设备支出（第四十一条第七项要点）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:spending:SP-WP-99",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四条",
+      "text": "专项核算、不得挤占挪用安全生产费用（红线，第四条第三项）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:coal:coal_high_gas",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第七条",
+      "text": "高瓦斯矿井，水文地质类型复杂、极复杂矿井，容易自燃煤层矿井（变体 coal_high_gas）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:coal:coal_opencast",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第七条",
+      "text": "露天矿（变体 coal_opencast）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:coal:coal_other_underground",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第七条",
+      "text": "其他井工矿（变体 coal_other_underground）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:coal:coal_outburst_rockburst",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第七条",
+      "text": "煤（岩）与瓦斯（二氧化碳）突出矿井、冲击地压矿井（变体 coal_outburst_rockburst）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:construction:mine_engineering",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十七条",
+      "text": "矿山工程（变体 mine_engineering）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:construction:municipal_port_highway",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十七条",
+      "text": "市政公用工程、港口与航道工程、公路工程（变体 municipal_port_highway）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:construction:railway_building_rail_transit",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十七条",
+      "text": "铁路工程、房屋建筑工程、城市轨道交通工程（变体 railway_building_rail_transit）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:construction:smelting_mechanical_chemical_telecom",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十七条",
+      "text": "冶炼工程、机电安装工程、化工石油工程、通信工程（变体 smelting_mechanical_chemical_telecom）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:construction:water_power_electric",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十七条",
+      "text": "水利水电工程、电力工程（变体 water_power_electric）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:noncoal_mine:nc_geological_exploration",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十条",
+      "text": "地质勘探单位（按地质勘查项目或工程总费用的 2%）（变体 nc_geological_exploration）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:noncoal_mine:nc_metal_opencast",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十条",
+      "text": "金属矿山·露天矿山（变体 nc_metal_opencast）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:noncoal_mine:nc_metal_underground",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十条",
+      "text": "金属矿山·地下矿山（变体 nc_metal_underground）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:noncoal_mine:nc_nonmetal_opencast",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十条",
+      "text": "非金属矿山·露天矿山（变体 nc_nonmetal_opencast）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:noncoal_mine:nc_nonmetal_underground",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十条",
+      "text": "非金属矿山·地下矿山（变体 nc_nonmetal_underground）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:noncoal_mine:nc_nuclear",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十条",
+      "text": "核工业矿山（变体 nc_nuclear）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:noncoal_mine:nc_small_quarry",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十条",
+      "text": "小型露天采石场（年生产规模不超过 50 万吨的山坡型露天采石场）（变体 nc_small_quarry）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:oil_gas:og_crude_oil",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十四条",
+      "text": "陆上/海上采油（气）·原油（变体 og_crude_oil）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:oil_gas:og_engineering",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十四条",
+      "text": "钻井、物探、测井、录井、井下作业、油建、海油工程（按直接工程成本的 2%）（变体 og_engineering）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:oil_gas:og_natural_gas",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第十四条",
+      "text": "陆上/海上采油（气）·原气（变体 og_natural_gas）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:power:power_generation",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四十三条",
+      "text": "电力生产企业（变体 power_generation）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:power:power_supply",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第四十三条",
+      "text": "电力供应企业（变体 power_supply）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:transport:general_freight",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十四条",
+      "text": "普通货运业务（变体 general_freight）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:transport:passenger_special_freight",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第二十四条",
+      "text": "客运业务、管道运输、危险品等特殊货运业务（变体 passenger_special_freight）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:weapons:wp_military_hazardous_chemicals",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十九条",
+      "text": "军工危险化学品（火炸药、推进剂、弹药、火箭导弹发动机、燃气发生器）（变体 wp_military_hazardous_chemicals）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:weapons:wp_naval_ship",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十九条",
+      "text": "军用舰船（含修理）（变体 wp_naval_ship）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:weapons:wp_nuclear",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十九条",
+      "text": "核装备及核燃料（变体 wp_nuclear）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:weapons:wp_other_military_hazardous",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十九条",
+      "text": "其他军用危险品（变体 wp_other_military_hazardous）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:2022:variant:weapons:wp_spacecraft",
+      "effective": null,
+      "expires": null,
+      "path": "财资〔2022〕136号 / 第三十九条",
+      "text": "飞船、卫星、军用飞机、坦克车辆、火炮、轻武器、大型天线等（变体 wp_spacecraft）",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:doc:CL-2012-16",
+      "effective": null,
+      "expires": null,
+      "path": "依据文件 / 财企〔2012〕16号 / 企业安全生产费用提取和使用管理办法",
+      "text": "财企〔2012〕16号｜企业安全生产费用提取和使用管理办法｜登记状态 verified",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:doc:CL-2022-136",
+      "effective": null,
+      "expires": null,
+      "path": "依据文件 / 财资〔2022〕136号 / 企业安全生产费用提取和使用管理办法",
+      "text": "财资〔2022〕136号｜企业安全生产费用提取和使用管理办法｜登记状态 verified",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:doc:CL-DECREE-8",
+      "effective": null,
+      "expires": null,
+      "path": "依据文件 / 应急管理部令第8号 / 中华人民共和国应急管理部令（第8号）：应急管理部关于修改《煤矿安全规程》的决定",
+      "text": "应急管理部令第8号｜中华人民共和国应急管理部令（第8号）：应急管理部关于修改《煤矿安全规程》的决定｜登记状态 verified",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:doc:CL-GB-12268",
+      "effective": null,
+      "expires": null,
+      "path": "依据文件 / GB 12268 / 国家标准《危险货物品名表》GB 12268",
+      "text": "GB 12268｜国家标准《危险货物品名表》GB 12268｜登记状态 pending",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:doc:CL-MAJJ-2018-14",
+      "effective": null,
+      "expires": null,
+      "path": "依据文件 / 煤安监调查〔2018〕14号 / 国家煤矿安全监察局关于印发《煤矿防治水细则》的通知",
+      "text": "煤安监调查〔2018〕14号｜国家煤矿安全监察局关于印发《煤矿防治水细则》的通知｜登记状态 verified",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:doc:CL-MAJJ-2018-8",
+      "effective": null,
+      "expires": null,
+      "path": "依据文件 / 煤安监技装〔2018〕8号 / 国家煤矿安监局关于印发《防治煤矿冲击地压细则》的通知",
+      "text": "煤安监技装〔2018〕8号｜国家煤矿安监局关于印发《防治煤矿冲击地压细则》的通知｜登记状态 verified",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:doc:CL-MAJJ-2018-9",
+      "effective": null,
+      "expires": null,
+      "path": "依据文件 / 煤安监技装〔2018〕9号 / 国家煤矿安监局 国家能源局关于印发《煤矿瓦斯等级鉴定办法》的通知",
+      "text": "煤安监技装〔2018〕9号｜国家煤矿安监局 国家能源局关于印发《煤矿瓦斯等级鉴定办法》的通知｜登记状态 verified",
+      "version": "2026-10-14"
+    },
+    {
+      "clause_id": "fee:doc:CL-SAFETY-LAW",
+      "effective": null,
+      "expires": null,
+      "path": "依据文件 / 主席令第七十号（2002年公布） / 中华人民共和国安全生产法",
+      "text": "主席令第七十号（2002年公布）｜中华人民共和国安全生产法｜登记状态 pending",
+      "version": "2026-10-14"
+    }
+  ],
+  "version": "2026-10-14"
+}

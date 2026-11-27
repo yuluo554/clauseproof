@@ -1,0 +1,48 @@
+{
+  "benchmark_thresholds": {
+    "dual_version": {
+      "min_consistency": 1.0
+    },
+    "synthetic_ledger": {
+      "min_truth_match": 1.0
+    },
+    "tiered_boundary": {
+      "max_false_positive": 0,
+      "min_pass_ratio": 1.0
+    }
+  },
+  "generated_by": "tools/gen_rulesets.py",
+  "next_review": "2027-10-14",
+  "review_interval": "annual",
+  "rulesets": [
+    {
+      "dir": "财资-2022-136",
+      "doc_no": "财资〔2022〕136号",
+      "doc_title": "企业安全生产费用提取和使用管理办法",
+      "effective_from": "2022-11-21",
+      "effective_to": null,
+      "files": {
+        "progress.json": "bb5828ace2bf628b1ba9c9c59a6194f2cf0f4ba3c771f89dc8b4fbacabe8d8bf",
+        "ruleset.json": "74db7df644477a27d0c9c1e76649530313957a78a8ef229e93f2a36ca21bbf44",
+        "spending.json": "492fc84e65d8889177d286fe8fc5812c0a07c81ec7f31b874943ab6a84f8fd07"
+      },
+      "ruleset_id": "财资-2022-136",
+      "status": "verified"
+    },
+    {
+      "dir": "财企-2012-16",
+      "doc_no": "财企〔2012〕16号",
+      "doc_title": "企业安全生产费用提取和使用管理办法",
+      "effective_from": "2012-02-14",
+      "effective_to": "2022-11-20",
+      "files": {
+        "progress.json": "d948598fabae68bc52374c1c607ba0c0418cf741c594c8adfa6fbab7ce4107d5",
+        "ruleset.json": "7355e36a51a63724027d143af5e819dbdc0844b58c912895ec27fd39acc3ec75",
+        "spending.json": "76daf3a7c977154dcc18c06b486794eb9d0aed4f4653dd7970c32571bf15ba5f"
+      },
+      "ruleset_id": "财企-2012-16",
+      "status": "verified"
+    }
+  ],
+  "schema_version": 1
+}

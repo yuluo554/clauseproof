@@ -120,6 +120,7 @@ python -m medreview.cli selftest
 | `pipl-audit` | target-map ① 行 | ✅ 已迁入（个人信息保护合规审计：4 门槛义务分栏 + 26 检查项四态 + 汇总语义（未评估不冒充合规）+ status 门控 + 规则包坐标；示例包标注合成；见器官文档 §5/§6） |
 | `two-tickets` | target-map ① 行 | ✅ 已迁入（电力两票核查：7 票种 × 7 类 check_type + 三级结论 + 依据闸（30/39 待核对降级待人工确认，如实登记）+ 复核锚；票面解析留输入层；见器官文档 §5/§6） |
 | `policy-review` | target-map ① 行 | ✅ 已迁入（隐私政策文本审查：条款切分 + 十类模式 + 否定/中和抑制 + 165 条法条锚点 + 三级分级（缺硬锚点不得高）；纯本地零网络；见器官文档 §5/§6） |
+| `safety-fee` | target-map ① 行 | ✅ 已迁入（安全生产费用：双版本年度锚定 + 四类计提机制（超额累退逐段量化）+ 依据选择 + 支出四态 + 使用进度 + 双版本对照；2012 进度门槛 pending 如实拦截；见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -263,10 +264,18 @@ clauseproof check policy-review \
 clauseproof check policy-review \
   --input samples/policy-review/policy-clean.json \
   --basis src/clauseproof/packs/policy-review/data/clauses.json
+
+# 安全生产费用提取与使用（计提 + 支出四态 + 使用进度 + 双版本对照）
+clauseproof check safety-fee \
+  --input samples/safety-fee/profile-coal.json \
+  --basis src/clauseproof/packs/safety-fee/data/clauses.json
+clauseproof check safety-fee \
+  --input samples/safety-fee/profile-coal-ledger.json \
+  --basis src/clauseproof/packs/safety-fee/data/clauses.json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另二十个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另二十一个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
 [`docs/extreme-terms.md`](docs/extreme-terms.md)、
@@ -283,7 +292,8 @@ clauseproof check policy-review \
 [`docs/picrecall.md`](docs/picrecall.md) 与
 [`docs/pipl-audit.md`](docs/pipl-audit.md) 与
 [`docs/two-tickets.md`](docs/two-tickets.md) 与
-[`docs/policy-review.md`](docs/policy-review.md)）。
+[`docs/policy-review.md`](docs/policy-review.md) 与
+[`docs/safety-fee.md`](docs/safety-fee.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 

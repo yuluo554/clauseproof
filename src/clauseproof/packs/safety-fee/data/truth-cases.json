@@ -1,0 +1,2743 @@
+{
+  "case_count": 122,
+  "cases": [
+    {
+      "case_id": "SYN-2012-FW-EDGE-10000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000.01",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "285000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 10000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-EDGE-10000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "285000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 10000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-EDGE-10000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999.99",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "285000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 10000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-EDGE-2000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000.01",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "70000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 2000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-EDGE-2000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "70000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 2000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-EDGE-2000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1999999.99",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "70000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 2000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-EDGE-5000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "5000000.01",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "160000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 5000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-EDGE-5000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "5000000",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "160000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 5000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-EDGE-5000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "4999999.99",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2020
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "160000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条分段点 5000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-FW-SHORT-TIER",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "30000000",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十二条"
+        },
+        "amount": "685000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版烟花爆竹第十二条（四段，分段点 200 万/500 万/1000 万——结构与 2022 版不同）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-MAC-MID",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000000",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十一条"
+        },
+        "amount": "3900000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版机械制造第十一条（五段）营收 2×10^9 元",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-MET-MID",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000000",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十条"
+        },
+        "amount": "8150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版冶金第十条（六段超额累退）营收 2×10^9 元",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-NONCOAL-GAS",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "kilo_m3",
+        "basis_value": "200000",
+        "enterprise_id": "90000000SYN0000004D",
+        "enterprise_name": "示例非煤矿山（合成）有限公司",
+        "industry_id": "noncoal_mine",
+        "variant_id": "nc_gas",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第六条"
+        },
+        "amount": "1000000.00",
+        "mechanism": "by_output"
+      },
+      "note": "2012 版非煤矿山第六条（天然气 5 元/千方）× 200000 千方",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-NONCOAL-OIL",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "100000",
+        "enterprise_id": "90000000SYN0000004D",
+        "enterprise_name": "示例非煤矿山（合成）有限公司",
+        "industry_id": "noncoal_mine",
+        "variant_id": "nc_oil",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第六条"
+        },
+        "amount": "1700000.00",
+        "mechanism": "by_output"
+      },
+      "note": "2012 版非煤矿山第六条（石油并入本行业）17 元/吨 × 100000 吨",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-TRANSPORT-PASSENGER",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "80000000",
+        "enterprise_id": "90000000SYN0000007G",
+        "enterprise_name": "示例交通运输（合成）有限公司",
+        "industry_id": "transport",
+        "variant_id": "passenger_special_freight",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第九条"
+        },
+        "amount": "1200000.00",
+        "mechanism": "by_revenue_rate"
+      },
+      "note": "2012 版交通运输第九条（客运等特殊货运 1.5%）",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-2012-WP-NAVAL-SHIP",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十三条"
+        },
+        "amount": "13025000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "2012 版武器装备第十三条·军用舰船变体营收 2×10^9 元",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-10000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000.01",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "400000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 10000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-10000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "400000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 10000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-10000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999.99",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "400000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 10000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-100000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000.01",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "2200000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 100000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-100000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "2200000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 100000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-100000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "99999999.99",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "2200000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 100000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-1000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000.01",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "6700000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 1000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-1000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "6700000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 1000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-EDGE-1000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "999999999.99",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "6700000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品第三十六条分段点 1000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CE-MID",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000000",
+        "enterprise_id": "90000000SYN0000011L",
+        "enterprise_name": "示例民用爆炸物品（合成）有限公司",
+        "industry_id": "civil_explosives",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十六条"
+        },
+        "amount": "8700000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "民用爆炸物品（第三十六条 四段超额累退）营收 2×10^9 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-COAL-HIGH_GAS",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "120000",
+        "enterprise_id": "90000000SYN0000001A",
+        "enterprise_name": "示例煤炭（合成）有限公司",
+        "industry_id": "coal",
+        "variant_id": "coal_high_gas",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第七条"
+        },
+        "amount": "3600000.00",
+        "mechanism": "by_output"
+      },
+      "note": "煤炭按产量（第七条 coal_high_gas）× 120000 吨",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-COAL-OPENCAST",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "1000000",
+        "enterprise_id": "90000000SYN0000001A",
+        "enterprise_name": "示例煤炭（合成）有限公司",
+        "industry_id": "coal",
+        "variant_id": "coal_opencast",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第七条"
+        },
+        "amount": "5000000.00",
+        "mechanism": "by_output"
+      },
+      "note": "煤炭按产量（第七条 coal_opencast）× 1000000 吨",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-COAL-OTHER_UNDERGROUND",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "300000",
+        "enterprise_id": "90000000SYN0000001A",
+        "enterprise_name": "示例煤炭（合成）有限公司",
+        "industry_id": "coal",
+        "variant_id": "coal_other_underground",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第七条"
+        },
+        "amount": "4500000.00",
+        "mechanism": "by_output"
+      },
+      "note": "煤炭按产量（第七条 coal_other_underground）× 300000 吨",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-COAL-OUTBURST_ROCKBURST",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "80000",
+        "enterprise_id": "90000000SYN0000001A",
+        "enterprise_name": "示例煤炭（合成）有限公司",
+        "industry_id": "coal",
+        "variant_id": "coal_outburst_rockburst",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第七条"
+        },
+        "amount": "4000000.00",
+        "mechanism": "by_output"
+      },
+      "note": "煤炭按产量（第七条 coal_outburst_rockburst）× 80000 吨",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CONST-MINE",
+      "enterprise": {
+        "basis_kind": "project_cost",
+        "basis_unit": "CNY",
+        "basis_value": "30000000",
+        "enterprise_id": "90000000SYN0000003C",
+        "enterprise_name": "示例建设工程（合成）有限公司",
+        "industry_id": "construction",
+        "variant_id": "mine_engineering",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十七条"
+        },
+        "amount": "1050000.00",
+        "mechanism": "by_project_cost"
+      },
+      "note": "建设工程按造价比例（第十七条 mine_engineering）× 30000000 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CONST-MUNICIPAL",
+      "enterprise": {
+        "basis_kind": "project_cost",
+        "basis_unit": "CNY",
+        "basis_value": "80000000",
+        "enterprise_id": "90000000SYN0000003C",
+        "enterprise_name": "示例建设工程（合成）有限公司",
+        "industry_id": "construction",
+        "variant_id": "municipal_port_highway",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十七条"
+        },
+        "amount": "1200000.00",
+        "mechanism": "by_project_cost"
+      },
+      "note": "建设工程按造价比例（第十七条 municipal_port_highway）× 80000000 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-CONST-RAILWAY",
+      "enterprise": {
+        "basis_kind": "project_cost",
+        "basis_unit": "CNY",
+        "basis_value": "80000000",
+        "enterprise_id": "90000000SYN0000003C",
+        "enterprise_name": "示例建设工程（合成）有限公司",
+        "industry_id": "construction",
+        "variant_id": "railway_building_rail_transit",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十七条"
+        },
+        "amount": "2400000.00",
+        "mechanism": "by_project_cost"
+      },
+      "note": "建设工程按造价比例（第十七条 railway_building_rail_transit）× 80000000 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-DUAL-COAL-2012",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "100000",
+        "enterprise_id": "90000000SYN0000001A",
+        "enterprise_name": "示例煤炭（合成）有限公司",
+        "industry_id": "coal",
+        "variant_id": "coal_outburst_high_gas",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第五条"
+        },
+        "amount": "3000000.00",
+        "mechanism": "by_output"
+      },
+      "note": "双版本对照（财企-2012-16，coal_outburst_high_gas）× 100000 吨",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-DUAL-COAL-2022",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "100000",
+        "enterprise_id": "90000000SYN0000001A",
+        "enterprise_name": "示例煤炭（合成）有限公司",
+        "industry_id": "coal",
+        "variant_id": "coal_high_gas",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第七条"
+        },
+        "amount": "3000000.00",
+        "mechanism": "by_output"
+      },
+      "note": "双版本对照（财资-2022-136，coal_high_gas）× 100000 吨",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-DUAL-CONST-2012",
+      "enterprise": {
+        "basis_kind": "project_cost",
+        "basis_unit": "CNY",
+        "basis_value": "30000000",
+        "enterprise_id": "90000000SYN0000003C",
+        "enterprise_name": "示例建设工程（合成）有限公司",
+        "industry_id": "construction",
+        "variant_id": "mine_engineering",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第七条"
+        },
+        "amount": "750000.00",
+        "mechanism": "by_project_cost"
+      },
+      "note": "双版本对照（财企-2012-16）矿山工程造价 30000000 元",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-DUAL-CONST-2022",
+      "enterprise": {
+        "basis_kind": "project_cost",
+        "basis_unit": "CNY",
+        "basis_value": "30000000",
+        "enterprise_id": "90000000SYN0000003C",
+        "enterprise_name": "示例建设工程（合成）有限公司",
+        "industry_id": "construction",
+        "variant_id": "mine_engineering",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十七条"
+        },
+        "amount": "1050000.00",
+        "mechanism": "by_project_cost"
+      },
+      "note": "双版本对照（财资-2022-136）矿山工程造价 30000000 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-DUAL-HAZ-2012",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "50000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第八条"
+        },
+        "amount": "1200000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "双版本对照（财企-2012-16）危险品营收 50000000 元",
+      "ruleset_id": "财企-2012-16"
+    },
+    {
+      "case_id": "SYN-DUAL-HAZ-2022",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "50000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "1350000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "双版本对照（财资-2022-136）危险品营收 50000000 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-FW-EDGE-10000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000.01",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十三条"
+        },
+        "amount": "400000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "烟花爆竹第三十三条分段点 10000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-FW-EDGE-10000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十三条"
+        },
+        "amount": "400000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "烟花爆竹第三十三条分段点 10000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-FW-EDGE-10000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999.99",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十三条"
+        },
+        "amount": "400000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "烟花爆竹第三十三条分段点 10000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-FW-EDGE-20000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "20000000.01",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十三条"
+        },
+        "amount": "700000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "烟花爆竹第三十三条分段点 20000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-FW-EDGE-20000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "20000000",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十三条"
+        },
+        "amount": "700000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "烟花爆竹第三十三条分段点 20000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-FW-EDGE-20000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "19999999.99",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十三条"
+        },
+        "amount": "700000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "烟花爆竹第三十三条分段点 20000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-FW-SHORT-TIER",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "30000000",
+        "enterprise_id": "90000000SYN0000010K",
+        "enterprise_name": "示例烟花爆竹（合成）有限公司",
+        "industry_id": "fireworks",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十三条"
+        },
+        "amount": "950000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "烟花爆竹（第三十三条 三段，跨 1000 万/2000 万分段点）营收 3×10^7 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-DEEP-TIER",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "2475000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品深端点（次末段下界 100000000 元）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-10000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000.01",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "450000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 10000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-10000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "450000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 10000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-10000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999.99",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "450000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 10000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-100000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000.01",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "2475000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 100000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-100000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "2475000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 100000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-100000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "99999999.99",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "2475000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 100000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-1000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000.01",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "7425000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 1000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-1000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "7425000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 1000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-EDGE-1000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "999999999.99",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "7425000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品分段点 1000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-MID-TIER1",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "5000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "225000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品常规档内点 mid-tier1（营收 5000000 元）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-MID-TIER2",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "55000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "1462500.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品常规档内点 mid-tier2（营收 55000000 元）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-MID-TIER3",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "550000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "4950000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "危险品常规档内点 mid-tier3（营收 550000000 元）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-HAZ-UNIT-MISMATCH",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY10k",
+        "basis_value": "5000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十一条"
+        },
+        "amount": "1350000.00",
+        "mechanism": "by_revenue_tiered",
+        "unit_warning": "不一致"
+      },
+      "note": "单位口径错配：档案以 CNY10k 填报 5000，规则包以元计价——定义性换算 ×10000 后按 5×10^7 元计算，且必须报 warning（不静默）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-10000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000.01",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "235000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 10000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-10000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "235000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 10000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-10000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999.99",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "235000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 10000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-100000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000.01",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "1360000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 100000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-100000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "1360000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 100000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-100000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "99999999.99",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "1360000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 100000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-1000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000.01",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "3610000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 1000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-1000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "3610000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 1000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-1000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "999999999.99",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "3610000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 1000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-5000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "5000000000.01",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "7610000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 5000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-5000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "5000000000",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "7610000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 5000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-EDGE-5000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "4999999999.99",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "7610000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造第三十条分段点 5000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MAC-MID",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000000",
+        "enterprise_id": "90000000SYN0000009J",
+        "enterprise_name": "示例机械制造（合成）有限公司",
+        "industry_id": "machinery",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十条"
+        },
+        "amount": "4610000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "机械制造（第三十条 五段超额累退）营收 2×10^9 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-10000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000.01",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "300000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 10000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-10000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "300000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 10000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-10000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999.99",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "300000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 10000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-100000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000.01",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "1650000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 100000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-100000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "1650000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 100000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-100000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "99999999.99",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "1650000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 100000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-1000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000.01",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "6150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 1000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-1000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "6150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 1000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-1000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "999999999.99",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "6150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 1000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-10000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000000.01",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "19150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 10000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-10000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000000",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "19150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 10000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-10000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999999.99",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "19150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 10000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-5000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "5000000000.01",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "14150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 5000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-5000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "5000000000",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "14150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 5000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-EDGE-5000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "4999999999.99",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "14150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金第二十七条分段点 5000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-MET-MID",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000000",
+        "enterprise_id": "90000000SYN0000008H",
+        "enterprise_name": "示例冶金（合成）有限公司",
+        "industry_id": "metallurgy",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十七条"
+        },
+        "amount": "8150000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "冶金（第二十七条 六段超额累退）营收 2×10^9 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-NONCOAL-GEOLOGICAL-EXPLORATION",
+      "enterprise": {
+        "basis_kind": "project_cost",
+        "basis_unit": "CNY",
+        "basis_value": "50000000",
+        "enterprise_id": "90000000SYN0000004D",
+        "enterprise_name": "示例非煤矿山（合成）有限公司",
+        "industry_id": "noncoal_mine",
+        "variant_id": "nc_geological_exploration",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十条"
+        },
+        "amount": "1000000.00",
+        "mechanism": "by_project_cost"
+      },
+      "note": "非煤矿山第十条第三款：地质勘探单位按工程总费用 2%（机制覆写）× 5×10^7 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-NONCOAL-METAL-UNDERGROUND",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "100000",
+        "enterprise_id": "90000000SYN0000004D",
+        "enterprise_name": "示例非煤矿山（合成）有限公司",
+        "industry_id": "noncoal_mine",
+        "variant_id": "nc_metal_underground",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十条"
+        },
+        "amount": "1500000.00",
+        "mechanism": "by_output"
+      },
+      "note": "非煤矿山按产量（第十条 金属矿山·地下 15 元/吨）× 100000 吨",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-NONCOAL-SMALL-QUARRY",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "200000",
+        "enterprise_id": "90000000SYN0000004D",
+        "enterprise_name": "示例非煤矿山（合成）有限公司",
+        "industry_id": "noncoal_mine",
+        "variant_id": "nc_small_quarry",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十条"
+        },
+        "amount": "400000.00",
+        "mechanism": "by_output"
+      },
+      "note": "非煤矿山（第十条 小型露天采石场 2 元/吨）× 200000 吨",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-OIL-GAS-CRUDE-OIL",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "1000000",
+        "enterprise_id": "90000000SYN0000006F",
+        "enterprise_name": "示例石油天然气（合成）有限公司",
+        "industry_id": "oil_gas",
+        "variant_id": "og_crude_oil",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十四条"
+        },
+        "amount": "20000000.00",
+        "mechanism": "by_output"
+      },
+      "note": "石油天然气按产量（第十四条 原油 20 元/吨）× 1000000 吨",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-OIL-GAS-ENGINEERING",
+      "enterprise": {
+        "basis_kind": "project_cost",
+        "basis_unit": "CNY",
+        "basis_value": "50000000",
+        "enterprise_id": "90000000SYN0000006F",
+        "enterprise_name": "示例石油天然气（合成）有限公司",
+        "industry_id": "oil_gas",
+        "variant_id": "og_engineering",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十四条"
+        },
+        "amount": "1000000.00",
+        "mechanism": "by_project_cost"
+      },
+      "note": "石油天然气第十四条：工程成本 2%（机制覆写）× 5×10^7 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-OIL-GAS-NATURAL-GAS",
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "kilo_m3",
+        "basis_value": "3000000",
+        "enterprise_id": "90000000SYN0000006F",
+        "enterprise_name": "示例石油天然气（合成）有限公司",
+        "industry_id": "oil_gas",
+        "variant_id": "og_natural_gas",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第十四条"
+        },
+        "amount": "22500000.00",
+        "mechanism": "by_output"
+      },
+      "note": "石油天然气（第十四条 原气 7.5 元/千方）× 3000000 千方",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-POWER-GEN",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000",
+        "enterprise_id": "90000000SYN0000005E",
+        "enterprise_name": "示例电力（合成）有限公司",
+        "industry_id": "power",
+        "variant_id": "power_generation",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第四十三条"
+        },
+        "amount": "10650000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "电力生产（第四十三条 power_generation）营收 1000000000 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-POWER-SUP",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "50000000000",
+        "enterprise_id": "90000000SYN0000005E",
+        "enterprise_name": "示例电力（合成）有限公司",
+        "industry_id": "power",
+        "variant_id": "power_supply",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第四十三条"
+        },
+        "amount": "250000000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "电力供应（第四十三条 power_supply）营收 50000000000 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-TRANSPORT-GENERAL-FREIGHT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "80000000",
+        "enterprise_id": "90000000SYN0000007G",
+        "enterprise_name": "示例交通运输（合成）有限公司",
+        "industry_id": "transport",
+        "variant_id": "general_freight",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十四条"
+        },
+        "amount": "800000.00",
+        "mechanism": "by_revenue_rate"
+      },
+      "note": "交通运输（第二十四条 普通货运 1%）× 8×10^7 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-TRANSPORT-PASSENGER-SPECIAL",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "80000000",
+        "enterprise_id": "90000000SYN0000007G",
+        "enterprise_name": "示例交通运输（合成）有限公司",
+        "industry_id": "transport",
+        "variant_id": "passenger_special_freight",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第二十四条"
+        },
+        "amount": "1200000.00",
+        "mechanism": "by_revenue_rate"
+      },
+      "note": "交通运输（第二十四条 客运/管道/危险品等特殊货运 1.5%）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-10000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000.01",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "250000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 10000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-10000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "250000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 10000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-10000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999.99",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "250000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 10000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-100000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000.01",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "1825000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 100000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-100000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "1825000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 100000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-100000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "99999999.99",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "1825000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 100000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-1000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000.01",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "9025000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 1000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-1000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "9025000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 1000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-EDGE-1000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "999999999.99",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "9025000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·军用舰船分段点 1000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-NAVAL-SHIP",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_naval_ship",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "13025000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备（第三十九条 军用舰船变体）营收 2×10^9 元",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-10000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000.01",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "200000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 10000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-10000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "200000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 10000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-10000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999.99",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "200000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 10000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-100000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000.01",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "1550000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 100000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-100000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "100000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "1550000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 100000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-100000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "99999999.99",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "1550000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 100000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-1000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000.01",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "6050000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 1000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-1000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "1000000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "6050000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 1000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-1000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "999999999.99",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "6050000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 1000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-10000000000-ABOVE",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000000.01",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "24050000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 10000000000 元邻域（ABOVE；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-10000000000-AT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "10000000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "24050000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 10000000000 元邻域（AT；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACE-EDGE-10000000000-BELOW",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "9999999999.99",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "24050000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备第三十九条·飞船卫星分段点 10000000000 元邻域（BELOW；边界口径 [lower, upper)，恰好等于归下一段）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "case_id": "SYN-WP-SPACECRAFT",
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "2000000000",
+        "enterprise_id": "90000000SYN0000012M",
+        "enterprise_name": "示例武器装备（合成）有限公司",
+        "industry_id": "weapons",
+        "variant_id": "wp_spacecraft",
+        "year": 2024
+      },
+      "expect": {
+        "also_expect": {
+          "clause": "第三十九条"
+        },
+        "amount": "8050000.00",
+        "mechanism": "by_revenue_tiered"
+      },
+      "note": "武器装备（第三十九条 飞船/卫星等变体，五段）营收 2×10^9 元",
+      "ruleset_id": "财资-2022-136"
+    }
+  ],
+  "negative_count": 7,
+  "negatives": [
+    {
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "120000",
+        "enterprise_id": "90000000SYN0000001A",
+        "enterprise_name": "示例煤炭（合成）有限公司",
+        "industry_id": "coal",
+        "variant_id": "coal_high_gas",
+        "year": 2024
+      },
+      "expect": {
+        "zero_hit": true
+      },
+      "negative_id": "NEG-CLEAN-001",
+      "note": "干净档案：应零命中（不产生任何 warning，计提正确）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "enterprise": {
+        "basis_kind": "project_cost",
+        "basis_unit": "CNY",
+        "basis_value": "80000000",
+        "enterprise_id": "90000000SYN0000003C",
+        "enterprise_name": "示例建设工程（合成）有限公司",
+        "industry_id": "construction",
+        "variant_id": "municipal_port_highway",
+        "year": 2024
+      },
+      "expect": {
+        "zero_hit": true
+      },
+      "negative_id": "NEG-CLEAN-002",
+      "note": "干净档案：应零命中（不产生任何 warning，计提正确）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "50000000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "zero_hit": true
+      },
+      "negative_id": "NEG-CLEAN-003",
+      "note": "干净档案：应零命中（不产生任何 warning，计提正确）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "enterprise": {
+        "basis_kind": "output",
+        "basis_unit": "ton",
+        "basis_value": "150000",
+        "enterprise_id": "90000000SYN0000004D",
+        "enterprise_name": "示例非煤矿山（合成）有限公司",
+        "industry_id": "noncoal_mine",
+        "variant_id": "nc_metal_underground",
+        "year": 2024
+      },
+      "expect": {
+        "zero_hit": true
+      },
+      "negative_id": "NEG-CLEAN-004",
+      "note": "干净档案：应零命中（不产生任何 warning，计提正确）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY",
+        "basis_value": "60000000",
+        "enterprise_id": "90000000SYN0000007G",
+        "enterprise_name": "示例交通运输（合成）有限公司",
+        "industry_id": "transport",
+        "variant_id": "general_freight",
+        "year": 2024
+      },
+      "expect": {
+        "zero_hit": true
+      },
+      "negative_id": "NEG-CLEAN-005",
+      "note": "干净档案：应零命中（不产生任何 warning，计提正确）",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY10k",
+        "basis_value": "2000",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "downgrade_warning": true
+      },
+      "negative_id": "NEG-DOWNGRADE-001",
+      "note": "应降级：CNY10k 可定义性换算 → 只报单位口径 warning",
+      "ruleset_id": "财资-2022-136"
+    },
+    {
+      "enterprise": {
+        "basis_kind": "revenue",
+        "basis_unit": "CNY100m",
+        "basis_value": "0.3",
+        "enterprise_id": "90000000SYN0000002B",
+        "enterprise_name": "示例危险品（合成）有限公司",
+        "industry_id": "hazardous_chemicals",
+        "year": 2024
+      },
+      "expect": {
+        "downgrade_warning": true
+      },
+      "negative_id": "NEG-DOWNGRADE-002",
+      "note": "应降级：CNY100m 可定义性换算 → 只报单位口径 warning",
+      "ruleset_id": "财资-2022-136"
+    }
+  ],
+  "source_reviewed_at": "2026-10-14"
+}
