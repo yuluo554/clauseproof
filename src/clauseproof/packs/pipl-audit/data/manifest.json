@@ -1,0 +1,42 @@
+{
+  "clause_count": 50,
+  "files": {
+    "clauses.json": {
+      "bytes": 15893,
+      "sha256": "1e84a282f68842cfd1e80e259955b45bc03327fb6e6c520ce0779d0495e64777",
+      "source_name": "built-from-rulesets+contracts"
+    },
+    "ruleset-pipl-audit-2025.json": {
+      "bytes": 40249,
+      "sha256": "da8aa7a6c4044bef6fb562f5a91c3f0bb2ba9a40761c9c5b28f421a056aab81b",
+      "source_name": "rules/ruleset-pipl-audit-2025.json"
+    },
+    "ruleset-pipl-audit-demo.json": {
+      "bytes": 4368,
+      "sha256": "2941b48f2322935a13203beb96449921750038c09481fcffce71fd504392a0af",
+      "source_name": "samples/ruleset-pipl-audit-demo.json"
+    },
+    "truth-cases.json": {
+      "bytes": 118053,
+      "sha256": "c79cb2748e66d1048e97abc2ec0c52bfa8d25b39297059da0951a6cea39f0375",
+      "source_name": "truth/*.json (aggregated)"
+    }
+  },
+  "rulesets": {
+    "pipl-audit-2025": {
+      "basis": 3,
+      "checklist": 26,
+      "synthetic": false,
+      "thresholds": 4
+    },
+    "pipl-audit-demo": {
+      "basis": 2,
+      "checklist": 4,
+      "synthetic": true,
+      "thresholds": 2
+    }
+  },
+  "source_reviewed_at": "2026-10-13",
+  "truth_cases": 42,
+  "version": "2026-10-13"
+}

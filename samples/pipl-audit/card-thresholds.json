@@ -1,0 +1,26 @@
+{
+  "case_id": "pipl-thresholds",
+  "audit_scope": {
+    "subject": "示例组织（虚构）",
+    "period": "2026 年度自评"
+  },
+  "input_card": {
+    "automated_decision": false,
+    "breach_scale": 1000000,
+    "breach_sensitive_scale": 100000,
+    "cross_border_transfer": false,
+    "entrusted_processing": false,
+    "joint_processing": false,
+    "large_platform": false,
+    "minors_under_14": false,
+    "processes_public_info": false,
+    "provides_to_third_party": false,
+    "public_place_devices": false,
+    "publicizes_personal_info": false,
+    "scale": 10000001,
+    "security_incident_occurred": false,
+    "sensitive": false,
+    "transfer_event": false
+  },
+  "manual_results": {}
+}

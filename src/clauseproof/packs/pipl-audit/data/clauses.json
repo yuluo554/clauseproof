@@ -1,0 +1,405 @@
+{
+  "clauses": [
+    {
+      "clause_id": "contract.checklist",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 检查项四态",
+      "text": "单项四态：compliant / partial / noncompliant / not_applicable；未观测记 unknown；auto 项按规则包 auto_mapping 求值，manual 项按人工录入；only_if 门控不满足即不适用。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.evidence",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 证据链边界",
+      "text": "证据只登记文件名与 sha256 指纹，不落真实内容副本；证据文件读取、底稿导出/导入、报告渲染与 CSV 导出都留交付层，本器官不读任何文件。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.gate",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / status 门控",
+      "text": "status != verified 的条目、以及 verified 但缺出处（channel/checked_at）的条目，一律拒绝进入判定路径（规则包不可用 → 退出码 2）。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.input",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 输入契约",
+      "text": "subject = {case_id, ruleset?, input_card, manual_results?, audit_scope?}；未知顶层字段拒绝（退出码 2）；input_card 必填；判定内核零文件 IO。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.manual",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 人工录入",
+      "text": "人工录入缺失记 unknown（计入待人工确认、不计违规）；非法状态值归一为 unknown；指向本规则包不存在的检查项即输入不合法（退出码 2）。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.not_assessed",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 未评估",
+      "text": "一条适用项都没被评 → not_assessed；not_assessed 不得写成 compliant，按阻断处理（退出码 1）。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.pack",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 规则包坐标",
+      "text": "每份规则包声明 ruleset_id / version / schema_version / generated_at；消费侧必须能报出所用规则包坐标，报告与账本不得混用两包结论。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.risk",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 问题分级",
+      "text": "分级由单项四态决定：noncompliant → high、partial → medium；分级恒挂条款依据，整改台账只能补责任人/期限/状态，不得覆写分级与依据。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.summary",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 汇总语义",
+      "text": "汇总只按适用项（compliant/partial/noncompliant）计算：任一 noncompliant → noncompliant；否则任一 partial → partial；全部 compliant → compliant。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.threshold",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 门槛判定与义务分栏",
+      "text": "门槛按 参数 × 运算符 × 阈值 求值；命中的门槛按 effect 分「无条件义务」与「条件触发」两栏呈现，结论不混同；triggered 仅表示命中任一门槛。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "contract.version",
+      "effective": null,
+      "expires": null,
+      "path": "数据契约 / 版本锚定",
+      "text": "条文库坐标 = 来源规则包核对日期 2026-10-13；条文库版本不符即契约违约（退出码 3），不吃默认值、不猜版本。",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:basis:gbt-35273",
+      "effective": "2020-10-01",
+      "expires": null,
+      "path": "依据文件 / GB/T 35273-2020 / 信息安全技术 个人信息安全规范",
+      "text": "信息安全技术 个人信息安全规范",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:basis:gbt-42574",
+      "effective": "2023-12-01",
+      "expires": null,
+      "path": "依据文件 / GB/T 42574-2023 / 信息安全技术 个人信息处理中告知和同意的实施指南",
+      "text": "信息安全技术 个人信息处理中告知和同意的实施指南",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:basis:order-18",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "依据文件 / 网信办令第18号 / 个人信息保护合规审计管理办法",
+      "text": "个人信息保护合规审计管理办法",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DEMO-001",
+      "effective": null,
+      "expires": null,
+      "path": "示例（合成） / 示例条3",
+      "text": "【合成示例值，非法规原文，不得据以作出合规结论】示例：已制定政策",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DEMO-002",
+      "effective": null,
+      "expires": null,
+      "path": "示例（合成） / 示例条4",
+      "text": "【合成示例值，非法规原文，不得据以作出合规结论】示例：撤回同意入口",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DEMO-003",
+      "effective": null,
+      "expires": null,
+      "path": "示例（合成） / 示例条5",
+      "text": "【合成示例值，非法规原文，不得据以作出合规结论】示例：敏感信息加密",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DEMO-004",
+      "effective": null,
+      "expires": null,
+      "path": "示例（合成） / 示例条6",
+      "text": "【合成示例值，非法规原文，不得据以作出合规结论】示例：投诉渠道",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DOC-019",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引19",
+      "text": "内部管理制度与操作规程审查（方针/组织架构/分类/应急/影响评估/投诉/权限/培训/履职/责任制）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DOC-021",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引21",
+      "text": "教育培训计划审查（培训对象/考核/内容方式频率）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DOC-022",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引22",
+      "text": "个人信息保护负责人履职审查（资质/职责/权限/联系方式公开）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DOC-026",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引26",
+      "text": "平台规则审查（不与法规抵触/权责界定/执行抽样验证）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-DOC-027",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引27",
+      "text": "社会责任报告审查（组织架构/能力建设/措施成效/权利受理/独立监督/事件处理/科普）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-002",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引2",
+      "text": "合法性基础审查（同意/单独同意/书面同意/免同意情形）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-003",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引3",
+      "text": "个人信息处理规则审查（告知完整性/最小必要/保存期限/权利途径）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-004",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引4",
+      "text": "告知义务审查（显著方式/清晰易懂/变更告知）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-005",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引5",
+      "text": "共同处理审查（权利义务约定/权益保护/事件报告）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-006",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引6",
+      "text": "委托处理审查（影响评估/合同约定/监督受托人）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-007",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引7",
+      "text": "个人信息转移审查（告知接收方名称/联系方式）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-008",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引8",
+      "text": "向他人提供个人信息审查（单独同意/告知/影响评估）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-010",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引10",
+      "text": "公开个人信息审查（单独同意/影响评估）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-012",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引12",
+      "text": "已公开个人信息处理审查（禁发无关商业信息/禁网暴/拒绝处理）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-013",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引13",
+      "text": "敏感个人信息处理审查（单独同意/未成年人监护人同意/影响评估）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-014",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引14",
+      "text": "不满十四周岁未成年人信息审查（专门规则/告知/禁止强制同意）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-015",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引15",
+      "text": "向境外提供个人信息审查（安全评估/认证/标准合同/备案）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-PRO-023",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引23",
+      "text": "个人信息保护影响评估审查（重大影响活动前/合法正当必要/风险/措施适应性）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-RES-016",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引16",
+      "text": "个人信息删除权保障审查（目的实现/注销/期限届满/撤回同意）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-RES-017",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引17",
+      "text": "个人权利保障审查（申请受理机制/及时响应/拒绝说明理由）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-RES-018",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引18",
+      "text": "处理规则解释说明审查（便捷途径/合理时间/通俗易懂）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-RES-024",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引24",
+      "text": "安全事件应急预案审查（风险评估/组织保障/培训演练）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-RES-025",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引25",
+      "text": "安全事件应急响应处置审查（查明范围/通报/降低危害）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-TEC-009",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引9",
+      "text": "自动化决策审查（透明度/公平公正/拒绝机制/差别待遇）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-TEC-011",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引11",
+      "text": "公共场所图像/身份识别设备审查（公共安全必需/提示标识/单独同意）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:chk:CHK-TEC-020",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 附件指引20",
+      "text": "安全技术措施审查（保密性完整性可用性/加密去标识化/操作权限）",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:th:TH-BREACH-GENERAL",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 第五条（三）",
+      "text": "发生个人信息安全事件，导致100万人以上个人信息泄露、篡改、丢失、毁损的，保护部门可以要求委托专业机构开展合规审计",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:th:TH-BREACH-SENSITIVE",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 第五条（三）",
+      "text": "发生个人信息安全事件，导致10万人以上敏感个人信息泄露、篡改、丢失、毁损的，保护部门可以要求委托专业机构开展合规审计",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:th:TH-DEMO-INSTITUTION",
+      "effective": null,
+      "expires": null,
+      "path": "示例（合成） / 示例条2",
+      "text": "【合成示例值，非法规原文，不得据以作出合规结论】示例门槛二",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:th:TH-DEMO-PERIODIC",
+      "effective": null,
+      "expires": null,
+      "path": "示例（合成） / 示例条1",
+      "text": "【合成示例值，非法规原文，不得据以作出合规结论】示例门槛一",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:th:TH-SCALE-OFFICER",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 第十二条",
+      "text": "处理100万人以上个人信息的处理者应当指定个人信息保护负责人",
+      "version": "2026-10-13"
+    },
+    {
+      "clause_id": "pipl:th:TH-SCALE-PERIODIC",
+      "effective": "2025-05-01",
+      "expires": null,
+      "path": "网信办令第18号 / 第四条",
+      "text": "处理超过1000万人个人信息的处理者，应当每两年至少开展一次合规审计",
+      "version": "2026-10-13"
+    }
+  ],
+  "version": "2026-10-13"
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "pipl-demo",
+  "ruleset": "pipl-audit-demo",
+  "audit_scope": {
+    "subject": "示例企业（虚构）",
+    "period": "示例期间"
+  },
+  "input_card": {
+    "has_consent_withdraw": false,
+    "has_policy": true,
+    "scale": 6000,
+    "sensitive": true,
+    "subject_type": "processor"
+  },
+  "manual_results": {
+    "CHK-DEMO-003": {
+      "note": "示例：部分字段未加密",
+      "state": "partial"
+    },
+    "CHK-DEMO-004": {
+      "note": "示例：渠道已设立",
+      "state": "compliant"
+    }
+  }
+}
