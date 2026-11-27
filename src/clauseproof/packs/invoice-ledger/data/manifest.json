@@ -1,0 +1,37 @@
+{
+  "version": "2026-10-06",
+  "source_reviewed_at": "2026-10-06",
+  "clause_count": 20,
+  "rule_clauses": {
+    "duplicate.exact": "no11-definition",
+    "duplicate.joint": "764-21-2",
+    "duplicate.fuzzy": "764-21-2",
+    "series": "no11-number-rule",
+    "arithmetic.total": "764-21-1",
+    "arithmetic.cn": "764-21-1",
+    "time.future": "764-21-1",
+    "time.stale": "764-21-1"
+  },
+  "files": {
+    "knowledge-11.json": {
+      "bytes": 6708,
+      "sha256": "eea6eec86b375890eb07cc5d80daee0929e989988329d68186daac90676a40c6",
+      "source_name": "11号公告.json"
+    },
+    "knowledge-56.json": {
+      "bytes": 5947,
+      "sha256": "a3c434ec191416a9abfd787fe94cb2dd4c378228ec61264a6ec9f24be23f68c7",
+      "source_name": "56号令.json"
+    },
+    "knowledge-764.json": {
+      "bytes": 3525,
+      "sha256": "4a7657aa24f0900af8f59f93b04e78367d9b8347b0f1a373ac49857d6c1aa283",
+      "source_name": "764号令.json"
+    },
+    "clauses.json": {
+      "bytes": 8784,
+      "sha256": "da9223cc2dfd8fd9299ace8ec9a182f7f3c96dd2d79529db70f95de539f3f5d3",
+      "source_name": "built-from-knowledge"
+    }
+  }
+}

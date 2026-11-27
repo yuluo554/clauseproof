@@ -1,0 +1,76 @@
+{
+  "ledger_id": "clean-control-3-cards",
+  "anchors": {
+    "default": "2026-07-15",
+    "batches": {
+      "batch_01": "2026-07-15"
+    }
+  },
+  "params": {},
+  "existing_numbers": [],
+  "cards": [
+    {
+      "invoice_number": "25910000000000000001",
+      "invoice_type": "数电普票",
+      "issue_date": "2026-06-01",
+      "buyer_name": "演示购买方甲有限公司",
+      "buyer_tax_id": "91330100DEMO0000001",
+      "seller_name": "演示销售方甲有限公司",
+      "seller_tax_id": "91330100DEMO0000101",
+      "items": [
+        {"name": "会议服务费", "amount": "1000.00", "tax_rate": "0.13", "tax_amount": "130.00"}
+      ],
+      "amount": "1000.00",
+      "tax_amount": "130.00",
+      "total_with_tax": "1130.00",
+      "total_with_tax_cn": "壹仟壹佰叁拾元整",
+      "remark": "演示数据，非真实主体",
+      "batch_id": "batch_01",
+      "confidence": 1.0,
+      "field_flags": [],
+      "evidence": []
+    },
+    {
+      "invoice_number": "25910000000000000002",
+      "invoice_type": "数电普票",
+      "issue_date": "2026-06-15",
+      "buyer_name": "演示购买方乙有限公司",
+      "buyer_tax_id": "91330100DEMO0000002",
+      "seller_name": "演示销售方乙有限公司",
+      "seller_tax_id": "91330100DEMO0000102",
+      "items": [
+        {"name": "咨询服务费", "amount": "2000.00", "tax_rate": "0.13", "tax_amount": "260.00"}
+      ],
+      "amount": "2000.00",
+      "tax_amount": "260.00",
+      "total_with_tax": "2260.00",
+      "total_with_tax_cn": "贰仟贰佰陆拾元整",
+      "remark": "演示数据，非真实主体",
+      "batch_id": "batch_01",
+      "confidence": 1.0,
+      "field_flags": [],
+      "evidence": []
+    },
+    {
+      "invoice_number": "25910000000000000003",
+      "invoice_type": "数电专票",
+      "issue_date": "2026-05-01",
+      "buyer_name": "演示购买方丙有限公司",
+      "buyer_tax_id": "91330100DEMO0000003",
+      "seller_name": "演示销售方甲有限公司",
+      "seller_tax_id": "91330100DEMO0000101",
+      "items": [
+        {"name": "培训服务费", "amount": "500.00", "tax_rate": "0.13", "tax_amount": "65.00"}
+      ],
+      "amount": "500.00",
+      "tax_amount": "65.00",
+      "total_with_tax": "565.00",
+      "total_with_tax_cn": "伍佰陆拾伍元整",
+      "remark": "演示数据，非真实主体",
+      "batch_id": "batch_01",
+      "confidence": 1.0,
+      "field_flags": [],
+      "evidence": []
+    }
+  ]
+}

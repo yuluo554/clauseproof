@@ -112,6 +112,7 @@ python -m medreview.cli selftest
 | `food-label` | target-map ① 行 | ✅ 已迁入（预包装**人**食品标签双标尺：GB 7718-2011 现行 / 2025 过渡期 47 条规则 + 数值复算；与 `petfood-label` 零共享规则；退出码语义差见器官文档 §5） |
 | `ghg-ledger` | target-map ① 行 | ✅ 已迁入（组织温室气体排放核算：GB/T 32150 双标尺 × 年度 × 行业三维门控 + 逐源核算 + 质量校核 + 配额试算；规则包 40 册逐字节随包；见器官文档 §5/§6） |
 | `income-tax` | target-map ① 行 | ✅ 已迁入（个人所得税联动判定：八个年度规则包 + status 门控 + 累计预扣 + 年度汇算 + 社保联动 + 七项扣除 + 年终奖择优；规则包逐字节随包；见器官文档 §5/§6） |
+| `invoice-ledger` | target-map ① 行 | ✅ 已迁入（电子发票台账判定：精确/联合键/模糊重复 + 连号拆分 + 票面算术 + 大写金额 + 时间逻辑；三级语义 + 法规条款锚点；与 `expense-ledger` 零复用；退出码语义差见器官文档 §5） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -191,10 +192,18 @@ clauseproof check income-tax \
 clauseproof check income-tax \
   --input samples/income-tax/claims-reject.json \
   --basis src/clauseproof/packs/income-tax/data/clauses.json --json
+
+# 电子发票台账判定（八规则 + 三级语义；时间基准显式输入，器官不读时钟）
+clauseproof check invoice-ledger \
+  --input samples/invoice-ledger/ledger-readme.json \
+  --basis src/clauseproof/packs/invoice-ledger/data/clauses.json
+clauseproof check invoice-ledger \
+  --input samples/invoice-ledger/ledger-clean.json \
+  --basis src/clauseproof/packs/invoice-ledger/data/clauses.json --json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另十二个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另十三个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
 [`docs/extreme-terms.md`](docs/extreme-terms.md)、
@@ -203,7 +212,8 @@ clauseproof check income-tax \
 [`docs/ebike-limits.md`](docs/ebike-limits.md)、
 [`docs/food-label.md`](docs/food-label.md)、
 [`docs/ghg-ledger.md`](docs/ghg-ledger.md) 与
-[`docs/income-tax.md`](docs/income-tax.md)）。
+[`docs/income-tax.md`](docs/income-tax.md) 与
+[`docs/invoice-ledger.md`](docs/invoice-ledger.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 
