@@ -1,0 +1,9 @@
+{
+  "year": 2024,
+  "months": [
+    {"gross": "12000.00", "special_deduction": "1500.00"},
+    {"gross": "12000.00", "special_deduction": "1500.00"},
+    {"gross": "12000.00", "special_deduction": "1500.00"}
+  ],
+  "bonus_income": "36001.00"
+}

@@ -1,0 +1,9 @@
+{
+  "year": 2024,
+  "uniform_month": {"gross": "20000.00"},
+  "month_count": 12,
+  "special_additional_claims": [
+    {"item": "housing_loan", "months": 12},
+    {"item": "housing_rent", "tier": 1, "months": 12}
+  ]
+}

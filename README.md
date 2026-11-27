@@ -111,6 +111,7 @@ python -m medreview.cli selftest
 | `ebike-limits` | target-map ① 行 | ✅ 已迁入（电动自行车三维限值判定：整车/电池/充电器 × GB 17761-2024 等三册；四态判定 + status 门控 + 条款锚点；规则包逐字节随包；见器官文档 §5/§6） |
 | `food-label` | target-map ① 行 | ✅ 已迁入（预包装**人**食品标签双标尺：GB 7718-2011 现行 / 2025 过渡期 47 条规则 + 数值复算；与 `petfood-label` 零共享规则；退出码语义差见器官文档 §5） |
 | `ghg-ledger` | target-map ① 行 | ✅ 已迁入（组织温室气体排放核算：GB/T 32150 双标尺 × 年度 × 行业三维门控 + 逐源核算 + 质量校核 + 配额试算；规则包 40 册逐字节随包；见器官文档 §5/§6） |
+| `income-tax` | target-map ① 行 | ✅ 已迁入（个人所得税联动判定：八个年度规则包 + status 门控 + 累计预扣 + 年度汇算 + 社保联动 + 七项扣除 + 年终奖择优；规则包逐字节随包；见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -182,18 +183,27 @@ clauseproof check ghg-ledger \
 clauseproof check ghg-ledger \
   --input samples/ghg-ledger/profile-power-2026.json \
   --basis src/clauseproof/packs/ghg-ledger/data/clauses.json
+
+# 个人所得税联动判定（年度规则包 + 累计预扣 + 汇算 + 年终奖择优；年度在 subject.year）
+clauseproof check income-tax \
+  --input samples/income-tax/readme-example.json \
+  --basis src/clauseproof/packs/income-tax/data/clauses.json
+clauseproof check income-tax \
+  --input samples/income-tax/claims-reject.json \
+  --basis src/clauseproof/packs/income-tax/data/clauses.json --json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另十一个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另十二个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
 [`docs/extreme-terms.md`](docs/extreme-terms.md)、
 [`docs/bid-conformity.md`](docs/bid-conformity.md)、
 [`docs/expense-ledger.md`](docs/expense-ledger.md)、
 [`docs/ebike-limits.md`](docs/ebike-limits.md)、
-[`docs/food-label.md`](docs/food-label.md) 与
-[`docs/ghg-ledger.md`](docs/ghg-ledger.md)）。
+[`docs/food-label.md`](docs/food-label.md)、
+[`docs/ghg-ledger.md`](docs/ghg-ledger.md) 与
+[`docs/income-tax.md`](docs/income-tax.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 

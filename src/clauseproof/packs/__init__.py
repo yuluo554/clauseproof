@@ -24,6 +24,7 @@ BUILTIN_MODULES: Tuple[str, ...] = (
     "extreme-terms",
     "food-label",
     "ghg-ledger",
+    "income-tax",
     "labeling-claims",
     "lease-terms",
     "petfood-label",

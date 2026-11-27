@@ -1,0 +1,17 @@
+{
+  "year": 2019,
+  "uniform_month": {"gross": "20000.00", "special_deduction": "0.00"},
+  "month_count": 12,
+  "social": {
+    "base_input": "10000.00",
+    "base_lower": "4000.00",
+    "base_upper": "25000.00",
+    "rates": {"养老": "0.08", "医疗": "0.02", "失业": "0.005", "公积金": "0.12"}
+  },
+  "bonus_income": "36001.00",
+  "special_additional_claims": [
+    {"item": "child_education", "children": 1, "share_ratio": "1.0"},
+    {"item": "housing_loan", "months": 12},
+    {"item": "support_elderly", "only_child": true}
+  ]
+}

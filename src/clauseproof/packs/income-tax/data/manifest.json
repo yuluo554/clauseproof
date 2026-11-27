@@ -1,0 +1,92 @@
+{
+  "version": "2026-10-07",
+  "snapshot_note": "八个年度规则包与真值库取自目标-map ① 行来源仓，逐字节同 sha256（只读迁移）",
+  "source_reviewed_at": "2026-10-07",
+  "packs": [
+    {
+      "year": 2019,
+      "file": "ruleset-2019.json",
+      "sha256": "bf779424cd56dc43faf758681f8494963340a2f724fa47a058895e30d71a7773",
+      "bytes": 13839,
+      "reviewed_at": "2026-10-07",
+      "basis_year": 2019,
+      "clause_refs": 23
+    },
+    {
+      "year": 2020,
+      "file": "ruleset-2020.json",
+      "sha256": "5ac9d53b5cd310d3e8d1949c102f1e4cabe2e417f0c9a75284a85203d598c358",
+      "bytes": 13839,
+      "reviewed_at": "2026-10-07",
+      "basis_year": 2019,
+      "clause_refs": 23
+    },
+    {
+      "year": 2021,
+      "file": "ruleset-2021.json",
+      "sha256": "15847bbe5a743a5d9097879f3642d6e8e9847089e08ea22454374497e1657396",
+      "bytes": 13839,
+      "reviewed_at": "2026-10-07",
+      "basis_year": 2019,
+      "clause_refs": 23
+    },
+    {
+      "year": 2022,
+      "file": "ruleset-2022.json",
+      "sha256": "26840cab2aa720d7133604bb6a2dfcd97de8b416cd8d4fc9c6958c144837bd01",
+      "bytes": 15659,
+      "reviewed_at": "2026-10-07",
+      "basis_year": 2022,
+      "clause_refs": 27
+    },
+    {
+      "year": 2023,
+      "file": "ruleset-2023.json",
+      "sha256": "03c0d7fedaf44af1514fe5c3b66355d6c7ab2dcce609533a5952edd95d804861",
+      "bytes": 16115,
+      "reviewed_at": "2026-10-07",
+      "basis_year": 2023,
+      "clause_refs": 27
+    },
+    {
+      "year": 2024,
+      "file": "ruleset-2024.json",
+      "sha256": "fa53d7804d31e52192f21ed3a35a322b7e49eedb6ce0eb54bb057b822f4a61ea",
+      "bytes": 16115,
+      "reviewed_at": "2026-10-07",
+      "basis_year": 2023,
+      "clause_refs": 27
+    },
+    {
+      "year": 2025,
+      "file": "ruleset-2025.json",
+      "sha256": "5bda4834173e5abd237044c5c9baa86487cfb7e9b5e81d9be838ea26d8c1c85e",
+      "bytes": 16115,
+      "reviewed_at": "2026-10-07",
+      "basis_year": 2023,
+      "clause_refs": 27
+    },
+    {
+      "year": 2026,
+      "file": "ruleset-2026.json",
+      "sha256": "ba9724d9ddb81bcf77b5cec5c17786db4bdb92d0106bed724e33c2ca5e8648f5",
+      "bytes": 16115,
+      "reviewed_at": "2026-10-07",
+      "basis_year": 2023,
+      "clause_refs": 27
+    }
+  ],
+  "truth": {
+    "file": "truth-cases.json",
+    "sha256": "908780eec07d36be9452eb040e939b9ce0fbef86802f3b8ff5e89bcbfad3a4b3",
+    "bytes": 5699,
+    "cases": 4,
+    "schema_version": 1
+  },
+  "clauses": {
+    "file": "clauses.json",
+    "count": 38,
+    "ref_clauses": 34,
+    "contract_clauses": 4
+  }
+}
