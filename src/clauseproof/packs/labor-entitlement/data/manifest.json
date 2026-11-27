@@ -1,0 +1,55 @@
+{
+  "version": "2026-10-13",
+  "source_reviewed_at": "2026-10-13",
+  "clause_count": 22,
+  "files": {
+    "clauses.json": {
+      "bytes": 11817,
+      "sha256": "f824f5c8ea2f106e79e074dfe14400e43de2d58b2aed4788aa77399b28e4ae74"
+    },
+    "constants.json": {
+      "bytes": 13204,
+      "sha256": "4552ad22efc3d72e44002edc56231b8a8da4e3cd476addc448eebfee675ba2e9"
+    },
+    "law-clauses.json": {
+      "bytes": 13770,
+      "sha256": "90bfae3436e7aaedd1666b01b80cc20db3242582a3a55acebe09ab0d19f6c547"
+    },
+    "regions.json": {
+      "bytes": 2602,
+      "sha256": "4d73aec800730b32f0f0433fd972c573fdc4cee6abd6910d21da618bc11bcd6e"
+    },
+    "ruleset-110000-2025.json": {
+      "bytes": 3763,
+      "sha256": "34bf0cff8ec7130481a386bf890ad710f77a3df87021fdd407814ecb9fe96c75"
+    },
+    "ruleset-110000-2026.json": {
+      "bytes": 3866,
+      "sha256": "2e2e8cc75e4bf3c69b9cebe3ed09e86f33ffdf4fedfdbd1a42207a99a3a005f9"
+    },
+    "ruleset-310000-2025.json": {
+      "bytes": 3002,
+      "sha256": "9146487d692c756b6c5e7fd1d113a461173587d0043ad5404a6cb8138217495d"
+    },
+    "ruleset-310000-2026.json": {
+      "bytes": 3159,
+      "sha256": "18cfb06d1471e3495118415c17a09b109daa64b0aba4c377e447296d7bb8cf18"
+    },
+    "ruleset-320000-2025.json": {
+      "bytes": 1604,
+      "sha256": "1fdaa65a6120b60bf182c6e5c61339b3815fecdf939da05b680a51d03884d90b"
+    },
+    "ruleset-320000-2026.json": {
+      "bytes": 1604,
+      "sha256": "84a74596b00643579d255f7d9e7c9f6abeec8bd7c30f643eb511a4066ba23a9c"
+    },
+    "ruleset-440000-2025.json": {
+      "bytes": 1604,
+      "sha256": "519e465916888a043805e93e27fd5b7a2a05eb2c1429eb0549820d07d8ce0c51"
+    },
+    "ruleset-440000-2026.json": {
+      "bytes": 1604,
+      "sha256": "88810fc97f19023af9a65428848215864589f2ac6317b3c5c77365b8c9316ef7"
+    }
+  }
+}

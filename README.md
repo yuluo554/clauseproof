@@ -113,6 +113,7 @@ python -m medreview.cli selftest
 | `ghg-ledger` | target-map ① 行 | ✅ 已迁入（组织温室气体排放核算：GB/T 32150 双标尺 × 年度 × 行业三维门控 + 逐源核算 + 质量校核 + 配额试算；规则包 40 册逐字节随包；见器官文档 §5/§6） |
 | `income-tax` | target-map ① 行 | ✅ 已迁入（个人所得税联动判定：八个年度规则包 + status 门控 + 累计预扣 + 年度汇算 + 社保联动 + 七项扣除 + 年终奖择优；规则包逐字节随包；见器官文档 §5/§6） |
 | `invoice-ledger` | target-map ① 行 | ✅ 已迁入（电子发票台账判定：精确/联合键/模糊重复 + 连号拆分 + 票面算术 + 大写金额 + 时间逻辑；三级语义 + 法规条款锚点；与 `expense-ledger` 零复用；退出码语义差见器官文档 §5） |
+| `labor-entitlement` | target-map ① 行 | ✅ 已迁入（劳动用工权益：经济补偿/赔偿金 + 加班费 + 未休年休假 + 二倍工资；地区×年度参数包 + status 门控 + 法条锚点；与 `income-tax` 零复用；见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -200,10 +201,18 @@ clauseproof check invoice-ledger \
 clauseproof check invoice-ledger \
   --input samples/invoice-ledger/ledger-clean.json \
   --basis src/clauseproof/packs/invoice-ledger/data/clauses.json --json
+
+# 劳动用工权益判定（经济补偿/赔偿金 + 加班费 + 年休假 + 二倍工资；地区×年度门控）
+clauseproof check labor-entitlement \
+  --input samples/labor-entitlement/case-readme.json \
+  --basis src/clauseproof/packs/labor-entitlement/data/clauses.json
+clauseproof check labor-entitlement \
+  --input samples/labor-entitlement/case-pending.json \
+  --basis src/clauseproof/packs/labor-entitlement/data/clauses.json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另十三个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另十四个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
 [`docs/extreme-terms.md`](docs/extreme-terms.md)、
@@ -213,7 +222,8 @@ clauseproof check invoice-ledger \
 [`docs/food-label.md`](docs/food-label.md)、
 [`docs/ghg-ledger.md`](docs/ghg-ledger.md) 与
 [`docs/income-tax.md`](docs/income-tax.md) 与
-[`docs/invoice-ledger.md`](docs/invoice-ledger.md)）。
+[`docs/invoice-ledger.md`](docs/invoice-ledger.md) 与
+[`docs/labor-entitlement.md`](docs/labor-entitlement.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 
