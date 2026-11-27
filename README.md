@@ -110,6 +110,7 @@ python -m medreview.cli selftest
 | `expense-ledger` | target-map ① 行 | ✅ 已迁入（多平台账单真实支出对账：行三态 + 商户归一化 + 跨平台去重 + 语义识别 + 订阅识别；依据=规则包参数条目，经验默认非官方；见器官文档 §5/§6） |
 | `ebike-limits` | target-map ① 行 | ✅ 已迁入（电动自行车三维限值判定：整车/电池/充电器 × GB 17761-2024 等三册；四态判定 + status 门控 + 条款锚点；规则包逐字节随包；见器官文档 §5/§6） |
 | `food-label` | target-map ① 行 | ✅ 已迁入（预包装**人**食品标签双标尺：GB 7718-2011 现行 / 2025 过渡期 47 条规则 + 数值复算；与 `petfood-label` 零共享规则；退出码语义差见器官文档 §5） |
+| `ghg-ledger` | target-map ① 行 | ✅ 已迁入（组织温室气体排放核算：GB/T 32150 双标尺 × 年度 × 行业三维门控 + 逐源核算 + 质量校核 + 配额试算；规则包 40 册逐字节随包；见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -173,17 +174,26 @@ clauseproof check food-label \
 clauseproof check food-label \
   --input samples/food-label/label-clean.json \
   --basis src/clauseproof/packs/food-label/data/clauses.json --json
+
+# 组织温室气体排放核算（GB/T 32150 双标尺 × 年度 × 行业；门控拦截 / 混算拦截）
+clauseproof check ghg-ledger \
+  --input samples/ghg-ledger/profile-power-2024.json \
+  --basis src/clauseproof/packs/ghg-ledger/data/clauses.json
+clauseproof check ghg-ledger \
+  --input samples/ghg-ledger/profile-power-2026.json \
+  --basis src/clauseproof/packs/ghg-ledger/data/clauses.json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另十个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另十一个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
 [`docs/extreme-terms.md`](docs/extreme-terms.md)、
 [`docs/bid-conformity.md`](docs/bid-conformity.md)、
 [`docs/expense-ledger.md`](docs/expense-ledger.md)、
-[`docs/ebike-limits.md`](docs/ebike-limits.md) 与
-[`docs/food-label.md`](docs/food-label.md)）。
+[`docs/ebike-limits.md`](docs/ebike-limits.md)、
+[`docs/food-label.md`](docs/food-label.md) 与
+[`docs/ghg-ledger.md`](docs/ghg-ledger.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 

@@ -1,0 +1,65 @@
+{
+  "version": "2026-10-13",
+  "clauses": [
+    {
+      "clause_id": "contract:three-axis",
+      "path": "数据契约 / 三维坐标",
+      "version": "2026-10-13",
+      "text": "三维坐标：GB/T 32150 新旧双标尺 × 年度（2022–2026）× 行业（发电/钢铁/水泥/铝冶炼）；坐标空间由 manifest 单点索引，代码内零坐标字面量"
+    },
+    {
+      "clause_id": "contract:status-gate",
+      "path": "数据契约 / status 门控",
+      "version": "2026-10-13",
+      "text": "status 门控按计算路径分作用域：calc / quota / check 各查各的块；pending 条目零参与其自身路径；input_required 为外部输入槽（不阻断，运行时显式索取，不得静默取 0）"
+    },
+    {
+      "clause_id": "contract:mixed-coordinates",
+      "path": "数据契约 / 跨坐标混算拦截",
+      "version": "2026-10-13",
+      "text": "跨坐标混算拦截：一次核算输入出现两个及以上坐标即拒绝（退出码 2）"
+    },
+    {
+      "clause_id": "contract:boundary",
+      "path": "数据契约 / 核算边界",
+      "version": "2026-10-13",
+      "text": "核算边界：应核算源缺活动数据即报缺失输入（不得静默按空核算）；双标尺差异以 delta_vs_2015 声明为准并以结构字段交叉校验"
+    },
+    {
+      "clause_id": "contract:factor-priority",
+      "path": "数据契约 / 因子来源优先级",
+      "version": "2026-10-13",
+      "text": "因子来源优先级：实测 > 官方因子库 > 行业缺省（按类别分派）；三层皆不可用不得静默取 0 或 1；档案自报来源不在白名单按不可用处理"
+    },
+    {
+      "clause_id": "contract:formula-grammar",
+      "path": "数据契约 / 公式表达式文法",
+      "version": "2026-10-13",
+      "text": "公式表达式树文法：mul/add/sub/div/var/const 白名单；const 只允许引用系数 id（禁内联数值）；除数为 0 报错"
+    },
+    {
+      "clause_id": "contract:units",
+      "path": "数据契约 / 单位换算",
+      "version": "2026-10-13",
+      "text": "单位换算：量纲 → 基准单位 → 换算因子（定义性关系，表来自随包 units.json）；跨量纲禁止换算；复合因子单位 <排放单位>_per_<活动单位>"
+    },
+    {
+      "clause_id": "contract:quality-checks",
+      "path": "数据契约 / 数据质量校核",
+      "version": "2026-10-13",
+      "text": "数据质量校核四类：单位一致性 / 量级异常 / 跨年度突变 / 比强度合理性；阈值全部取自规则包 quality.thresholds；pending 规则不执行并记跳过原因"
+    },
+    {
+      "clause_id": "contract:quota-methods",
+      "path": "数据契约 / 配额方法学",
+      "version": "2026-10-13",
+      "text": "配额试算方法学：benchmark（A=Qe×Be×Ff）/ intensity_coefficient（A=E×(1+α)，α 由偏离度分段）/ historical_intensity / none（显式不适用）"
+    },
+    {
+      "clause_id": "contract:quota-disclaimer",
+      "path": "数据契约 / 配额免责声明",
+      "version": "2026-10-13",
+      "text": "配额试算强制免责声明：返回结构 disclaimer_required 恒为 True，渲染层必须输出规则包携带的声明正文"
+    }
+  ]
+}
