@@ -1,0 +1,71 @@
+{
+  "version": "2026-10-04",
+  "clauses": [
+    {
+      "clause_id": "contract:dual-rulesets",
+      "path": "数据契约 / 双标尺规则集",
+      "version": "2026-10-04",
+      "text": "双标尺：GB 7718-2011（现行，21 条）与 GB 7718-2025（过渡期，26 条）跑同一标签；规则逐条挂标准号+条款号+条文块出处（status=已核对）"
+    },
+    {
+      "clause_id": "contract:three-levels",
+      "path": "数据契约 / 三级判定",
+      "version": "2026-10-04",
+      "text": "三级判定：合规 / 不合规 / 待人工确认；「标示行存在但解析失败」转待人工确认而非误判不合规；「没查到问题」与「没检查过」可区分"
+    },
+    {
+      "clause_id": "contract:stats",
+      "path": "数据契约 / 统计口径",
+      "version": "2026-10-04",
+      "text": "统计口径：pass + fail + manual == checked == len(findings)；skipped 为门控未命中跳过数；not_run 为前置缺失未执行数（不产生结论）"
+    },
+    {
+      "clause_id": "contract:basis-pending",
+      "path": "数据契约 / 依据待核对标记",
+      "version": "2026-10-04",
+      "text": "依据纪律：basis.status != 已核对 的规则产出结论自动置flagged_pending_basis（报告与账本同步显示「依据待核对」）"
+    },
+    {
+      "clause_id": "contract:gate",
+      "path": "数据契约 / 类目门控",
+      "version": "2026-10-04",
+      "text": "类目隔离门控：only_if 为 None 恒真；否则任一关键词命中卡片平文本即真，对全部 check_type 生效（含 conditional 豁免分支）"
+    },
+    {
+      "clause_id": "numeric:nrv",
+      "path": "数值口径 / NRV% 复算",
+      "version": "2026-10-04",
+      "text": "NRV%% 复算：round(amount / NRV × 100)，修约间隔 1（2011 A.2 / 2025 A.3.2）；行级 |标示-复算| > 1 判不一致；NRV 表挂 GB 28050 附录A"
+    },
+    {
+      "clause_id": "numeric:energy",
+      "path": "数值口径 / 能量折算",
+      "version": "2026-10-04",
+      "text": "能量折算：E = round(17×蛋白 + 37×脂肪 + 17×碳水)（GB 28050-2025 §2.3）；表2 允许误差只约束低报方向：复算值 > 120% 标示值（+1 kJ 修约容差）判矛盾"
+    },
+    {
+      "clause_id": "numeric:claim-threshold",
+      "path": "数值口径 / 声称阈值",
+      "version": "2026-10-04",
+      "text": "声称阈值（两版表C.1）：无糖 ≤0.5g/100g(mL)、低糖 ≤5、低钠 ≤120mg；营养成分表缺该行或按份标示时无法复算 → 待人工确认"
+    },
+    {
+      "clause_id": "numeric:date-logic",
+      "path": "数值口径 / 到期日推算",
+      "version": "2026-10-04",
+      "text": "到期日推算（生成器约定口径，GB 未明文规定）：月单位月加法且日截断到月末、天单位按天加法；不做 -1 天修正"
+    },
+    {
+      "clause_id": "numeric:nutrition-rows",
+      "path": "数据契约 / 强制营养行",
+      "version": "2026-10-04",
+      "text": "强制营养行完整性（GB 28050-2025 §4.1：能量 + 6 项核心营养素）"
+    },
+    {
+      "clause_id": "numeric:allergen",
+      "path": "数据契约 / 致敏物质提示",
+      "version": "2026-10-04",
+      "text": "致敏物质提示（GB 7718-2025 §4.12 八类）：确定性近似——只检索配料表；提示行在位 → 通过；含八类关键词而提示缺失 → 不合规；深加工/单一配料豁免无法自动判定，advice 注明人工复核"
+    }
+  ]
+}

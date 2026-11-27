@@ -1,0 +1,330 @@
+{
+ "card": {
+  "fields": {
+   "food_name": {
+    "key": "food_name",
+    "value": "牧云 发酵乳（原味）",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "名称栏",
+     "quote": "牧云 发酵乳（原味）",
+     "span": [
+      5,
+      15
+     ]
+    }
+   },
+   "ingredients": {
+    "key": "ingredients",
+    "value": [
+     "生牛乳",
+     "白砂糖",
+     "保加利亚乳杆菌",
+     "嗜热链球菌"
+    ],
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "配料表",
+     "quote": "生牛乳、白砂糖、保加利亚乳杆菌、嗜热链球菌",
+     "span": [
+      19,
+      40
+     ]
+    }
+   },
+   "product_standard": {
+    "key": "product_standard",
+    "value": "GB 19302",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "标准代号栏",
+     "quote": "GB 19302",
+     "span": [
+      48,
+      56
+     ]
+    }
+   },
+   "net_content": {
+    "key": "net_content",
+    "value": {
+     "amount": 200.0,
+     "unit": "g"
+    },
+    "unit": "g",
+    "confidence": 1.0,
+    "evidence": {
+     "region": "净含量行",
+     "quote": "200g",
+     "span": [
+      61,
+      65
+     ]
+    }
+   },
+   "production_date": {
+    "key": "production_date",
+    "value": "2026-01-23",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "日期栏",
+     "quote": "2026年01月23日",
+     "span": [
+      71,
+      82
+     ]
+    }
+   },
+   "shelf_life": {
+    "key": "shelf_life",
+    "value": {
+     "value": 21,
+     "unit": "天"
+    },
+    "unit": "天",
+    "confidence": 1.0,
+    "evidence": {
+     "region": "日期栏",
+     "quote": "21天",
+     "span": [
+      87,
+      90
+     ]
+    }
+   },
+   "expiry_date": {
+    "key": "expiry_date",
+    "value": "2026-02-13",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "日期栏",
+     "quote": "2026年02月13日",
+     "span": [
+      98,
+      109
+     ]
+    }
+   },
+   "storage_conditions": {
+    "key": "storage_conditions",
+    "value": "2℃～6℃冷藏保存",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "贮存栏",
+     "quote": "2℃～6℃冷藏保存",
+     "span": [
+      115,
+      124
+     ]
+    }
+   },
+   "producer_name": {
+    "key": "producer_name",
+    "value": "牧云乳业有限公司（虚构演示数据）",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "生产者栏",
+     "quote": "牧云乳业有限公司（虚构演示数据）",
+     "span": [
+      129,
+      145
+     ]
+    }
+   },
+   "producer_address": {
+    "key": "producer_address",
+    "value": "云溪省云溪市食品工业园 8 号",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "生产者栏",
+     "quote": "云溪省云溪市食品工业园 8 号",
+     "span": [
+      149,
+      164
+     ]
+    }
+   },
+   "producer_contact": {
+    "key": "producer_contact",
+    "value": "400-810-0001",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "生产者栏",
+     "quote": "400-810-0001",
+     "span": [
+      170,
+      182
+     ]
+    }
+   },
+   "sc_license": {
+    "key": "sc_license",
+    "value": "SC10532050001235",
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "许可证栏",
+     "quote": "SC10532050001235",
+     "span": [
+      193,
+      209
+     ]
+    }
+   },
+   "salt_oil_sugar_notice": {
+    "key": "salt_oil_sugar_notice",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "营养成分表",
+     "quote": "儿童青少年应避免过量摄入盐油糖。",
+     "span": [
+      309,
+      325
+     ]
+    }
+   },
+   "allergen_notice": {
+    "key": "allergen_notice",
+    "value": true,
+    "unit": null,
+    "confidence": 1.0,
+    "evidence": {
+     "region": "致敏物质提示",
+     "quote": "致敏物质提示：含乳。",
+     "span": [
+      326,
+      336
+     ]
+    }
+   }
+  },
+  "nutrition_table": [
+   {
+    "name": "能量",
+    "amount": 363,
+    "unit": "kJ",
+    "nrv_percent": 4,
+    "per_serving": false,
+    "evidence": {
+     "region": "营养成分表",
+     "quote": "能量\t363kJ\t4%",
+     "span": [
+      230,
+      241
+     ]
+    }
+   },
+   {
+    "name": "蛋白质",
+    "amount": 2.8,
+    "unit": "g",
+    "nrv_percent": 5,
+    "per_serving": false,
+    "evidence": {
+     "region": "营养成分表",
+     "quote": "蛋白质\t2.8g\t5%",
+     "span": [
+      242,
+      253
+     ]
+    }
+   },
+   {
+    "name": "脂肪",
+    "amount": 3,
+    "unit": "g",
+    "nrv_percent": 5,
+    "per_serving": false,
+    "evidence": {
+     "region": "营养成分表",
+     "quote": "脂肪\t3g\t5%",
+     "span": [
+      254,
+      262
+     ]
+    }
+   },
+   {
+    "name": "饱和脂肪",
+    "amount": 1.8,
+    "unit": "g",
+    "nrv_percent": 9,
+    "per_serving": false,
+    "evidence": {
+     "region": "营养成分表",
+     "quote": "饱和脂肪\t1.8g\t9%",
+     "span": [
+      263,
+      275
+     ]
+    }
+   },
+   {
+    "name": "碳水化合物",
+    "amount": 12,
+    "unit": "g",
+    "nrv_percent": 4,
+    "per_serving": false,
+    "evidence": {
+     "region": "营养成分表",
+     "quote": "碳水化合物\t12g\t4%",
+     "span": [
+      276,
+      288
+     ]
+    }
+   },
+   {
+    "name": "糖",
+    "amount": 10.5,
+    "unit": "g",
+    "nrv_percent": null,
+    "per_serving": false,
+    "evidence": {
+     "region": "营养成分表",
+     "quote": "糖\t10.5g\t—",
+     "span": [
+      289,
+      298
+     ]
+    }
+   },
+   {
+    "name": "钠",
+    "amount": 65,
+    "unit": "mg",
+    "nrv_percent": 3,
+    "per_serving": false,
+    "evidence": {
+     "region": "营养成分表",
+     "quote": "钠\t65mg\t3%",
+     "span": [
+      299,
+      308
+     ]
+    }
+   }
+  ],
+  "ingredients": [
+   "生牛乳",
+   "白砂糖",
+   "保加利亚乳杆菌",
+   "嗜热链球菌"
+  ],
+  "claims": [],
+  "unresolved": [],
+  "unresolved_detail": {}
+ },
+ "text": "食品名称：牧云 发酵乳（原味）\n配料：生牛乳、白砂糖、保加利亚乳杆菌、嗜热链球菌\n产品标准代号：GB 19302\n净含量：200g\n生产日期：2026年01月23日\n保质期：21天\n保质期到期日：2026年02月13日\n贮存条件：2℃～6℃冷藏保存\n生产商：牧云乳业有限公司（虚构演示数据）\n地址：云溪省云溪市食品工业园 8 号\n联系方式：400-810-0001\n食品生产许可证编号：SC10532050001235\n营养成分表\n项目\t每100g\tNRV%\n能量\t363kJ\t4%\n蛋白质\t2.8g\t5%\n脂肪\t3g\t5%\n饱和脂肪\t1.8g\t9%\n碳水化合物\t12g\t4%\n糖\t10.5g\t—\n钠\t65mg\t3%\n儿童青少年应避免过量摄入盐油糖。\n致敏物质提示：含乳。\n"
+}

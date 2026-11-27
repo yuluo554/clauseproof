@@ -109,6 +109,7 @@ python -m medreview.cli selftest
 | `bid-conformity` | target-map ① 行 | ✅ 已迁入（21 条 CHK-*：资格/星号/算术/保证金/时间/否决/低价；依据=已核对法规条文块或招标条款；退出码语义差见器官文档 §5） |
 | `expense-ledger` | target-map ① 行 | ✅ 已迁入（多平台账单真实支出对账：行三态 + 商户归一化 + 跨平台去重 + 语义识别 + 订阅识别；依据=规则包参数条目，经验默认非官方；见器官文档 §5/§6） |
 | `ebike-limits` | target-map ① 行 | ✅ 已迁入（电动自行车三维限值判定：整车/电池/充电器 × GB 17761-2024 等三册；四态判定 + status 门控 + 条款锚点；规则包逐字节随包；见器官文档 §5/§6） |
+| `food-label` | target-map ① 行 | ✅ 已迁入（预包装**人**食品标签双标尺：GB 7718-2011 现行 / 2025 过渡期 47 条规则 + 数值复算；与 `petfood-label` 零共享规则；退出码语义差见器官文档 §5） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -164,16 +165,25 @@ clauseproof check ebike-limits \
 clauseproof check ebike-limits \
   --input samples/ebike-limits/profile-violation.json \
   --basis src/clauseproof/packs/ebike-limits/data/clauses.json --json
+
+# 预包装人食品标签双标尺判定（GB 7718-2011 现行 / 2025 过渡期）
+clauseproof check food-label \
+  --input samples/food-label/label-sample.json \
+  --basis src/clauseproof/packs/food-label/data/clauses.json
+clauseproof check food-label \
+  --input samples/food-label/label-clean.json \
+  --basis src/clauseproof/packs/food-label/data/clauses.json --json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另九个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另十个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
 [`docs/extreme-terms.md`](docs/extreme-terms.md)、
 [`docs/bid-conformity.md`](docs/bid-conformity.md)、
-[`docs/expense-ledger.md`](docs/expense-ledger.md) 与
-[`docs/ebike-limits.md`](docs/ebike-limits.md)）。
+[`docs/expense-ledger.md`](docs/expense-ledger.md)、
+[`docs/ebike-limits.md`](docs/ebike-limits.md) 与
+[`docs/food-label.md`](docs/food-label.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 

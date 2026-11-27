@@ -1,0 +1,39 @@
+{
+ "gb7718-2011": {
+  "stats": {
+   "checked": 15,
+   "skipped": 2,
+   "not_run": 4,
+   "pass": 13,
+   "fail": 2,
+   "manual": 0
+  },
+  "fails": [
+   "MAND-NET-01",
+   "NUTR-TABLE-01"
+  ]
+ },
+ "gb7718-2025": {
+  "stats": {
+   "checked": 19,
+   "skipped": 2,
+   "not_run": 5,
+   "pass": 15,
+   "fail": 4,
+   "manual": 0
+  },
+  "fails": [
+   "MAND-NET-01",
+   "MAND-EXPIRY-01",
+   "SALT-NOTICE-01",
+   "NUTR-TABLE-01"
+  ]
+ },
+ "dual_diff": {
+  "new_fails": [
+   "MAND-EXPIRY-01",
+   "SALT-NOTICE-01"
+  ],
+  "resolved_fails": []
+ }
+}
