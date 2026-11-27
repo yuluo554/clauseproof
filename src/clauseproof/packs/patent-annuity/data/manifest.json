@@ -1,0 +1,34 @@
+{
+  "version": "2026-10-14",
+  "clause_count": 41,
+  "files": {
+    "clauses.json": {
+      "bytes": 24701,
+      "sha256": "070e3060aef6f10152aac9ead7e9406e2667cbca82cebfe6e3fbb7bd2e16e10a"
+    },
+    "fee_schedule.v2024.json": {
+      "bytes": 18691,
+      "sha256": "7d3824b326668c8088d76c2f04846c03c30ee5bb04e7899d3f4c42b9b8c33139"
+    },
+    "knowledge-clauses.json": {
+      "bytes": 9505,
+      "sha256": "ff40e492034eb7315ebac4013e9f98043734916228f4be114c5472e8419b41e3"
+    },
+    "reduction_316.v2019.json": {
+      "bytes": 7519,
+      "sha256": "65b526ba4cafb3f50f1369c63f5237bed7838672cc2c8ddce144136d11b4c428"
+    },
+    "reduction_594.v2024.json": {
+      "bytes": 5574,
+      "sha256": "75ab07e6334103eb7956c1c3b8b7724de3baa2b6f7e48ddbb858d5b7cffe5ced"
+    },
+    "reduction_78.v2016.json": {
+      "bytes": 5608,
+      "sha256": "aed8ac01cfc5094a97eab5c3cb38fdbf3e34aa192dc597365f13e0c3bfb53d79"
+    },
+    "rules-manifest.json": {
+      "bytes": 5952,
+      "sha256": "7a1548007d05882a24be335b8ee3c7f5e0a16aca30767eaddeae7ac15b82a982"
+    }
+  }
+}

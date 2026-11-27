@@ -1,0 +1,192 @@
+{
+  "schema": "patfee.rules.manifest/v1",
+  "generated_by": "tools/gen_rulesets.py",
+  "generated_at": "1970-01-01T00:00:00Z",
+  "retrieved": "2026-10-14",
+  "reviewed": "2026-10-14",
+  "review_interval": "annual",
+  "next_review": "2027-10-14",
+  "rulesets": [
+    {
+      "id": "fee_schedule",
+      "version": "v2024",
+      "title": "专利收费标准表",
+      "doc_no": "国家知识产权局专利收费标准（专利业务办理系统公示）",
+      "anchor_from": "2024-08-06",
+      "anchor_to": "",
+      "source": {
+        "channel": "国家知识产权局专利业务办理系统 公示页",
+        "url": "https://cponline.cnipa.gov.cn/GzfwYwblGlwhTMVC/GzfwYwblGlwhT/selectByNoticeId?weihuRid=286",
+        "retrieved": "2026-10-14",
+        "verification": "item_reviewed",
+        "raw_snapshot": "data/knowledge/raw/cnipa_fee_schedule_286.html"
+      },
+      "review_interval": "annual",
+      "reviewed": "2026-10-14",
+      "next_review": "2027-10-14",
+      "file": "fee_schedule.v2024.json",
+      "sha256": "7d3824b326668c8088d76c2f04846c03c30ee5bb04e7899d3f4c42b9b8c33139",
+      "status_counts": {
+        "verified": 16,
+        "pending": 0,
+        "input_required": 0
+      }
+    },
+    {
+      "id": "reduction_78",
+      "version": "v2016",
+      "title": "专利收费减缴办法（减缴比例与减缴项目）",
+      "doc_no": "《专利收费减缴办法》财税〔2016〕78 号",
+      "anchor_from": "2016-09-01",
+      "anchor_to": "",
+      "source": {
+        "channel": "财政部 财政文告（mof.gov.cn）",
+        "url": "http://www.mof.gov.cn/gkml/caizhengwengao/wg2016/wg201609/201702/t20170209_2531813.htm",
+        "retrieved": "2026-10-14",
+        "verification": "item_reviewed",
+        "raw_snapshot": "data/knowledge/raw/mof_2016_78.html"
+      },
+      "review_interval": "annual",
+      "reviewed": "2026-10-14",
+      "next_review": "2027-10-14",
+      "file": "reduction_78.v2016.json",
+      "sha256": "aed8ac01cfc5094a97eab5c3cb38fdbf3e34aa192dc597365f13e0c3bfb53d79",
+      "status_counts": {
+        "verified": 4,
+        "pending": 0,
+        "input_required": 0
+      }
+    },
+    {
+      "id": "reduction_316",
+      "version": "v2019",
+      "title": "调整专利收费减缴条件（阈值）",
+      "doc_no": "国家知识产权局公告第 316 号",
+      "anchor_from": "2019-07-01",
+      "anchor_to": "",
+      "source": {
+        "channel": "中国政府网 政策文件库（gov.cn）",
+        "url": "https://www.gov.cn/zhengce/zhengceku/2019-12/09/content_5459661.htm",
+        "retrieved": "2026-10-14",
+        "verification": "item_reviewed",
+        "raw_snapshot": "data/knowledge/raw/gov_316.html"
+      },
+      "review_interval": "annual",
+      "reviewed": "2026-10-14",
+      "next_review": "2027-10-14",
+      "file": "reduction_316.v2019.json",
+      "sha256": "65b526ba4cafb3f50f1369c63f5237bed7838672cc2c8ddce144136d11b4c428",
+      "status_counts": {
+        "verified": 7,
+        "pending": 0,
+        "input_required": 0
+      }
+    },
+    {
+      "id": "reduction_594",
+      "version": "v2024",
+      "title": "调整部分专利收费标准和减缴政策（新增项目与减免）",
+      "doc_no": "国家知识产权局公告第 594 号",
+      "anchor_from": "2024-08-06",
+      "anchor_to": "",
+      "source": {
+        "channel": "中国政府网 政策文件库（gov.cn）",
+        "url": "https://www.gov.cn/zhengce/zhengceku/202408/content_6967596.htm",
+        "retrieved": "2026-10-14",
+        "verification": "item_reviewed",
+        "raw_snapshot": "data/knowledge/raw/gov_594.html"
+      },
+      "review_interval": "annual",
+      "reviewed": "2026-10-14",
+      "next_review": "2027-10-14",
+      "file": "reduction_594.v2024.json",
+      "sha256": "75ab07e6334103eb7956c1c3b8b7724de3baa2b6f7e48ddbb858d5b7cffe5ced",
+      "status_counts": {
+        "verified": 5,
+        "pending": 0,
+        "input_required": 0
+      }
+    }
+  ],
+  "scopes": [
+    "calc",
+    "late",
+    "reduction",
+    "check"
+  ],
+  "exemptions": {
+    "small_int_abs_limit": 100,
+    "exempt_integers": [],
+    "exempt_decimals": [
+      "0.01",
+      "0.1",
+      "0.5",
+      "1.0",
+      "2.0"
+    ],
+    "inline_allow_mark": "literal-ok"
+  },
+  "banned_tokens": {
+    "integers": [
+      50,
+      80,
+      200,
+      500,
+      600,
+      900,
+      1000,
+      1200,
+      2000,
+      2400,
+      2500,
+      3000,
+      3500,
+      4000,
+      5000,
+      6000,
+      8000,
+      42000,
+      60000,
+      300000,
+      1000000
+    ],
+    "decimals": [
+      "0.05",
+      "0.15",
+      "0.70",
+      "0.85"
+    ],
+    "extra_integers": [
+      80,
+      50
+    ]
+  },
+  "benchmarks": {
+    "b1_ladder": {
+      "min_pass_rate": "1.0",
+      "max_fail": 0,
+      "max_seconds": "1.0"
+    },
+    "b2_late": {
+      "min_pass_rate": "1.0",
+      "max_fail": 0,
+      "max_seconds": "1.0"
+    },
+    "b3_reduction": {
+      "min_pass_rate": "1.0",
+      "max_fail": 0,
+      "max_seconds": "1.0"
+    },
+    "b4_portfolio": {
+      "min_pass_rate": "1.0",
+      "max_fail": 0,
+      "max_seconds": "2.0"
+    }
+  },
+  "notes": [
+    "本目录为生成器冻结产物，禁手改；改体例走 tools/gen_rulesets.py 整目录重生成。",
+    "M1：32 条条目已逐项回到官方原文/费率表页复核，全部 status=verified；复核痕迹写在每条 basis.note（条目定位 + 核对结论）。",
+    "late.grace_months / late.month_basis 的原文出自《专利法实施细则》国务院令第 769 号（第 115 条 / 第 5 条），故这两条的 basis 指向细则快照而非费率表页。",
+    "复核锚点：review_interval=annual（费率表可能逐年调整），next_review=2027-10-14 由复核基准日 2026-10-14 推出，规则包各条目与其依据原文快照（data/knowledge/raw/_ledger.json）同批复核、同锚点；逾期由 patfee selfcheck 提示（只提示，不改退出码）。"
+  ]
+}
