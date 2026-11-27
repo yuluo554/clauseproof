@@ -1,0 +1,31 @@
+{
+  "background_anchors": [],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "未成年人个人信息",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "不面向未成年人",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "不(?:面向|服务|收集)[^。；]{0,8}未成年人"
+    }
+  ],
+  "neutralizers": [],
+  "pattern_id": "P08",
+  "severity_base": "high",
+  "statute_anchors": [
+    "PIPL-31",
+    "DATA_SEC-21"
+  ],
+  "trigger_features": [
+    {
+      "description": "未成年人 / 监护人同意",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "(?:不满十四周岁|十四周岁)(?:的)?(?:未成年人)?(?:个人信息)?|未成年人(?:的)?(?:个人信息|专门规则)|儿童个人信息|监护人(?:的)?同意"
+    }
+  ],
+  "version": "0.1.0"
+}

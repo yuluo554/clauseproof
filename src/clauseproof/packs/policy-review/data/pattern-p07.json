@@ -1,0 +1,37 @@
+{
+  "background_anchors": [],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "自动化决策",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "提供关闭选项或承诺不做",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "提供[^。；]{0,10}关闭[^。；]{0,8}(?:选项|开关)|(?:不|不会)(?:用于|进行)自动化决策"
+    }
+  ],
+  "neutralizers": [
+    {
+      "description": "明确非个性化语境",
+      "feature_id": "Z1",
+      "type": "regex",
+      "value": "非个性化"
+    }
+  ],
+  "pattern_id": "P07",
+  "severity_base": "high",
+  "statute_anchors": [
+    "PIPL-24"
+  ],
+  "trigger_features": [
+    {
+      "description": "自动化决策/画像/定向推送",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "自动化决策|算法(?:推荐|决策)|用户画像|个性化(?:推荐|定价)|大数据杀熟|定向推送"
+    }
+  ],
+  "version": "0.1.0"
+}

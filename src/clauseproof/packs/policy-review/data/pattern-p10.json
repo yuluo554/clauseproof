@@ -1,0 +1,32 @@
+{
+  "background_anchors": [
+    "CIVIL-496",
+    "CIVIL-497",
+    "CIVIL-498"
+  ],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "免责与责任限制",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "申明不免除法定责任的保护性表述",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "不免除|并非免除|不减轻"
+    }
+  ],
+  "neutralizers": [],
+  "pattern_id": "P10",
+  "severity_base": "notice",
+  "statute_anchors": [],
+  "trigger_features": [
+    {
+      "description": "免责/责任上限表述",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "(?:概不|不)(?:承担|负责)(?:任何)?(?:责任|赔偿)|不负任何责任|免除[^。；]{0,8}责任|责任(?:上限|限于)|不保证[^。；]{0,15}(?:安全|准确|完整|不间断)"
+    }
+  ],
+  "version": "0.1.0"
+}

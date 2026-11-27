@@ -1,0 +1,36 @@
+{
+  "background_anchors": [],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "不可撤销授权",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "承诺可撤销",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "(?:可以|可|有权)(?:随时)?(?:撤销|撤回)(?:您|用户)?(?:的)?(?:授权|同意)"
+    }
+  ],
+  "neutralizers": [],
+  "pattern_id": "P03",
+  "severity_base": "high",
+  "statute_anchors": [
+    "PIPL-15"
+  ],
+  "trigger_features": [
+    {
+      "description": "不可撤销/永久授权表述",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "(?:不可撤销|不可收回|不得撤回|不能撤销|永久有效|无条件)(?:的)?(?:授权|同意|许可|使用)"
+    },
+    {
+      "description": "授权不可撤销",
+      "feature_id": "F2",
+      "type": "regex",
+      "value": "授权[^。；]{0,12}(?:不可|不得|不能)(?:撤销|撤回|收回)|(?:许可|授权|同意)[^。；]{0,8}(?:不可撤销|永久有效)"
+    }
+  ],
+  "version": "0.1.0"
+}

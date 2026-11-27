@@ -1,0 +1,33 @@
+{
+  "background_anchors": [],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "跨境传输",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "不出境承诺",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "(?:不|不会|未)向境外提供|(?:不|不会)存储在境外|仅在中华人民共和国境内(?:存储|处理)"
+    }
+  ],
+  "neutralizers": [],
+  "pattern_id": "P06",
+  "severity_base": "high",
+  "statute_anchors": [
+    "PIPL-38",
+    "PIPL-39",
+    "DATA_SEC-35",
+    "CROSS_BORDER-5"
+  ],
+  "trigger_features": [
+    {
+      "description": "向境外提供 / 境外存储",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "向境外提供|传输至境外|存储于境外|境外(?:服务器|接收方|机构|云)|跨境传输|数据出境"
+    }
+  ],
+  "version": "0.1.0"
+}

@@ -1,0 +1,31 @@
+{
+  "background_anchors": [],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "敏感个人信息",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "不收集承诺",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "不收集|不会收集|不采集|无需"
+    }
+  ],
+  "neutralizers": [],
+  "pattern_id": "P05",
+  "severity_base": "high",
+  "statute_anchors": [
+    "PIPL-28",
+    "PIPL-29"
+  ],
+  "trigger_features": [
+    {
+      "description": "敏感个人信息类别 + 收集动作",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "(?:收集|获取|处理|采集|提供|传输|共享|披露|向境外提供)(?:您的)?(?:生物识别|人脸|指纹|声纹|虹膜|行踪轨迹|医疗健康|金融账户|宗教信仰|犯罪记录|身份证号)"
+    }
+  ],
+  "version": "0.1.0"
+}

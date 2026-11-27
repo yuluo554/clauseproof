@@ -1,0 +1,43 @@
+{
+  "background_anchors": [],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "数据共享给第三方",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "否定承诺",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "不会向|不向|未向|拒绝向|不出售|不共享|不对外提供|未经您的同意不"
+    }
+  ],
+  "neutralizers": [],
+  "pattern_id": "P01",
+  "severity_base": "high",
+  "statute_anchors": [
+    "PIPL-23",
+    "APP-节5"
+  ],
+  "trigger_features": [
+    {
+      "description": "提供动作 + 第三方对象",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "向(?:第三方|其他处理者|合作方|关联方|合作伙伴|广告商)(?:的)?(?:合作伙伴)?(?:提供|共享|披露|传输|出售)"
+    },
+    {
+      "description": "与第三方共享",
+      "feature_id": "F2",
+      "type": "regex",
+      "value": "(?:与|同|和)(?:第三方|关联方|合作伙伴|广告商)(?:共享|交换|互通)|向(?:第三方|关联方|合作伙伴|广告商)(?:的)?(?:共享|披露)|合作伙伴共享"
+    },
+    {
+      "description": "委托处理 / 第三方SDK",
+      "feature_id": "F3",
+      "type": "regex",
+      "value": "委托(?:第三方|其他)(?:处理|加工)|第三方SDK"
+    }
+  ],
+  "version": "0.1.0"
+}

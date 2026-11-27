@@ -1,0 +1,44 @@
+{
+  "background_anchors": [],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "单方变更权",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "承诺通知或再次征得同意",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "(?:将|会|应当)(?:以|通过)[^。；]{0,20}通知您|再次征得(?:您|用户)?(?:的)?同意"
+    }
+  ],
+  "neutralizers": [
+    {
+      "description": "软件更新语境（非政策变更）",
+      "feature_id": "Z1",
+      "type": "regex",
+      "value": "(?:软件|客户端|系统|版本)(?:的)?(?:更新|升级)"
+    }
+  ],
+  "pattern_id": "P02",
+  "severity_base": "medium",
+  "statute_anchors": [
+    "PIPL-14",
+    "PIPL-17"
+  ],
+  "trigger_features": [
+    {
+      "description": "单方更新政策/协议",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "(?:有权|可能|可随时)(?:随时)?(?:更新|修改|变更|调整)(?:本|隐私|用户|服务)?(?:政策|协议|条款)(?:内容)?"
+    },
+    {
+      "description": "变更生效且不承诺通知",
+      "feature_id": "F2",
+      "type": "regex",
+      "value": "(?:更新|修改|变更)(?:后|即)(?:即刻|将|自动)?(?:生效|适用)|恕不另行通知|无需(?:另行)?通知您|不再另行通知"
+    }
+  ],
+  "version": "0.1.0"
+}

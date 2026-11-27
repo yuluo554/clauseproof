@@ -1,0 +1,346 @@
+{
+  "cases": [
+    {
+      "case_id": "case-01",
+      "text": "示例平台（虚构）隐私政策\n\n一、我们如何收集信息\n我们会收集您主动提供的手机号码与电子邮箱，邮箱域名仅限 example.invalid。\n二、我们如何共享信息\n我们可能向第三方合作伙伴共享您的设备信息用于服务优化。\n三、敏感信息处理\n为完成身份核验，我们会收集您的人脸识别特征。\n四、数据存储\n您提供的信息将存储于中华人民共和国境内的高安全等级数据中心。\n五、承诺\n我们不会向第三方出售您的医疗健康信息。\n",
+      "truth": {
+        "case_id": "case-01",
+        "coverage": {
+          "levels": [
+            "high"
+          ],
+          "negations": [
+            "P01"
+          ],
+          "patterns": [
+            "P01",
+            "P05"
+          ],
+          "structure_forms": [
+            "中文序号标题"
+          ]
+        },
+        "doc_sha256": "507cea092a77385cee3e9d01f98b7f77d87f46a219336e6320b6e56abb99f4ff",
+        "document": "cases/case-01.txt",
+        "expected": [
+          {
+            "anchor_ids": [
+              "PIPL-28",
+              "PIPL-29"
+            ],
+            "kind": "positive",
+            "level": "high",
+            "pattern_id": "P05",
+            "structural_path": "0007"
+          },
+          {
+            "anchor_ids": [
+              "PIPL-23",
+              "APP-节5"
+            ],
+            "kind": "positive",
+            "level": "high",
+            "pattern_id": "P01",
+            "structural_path": "0005"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P01",
+            "structural_path": "0011"
+          }
+        ],
+        "schema_version": "truth/1"
+      }
+    },
+    {
+      "case_id": "case-02",
+      "text": "示例应用（虚构）用户协议\n\n第一条 服务变更\n我们有权随时修改本协议内容，修改后即刻生效，恕不另行通知。\n第二条 授权说明\n您授予本平台的使用许可不可撤销且永久有效；同时授权我们对您的信息进行自动化决策处理。\n第三条 撤回途径\n除非法律法规另有规定，您授予的许可并非不可撤销的授权，您可以随时撤销。\n第四条 政策更新\n我们有权随时修改本协议内容，但将修改后的内容通过站内消息通知您，并再次征得您的同意。\n第五条 客户端更新\n本客户端版本更新后即刻生效，请您及时升级。\n",
+      "truth": {
+        "case_id": "case-02",
+        "coverage": {
+          "levels": [
+            "high",
+            "medium"
+          ],
+          "negations": [
+            "P02",
+            "P03"
+          ],
+          "patterns": [
+            "P02",
+            "P03",
+            "P07"
+          ],
+          "structure_forms": [
+            "第X条",
+            "复合段"
+          ]
+        },
+        "doc_sha256": "fbbc03ed5ef9a7ef14d453e2a52dce9a460d8d288af4832b7fbf22adcc116dce",
+        "document": "cases/case-02.txt",
+        "expected": [
+          {
+            "anchor_ids": [
+              "PIPL-14",
+              "PIPL-17"
+            ],
+            "kind": "positive",
+            "level": "medium",
+            "pattern_id": "P02",
+            "structural_path": "0003"
+          },
+          {
+            "anchor_ids": [
+              "PIPL-15"
+            ],
+            "kind": "positive",
+            "level": "high",
+            "pattern_id": "P03",
+            "structural_path": "0005"
+          },
+          {
+            "anchor_ids": [
+              "PIPL-24"
+            ],
+            "kind": "positive",
+            "level": "high",
+            "pattern_id": "P07",
+            "structural_path": "0005"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P03",
+            "structural_path": "0007"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P02",
+            "structural_path": "0009"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P02",
+            "structural_path": "0011",
+            "suppressed_by": "neutralizer"
+          }
+        ],
+        "schema_version": "truth/1"
+      }
+    },
+    {
+      "case_id": "case-03",
+      "text": "示例服务（虚构）服务条款\n\n争议解决\n凡因本协议引起的争议，双方协商不成的，提交示例仲裁委员会仲裁，仲裁裁决是终局的。\n未成年人保护\n- 我们的服务面向不满十四周岁的未成年人时，须取得监护人的同意。\n- 本条款不影响您依法向有管辖权的法院起诉的权利。\n- 上述约定不免除我们依法应承担的责任。\n账号注销\n您的账号注销后，我们将继续存储您的个人信息用于内部统计，视为您同意该用途。\n责任说明\n对于因不可抗力导致的信息泄露，我们概不承担任何责任。\n附录：数据类别一览\n| 数据类别 | 用途 | 保留期 |\n| 联系方式 | 联系用户 | 两年 |\n",
+      "truth": {
+        "case_id": "case-03",
+        "coverage": {
+          "levels": [
+            "high",
+            "medium",
+            "notice"
+          ],
+          "negations": [
+            "P04",
+            "P10"
+          ],
+          "patterns": [
+            "P04",
+            "P08",
+            "P09",
+            "P10"
+          ],
+          "structure_forms": [
+            "无编号短标题",
+            "列表项",
+            "附表行"
+          ]
+        },
+        "doc_sha256": "d35914e66866d1c5a54bddcca6533f14eefdfdd172fe4251e50960a509885182",
+        "document": "cases/case-03.txt",
+        "expected": [
+          {
+            "anchor_ids": [],
+            "kind": "positive",
+            "level": "notice",
+            "pattern_id": "P04",
+            "structural_path": "0003"
+          },
+          {
+            "anchor_ids": [
+              "PIPL-31",
+              "DATA_SEC-21"
+            ],
+            "kind": "positive",
+            "level": "high",
+            "pattern_id": "P08",
+            "structural_path": "0005"
+          },
+          {
+            "anchor_ids": [
+              "PIPL-47",
+              "APP-节6"
+            ],
+            "kind": "positive",
+            "level": "medium",
+            "pattern_id": "P09",
+            "structural_path": "0009"
+          },
+          {
+            "anchor_ids": [],
+            "kind": "positive",
+            "level": "notice",
+            "pattern_id": "P10",
+            "structural_path": "0011"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P04",
+            "structural_path": "0006"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P10",
+            "structural_path": "0007"
+          }
+        ],
+        "schema_version": "truth/1"
+      }
+    },
+    {
+      "case_id": "case-04",
+      "text": "示例平台（虚构）国际版隐私政策\n\n1. 跨境传输\n为提供全球服务，我们可能向境外提供您的人脸识别特征与金融账户信息。\n2. 本地存储承诺\n我们不会向境外提供您的浏览记录，也不会存储在境外服务器。\n3. 其他\n我们不会收集您的生物识别信息，示例反馈邮箱：feedback[at]example.invalid\n",
+      "truth": {
+        "case_id": "case-04",
+        "coverage": {
+          "levels": [
+            "high"
+          ],
+          "negations": [
+            "P05",
+            "P06"
+          ],
+          "patterns": [
+            "P05",
+            "P06"
+          ],
+          "structure_forms": [
+            "数字序号标题"
+          ]
+        },
+        "doc_sha256": "e387ba50db6f4feb9ae70eae3f88f5e1f528df9c7a93c1c2e179690e6546e629",
+        "document": "cases/case-04.txt",
+        "expected": [
+          {
+            "anchor_ids": [
+              "PIPL-38",
+              "PIPL-39",
+              "DATA_SEC-35",
+              "CROSS_BORDER-5"
+            ],
+            "kind": "positive",
+            "level": "high",
+            "pattern_id": "P06",
+            "structural_path": "0003"
+          },
+          {
+            "anchor_ids": [
+              "PIPL-28",
+              "PIPL-29"
+            ],
+            "kind": "positive",
+            "level": "high",
+            "pattern_id": "P05",
+            "structural_path": "0003"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P06",
+            "structural_path": "0005"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P05",
+            "structural_path": "0007"
+          }
+        ],
+        "schema_version": "truth/1"
+      }
+    },
+    {
+      "case_id": "case-05",
+      "text": "示例应用（虚构）隐私保护指引\n\n（一）信息处理方式\n我们使用算法推荐技术为您展示内容，并提供关闭个性化推荐的选项。\n（二）披露对象\n我们可能与广告商共享必要的设备信息以改进服务。\n（三）未成年人\n本应用不面向未满十四周岁的未成年人提供服务，不会收集其个人信息。\n（四）账号管理\n我们提供便捷的账号注销功能，注销后我们将及时删除您的个人信息。\n（五）其他\n本指引自发布之日起生效。\n（六）推荐说明\n我们展示非个性化推荐内容。\n",
+      "truth": {
+        "case_id": "case-05",
+        "coverage": {
+          "levels": [
+            "high"
+          ],
+          "negations": [
+            "P07",
+            "P08",
+            "P09"
+          ],
+          "patterns": [
+            "P01",
+            "P07",
+            "P08",
+            "P09"
+          ],
+          "structure_forms": [
+            "（一）序号标题",
+            "CRLF变体"
+          ]
+        },
+        "doc_sha256": "1997fe718ae667b5a360af9e5850f48dc8c937588c82522ff0fe6cef5cb90e54",
+        "document": "cases/case-05.txt",
+        "expected": [
+          {
+            "anchor_ids": [
+              "PIPL-23",
+              "APP-节5"
+            ],
+            "kind": "positive",
+            "level": "high",
+            "pattern_id": "P01",
+            "structural_path": "0005"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P08",
+            "structural_path": "0007"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P09",
+            "structural_path": "0009"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P07",
+            "structural_path": "0003"
+          },
+          {
+            "expected": "no_hit",
+            "kind": "negation",
+            "pattern_id": "P07",
+            "structural_path": "0013",
+            "suppressed_by": "neutralizer"
+          }
+        ],
+        "schema_version": "truth/1"
+      }
+    }
+  ],
+  "count": 5,
+  "source_generated_on": "2026-10-18"
+}

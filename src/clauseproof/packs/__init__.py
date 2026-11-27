@@ -35,6 +35,7 @@ BUILTIN_MODULES: Tuple[str, ...] = (
     "picrecall",
     "pipl-audit",
     "policy-intake",
+    "policy-review",
     "two-tickets",
 )
 

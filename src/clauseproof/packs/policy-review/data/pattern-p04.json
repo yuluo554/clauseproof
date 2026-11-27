@@ -1,0 +1,32 @@
+{
+  "background_anchors": [
+    "CIVIL-496",
+    "CIVIL-497",
+    "CIVIL-498"
+  ],
+  "escalation": [],
+  "evidence_date": "2026-10-18",
+  "name_zh": "仲裁与管辖",
+  "needs_semantic": false,
+  "negation": [
+    {
+      "description": "保护当事人诉权/选择权的表述",
+      "feature_id": "N1",
+      "type": "regex",
+      "value": "不限制[^。；]{0,20}权利|不影响[^。；]{0,20}(?:权利|起诉)"
+    }
+  ],
+  "neutralizers": [],
+  "pattern_id": "P04",
+  "severity_base": "notice",
+  "statute_anchors": [],
+  "trigger_features": [
+    {
+      "description": "仲裁条款 / 管辖约定",
+      "feature_id": "F1",
+      "type": "regex",
+      "value": "提交[^。；]{0,12}仲裁委员会|仲裁裁决[^。；]{0,10}终局|(?:专属)?管辖(?:法院|权)|作为(?:第一审|一审)(?:管辖)?法院|被告(?:住所地|所在地)法院"
+    }
+  ],
+  "version": "0.1.0"
+}

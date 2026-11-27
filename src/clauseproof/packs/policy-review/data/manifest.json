@@ -1,0 +1,115 @@
+{
+  "anchor_count": 165,
+  "clause_count": 174,
+  "files": {
+    "clauses.json": {
+      "bytes": 118259,
+      "sha256": "b3eadc4ab75abd01fe858dd2d09022d17330e0bcb0b003174b56a9d653ea25e1",
+      "source_name": "built-from-statutes+contracts"
+    },
+    "pattern-p01.json": {
+      "bytes": 1323,
+      "sha256": "edb80d9628d65b45844e03854748980deb14cec8056be5f2a9de7d1a35ed24d2",
+      "source_name": "patterns/P01.json"
+    },
+    "pattern-p02.json": {
+      "bytes": 1322,
+      "sha256": "79e6986a182a4c8137f78ac1e54839c78d08e81184c571dd12832cc2a5eca472",
+      "source_name": "patterns/P02.json"
+    },
+    "pattern-p03.json": {
+      "bytes": 1052,
+      "sha256": "0102b9facb02443fb0534a223a1e409d01691d77cd07c89a1dc1a9f40ee17cf0",
+      "source_name": "patterns/P03.json"
+    },
+    "pattern-p04.json": {
+      "bytes": 896,
+      "sha256": "0b1925710e45385d92beb78f7715c6408209063126e715ed328ac9854d7f8d50",
+      "source_name": "patterns/P04.json"
+    },
+    "pattern-p05.json": {
+      "bytes": 856,
+      "sha256": "16e72af701dadcb856f54c7740a1acd344f2683e906ca1e034fac4ec65259a8f",
+      "source_name": "patterns/P05.json"
+    },
+    "pattern-p06.json": {
+      "bytes": 863,
+      "sha256": "4d42225e070334295c686386cd5adc1eed1073d3be996a08683218669bff5869",
+      "source_name": "patterns/P06.json"
+    },
+    "pattern-p07.json": {
+      "bytes": 961,
+      "sha256": "e60814f028b4ca28c6856995d5861ce0efc177738148d783e950a62b4647e798",
+      "source_name": "patterns/P07.json"
+    },
+    "pattern-p08.json": {
+      "bytes": 839,
+      "sha256": "68a15a3a3a9fd9420bb376553d8e8b60abd930d4696567527434a49f3526adcf",
+      "source_name": "patterns/P08.json"
+    },
+    "pattern-p09.json": {
+      "bytes": 1371,
+      "sha256": "dd31018d9ad16b8b9a8cebd4a07f8b0a9ad58071fc5f70c268ae51978cd5d5b9",
+      "source_name": "patterns/P09.json"
+    },
+    "pattern-p10.json": {
+      "bytes": 871,
+      "sha256": "97e2bc12b30929b71ab8f05d0c126ec771df3d4e78d0bf80eb5addee03eb782a",
+      "source_name": "patterns/P10.json"
+    },
+    "statute-APP.json": {
+      "bytes": 6169,
+      "sha256": "bc02c09e07efdfafaa58810c16f79fe745fd805e68d91771f38f0bec9cc4db5e",
+      "source_name": "statutes/APP.json"
+    },
+    "statute-CROSS_BORDER.json": {
+      "bytes": 8077,
+      "sha256": "27d3c1b0a65feda5ecdaa1c6a69ae03f0ef3e39564563f8c6e70c7d56e63e12a",
+      "source_name": "statutes/CROSS_BORDER.json"
+    },
+    "statute-DATA_SEC.json": {
+      "bytes": 37617,
+      "sha256": "a75c006ab5d982ebac8a04aef80dae14571271a825167bf91166760d6df59cb6",
+      "source_name": "statutes/DATA_SEC.json"
+    },
+    "statute-NECESSARY.json": {
+      "bytes": 11933,
+      "sha256": "794a2eb5b456d2e3e336b2917f51692a6d1722b1f475942f9a1979fd8bb51f71",
+      "source_name": "statutes/NECESSARY.json"
+    },
+    "statute-PIPL.json": {
+      "bytes": 36509,
+      "sha256": "68e7cf37bb7cbd5ff5d48b0acbe7bf30356bc4a13ae3b2768c6be70c3902f6e9",
+      "source_name": "statutes/PIPL.json"
+    },
+    "synthetic-cases.json": {
+      "bytes": 11378,
+      "sha256": "dd32f603ce85042b6c8bf930afd1b58f793f954ee2b3a014f5d57c1c0f2065ba",
+      "source_name": "synthetic cases + truth (aggregated)"
+    }
+  },
+  "generated_on": "2026-10-18",
+  "patterns": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10"
+  ],
+  "ruleset_version": "0.1.0",
+  "schema": "policy.rules.manifest/v1",
+  "statutes": [
+    "PIPL",
+    "DATA_SEC",
+    "APP",
+    "NECESSARY",
+    "CROSS_BORDER"
+  ],
+  "synthetic_cases": 5,
+  "version": "2026-10-18"
+}

@@ -119,6 +119,7 @@ python -m medreview.cli selftest
 | `picrecall` | target-map ① 行 | ✅ 已迁入（截图相似分组：pHash 汉明距离单链聚类 + 分辨率/大小/mtime 保留建议 + 只读纪律（AST 守门）；数据契约锚点；见器官文档 §5/§6） |
 | `pipl-audit` | target-map ① 行 | ✅ 已迁入（个人信息保护合规审计：4 门槛义务分栏 + 26 检查项四态 + 汇总语义（未评估不冒充合规）+ status 门控 + 规则包坐标；示例包标注合成；见器官文档 §5/§6） |
 | `two-tickets` | target-map ① 行 | ✅ 已迁入（电力两票核查：7 票种 × 7 类 check_type + 三级结论 + 依据闸（30/39 待核对降级待人工确认，如实登记）+ 复核锚；票面解析留输入层；见器官文档 §5/§6） |
+| `policy-review` | target-map ① 行 | ✅ 已迁入（隐私政策文本审查：条款切分 + 十类模式 + 否定/中和抑制 + 165 条法条锚点 + 三级分级（缺硬锚点不得高）；纯本地零网络；见器官文档 §5/§6） |
 
 ```bash
 # 列出已注册的器官（slug / 版本 / 摘要）
@@ -254,10 +255,18 @@ clauseproof check two-tickets \
 clauseproof check two-tickets \
   --input samples/two-tickets/ticket-signature-gap.json \
   --basis src/clauseproof/packs/two-tickets/data/clauses.json
+
+# 隐私政策文本审查（用户侧：条款 → 十类模式 → 法条锚点 → 三级分级）
+clauseproof check policy-review \
+  --input samples/policy-review/policy-case-03.json \
+  --basis src/clauseproof/packs/policy-review/data/clauses.json
+clauseproof check policy-review \
+  --input samples/policy-review/policy-clean.json \
+  --basis src/clauseproof/packs/policy-review/data/clauses.json
 ```
 
 器官的输入字段、规则映射、输出示例与判据留档见 [`docs/labeling-claims.md`](docs/labeling-claims.md)
-（另十九个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
+（另二十个器官见 [`docs/checkup-ranges.md`](docs/checkup-ranges.md)、
 [`docs/petfood-label.md`](docs/petfood-label.md)、[`docs/cost-card.md`](docs/cost-card.md)、
 [`docs/lease-terms.md`](docs/lease-terms.md)、[`docs/policy-intake.md`](docs/policy-intake.md)、
 [`docs/extreme-terms.md`](docs/extreme-terms.md)、
@@ -273,7 +282,8 @@ clauseproof check two-tickets \
 [`docs/patent-annuity.md`](docs/patent-annuity.md) 与
 [`docs/picrecall.md`](docs/picrecall.md) 与
 [`docs/pipl-audit.md`](docs/pipl-audit.md) 与
-[`docs/two-tickets.md`](docs/two-tickets.md)）。
+[`docs/two-tickets.md`](docs/two-tickets.md) 与
+[`docs/policy-review.md`](docs/policy-review.md)）。
 判定账本口径（`pass` / `fail` / `not_applicable` + 条款锚点 `clause_id`+`path`+`version`）与
 退出码 0/1/2/3 见同页 §3。
 
