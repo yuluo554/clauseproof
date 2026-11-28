@@ -26,8 +26,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: windows-latest
-            python: "3.8"
+          # 3.8 腿 2026-11-28 退役：dev extra 的 pytest>=9.0.3 要求 Python>=3.10
+          # （PYSEC-2026-1845 修复面），与 requires-python>=3.10 保持同一底线。
           - os: windows-latest
             python: "3.12"
           - os: ubuntu-latest

@@ -364,7 +364,8 @@ python tools/make_release.py --rev v0.1.0 --out dist.zip   # 确定性发布打�
 
 ## 已知环境问题
 
-- **底线 Python 3.8**：全部源码按 3.8 语法写（`typing.List` 而非 `list[str]`）；
+- **底线 Python 3.10**：`requires-python >= 3.10`（dev extra 的 `pytest>=9.0.3` 要求 3.10+，见 PYSEC-2026-1845）；
+  源码仍保持 3.8 语法面（`typing.List` 而非 `list[str]`），需要回落时只需改元数据；
 - **Windows 用 `python -m pip`**：`py` 启动器会绕过 venv 装进系统 Python；
 - **规则包是生成物**：请勿手改 `src/medreview/references/*.json`，改需求走 `tools/gen_ruleset.py` 整目录重生成；
 - **规则包与基准真值库均随包**：`[tool.setuptools.package-data]` 同时携带冻结规则包

@@ -11,12 +11,13 @@ name = "clauseproof"
 version = "0.0.0"
 description = "医疗/医美/药品/器械/保健食品广告合规预审体检工具（确定性规则引擎，纯本地）"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [{ name = "yuluo554" }]
 keywords = ["medical-advertising", "compliance", "pre-review", "cli", "deterministic"]
 classifiers = [
-  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Topic :: Office/Business",
   "Environment :: Console",
@@ -26,7 +27,9 @@ dependencies = []
 
 [project.optional-dependencies]
 # dev 只放测试期真 import 的库；extras 永不进入运行时必需面。
-dev = ["pytest>=7,<9", "pyyaml>=6"]
+# pytest 下界 9.0.3：清 PYSEC-2026-1845（CVE-2025-71176，<=9.0.2 的 /tmp 本地 DoS/提权）。
+# 该版 Requires-Python >=3.10，故本仓 requires-python 同步抬到 3.10。
+dev = ["pytest>=9.0.3,<10", "pyyaml>=6"]
 
 [project.scripts]
 # 唯一入口（2026-11-25 轨AD-B 退役旧入口 medreview；旧包仍可用 `python -m medreview.cli` 运行）
